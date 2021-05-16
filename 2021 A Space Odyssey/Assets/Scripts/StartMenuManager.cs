@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.Audio;
 using TMPro;
 using System;
@@ -10,6 +12,9 @@ public class StartMenuManager : MonoBehaviour {
     [SerializeField] AudioMixer mixer;
     [SerializeField] Texture2D cursorIcon;
     private Animator panelAnimator;
+    [SerializeField] AudioSource highlightSound;
+    [SerializeField]
+    Button settingsFirstButton, settingsClosedButton;
 
 
     void Start() {
@@ -23,10 +28,16 @@ public class StartMenuManager : MonoBehaviour {
 
     public void OpenSettingsPanel() {
         panelAnimator.SetBool("settings", true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(settingsFirstButton.gameObject);
+        settingsFirstButton.OnSelect(null);
     }
 
     public void CloseSettingsPanel() {
         panelAnimator.SetBool("settings", false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(settingsClosedButton.gameObject);
+        settingsClosedButton.OnSelect(null);
     }
 
     public void Quit() {
@@ -39,6 +50,10 @@ public class StartMenuManager : MonoBehaviour {
 
     public void SetSFXVolume(float sliderValue) {
         mixer.SetFloat("SFXVolume", Mathf.Log10(sliderValue) * 20); // convert to dB
+    }
+
+    public void PlayHighlightSound() {
+        highlightSound.Play();
     }
 
 }
