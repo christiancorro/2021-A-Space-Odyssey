@@ -11,10 +11,10 @@ public class StartMenuManager : MonoBehaviour {
 
     [SerializeField] AudioMixer mixer;
     [SerializeField] Texture2D cursorIcon;
-    private Animator panelAnimator;
     [SerializeField] AudioSource highlightSound;
-    [SerializeField]
-    Button settingsFirstButton, settingsClosedButton;
+    [SerializeField] Button settingsFirstButton, settingsClosedButton;
+
+    private Animator panelAnimator;
 
 
     void Start() {
@@ -50,10 +50,6 @@ public class StartMenuManager : MonoBehaviour {
 
     public void SetSFXVolume(float sliderValue) {
         mixer.SetFloat("SFXVolume", Mathf.Log10(sliderValue) * 20); // convert to dB
-    }
-
-    public void PlayHighlightSound() {
-        highlightSound.Play();
     }
 
 }
