@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Audio;
 using TMPro;
-using System;
 
 public class StartMenuManager : MonoBehaviour {
 
@@ -20,12 +19,20 @@ public class StartMenuManager : MonoBehaviour {
     private Animator panelAnimator;
 
 
-    void Start() {
+    void Awake() {
         panelAnimator = GetComponent<Animator>();
         Cursor.SetCursor(cursorIcon, Vector2.zero, CursorMode.Auto);
     }
 
-    void Update() {
+    public void NewGame() {
+        Debug.Log("New Game");
+    }
+
+    public void Pause() {
+
+    }
+
+    public void UnPause() {
 
     }
 
