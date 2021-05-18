@@ -12,7 +12,10 @@ public class StartMenuManager : MonoBehaviour {
     [SerializeField] AudioMixer mixer;
     [SerializeField] Texture2D cursorIcon;
     [SerializeField] AudioSource highlightSound;
-    [SerializeField] Button settingsFirstButton, settingsClosedButton;
+    [SerializeField]
+    Button settingsFirstButton, settingsClosedButton,
+            controlsFirstButton, controlsClosedButton,
+            creditsFirstButton, creditsClosedButton;
 
     private Animator panelAnimator;
 
@@ -38,6 +41,35 @@ public class StartMenuManager : MonoBehaviour {
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(settingsClosedButton.gameObject);
         settingsClosedButton.OnSelect(null);
+    }
+
+    public void OpenControlsPanel() {
+        panelAnimator.SetBool("controls", true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(controlsFirstButton.gameObject);
+        controlsFirstButton.OnSelect(null);
+    }
+
+    public void CloseControlsPanel() {
+        panelAnimator.SetBool("controls", false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(controlsClosedButton.gameObject);
+        controlsClosedButton.OnSelect(null);
+    }
+
+
+    public void OpenCreditsPanel() {
+        panelAnimator.SetBool("credits", true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(creditsFirstButton.gameObject);
+        creditsFirstButton.OnSelect(null);
+    }
+
+    public void CloseCreditsPanel() {
+        panelAnimator.SetBool("credits", false);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(creditsClosedButton.gameObject);
+        creditsClosedButton.OnSelect(null);
     }
 
     public void Quit() {

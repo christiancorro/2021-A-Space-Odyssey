@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Linq;
 
-public class TypeWriter : MonoBehaviour {
+public class TypeWriterDemo : MonoBehaviour {
 
     [SerializeField] TMP_Text page;
     [TextArea(3, 20)]
@@ -41,7 +41,9 @@ public class TypeWriter : MonoBehaviour {
                 timer += (textToWrite[characterIndex] == '.') ? timePerCharacter * 15 : timePerCharacter;
                 characterIndex++;
                 currentText = textToWrite.Substring(0, characterIndex);
+
                 currentText += "<color=#00000000>" + textToWrite.Substring(characterIndex) + "</color>";
+
                 page.text = currentText;
 
                 if (characterIndex >= textToWrite.Length) {
