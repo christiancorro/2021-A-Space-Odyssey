@@ -8,6 +8,7 @@ using TMPro;
 
 public class StartMenuManager : MonoBehaviour {
 
+    [SerializeField] Animator gameStateManager;
     [SerializeField] AudioMixer mixer;
     [SerializeField] Texture2D cursorIcon;
     [SerializeField] AudioSource highlightSound;
@@ -26,10 +27,16 @@ public class StartMenuManager : MonoBehaviour {
 
     public void NewGame() {
         Debug.Log("New Game");
+        gameStateManager.SetTrigger("newGame");
+        panelAnimator.SetBool("pause", false);
+    }
+
+    public bool isNewGame() {
+        return gameStateManager.GetBool("newGame");
     }
 
     public void Pause() {
-
+        gameStateManager.SetBool("pause", false);
     }
 
     public void UnPause() {

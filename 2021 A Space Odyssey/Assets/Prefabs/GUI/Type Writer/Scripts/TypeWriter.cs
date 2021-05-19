@@ -2,8 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 using System.Linq;
 
+[System.Serializable]
+public class EndWritingEvent : UnityEvent { }
+
+[System.Serializable]
 public class TypeWriter : MonoBehaviour {
 
     public Sentences currentText;
@@ -13,6 +18,9 @@ public class TypeWriter : MonoBehaviour {
     [SerializeField] float autoForwardPause = 3;
     [SerializeField] TMP_Text page;
     [SerializeField] TMP_Text alert;
+
+    [SerializeField] EndWritingEvent beginWritingEvent;
+    [SerializeField] EndWritingEvent endWritingEvent;
 
     private Animator alertAnimation;
     private Queue<string> sentences;
@@ -25,6 +33,7 @@ public class TypeWriter : MonoBehaviour {
         sentences = new Queue<string>();
         SFX_Typing = GetComponent<AudioSource>();
         alertAnimation = GetComponent<Animator>();
+        // StartWriting();
 
         if (Input.GetJoystickNames().Length > 0) {
             Debug.Log("Joystick detected");
@@ -66,6 +75,7 @@ public class TypeWriter : MonoBehaviour {
         SFX_Typing.Pause();
         active = false;
         page.text = "";
+        endWritingEvent.Invoke();
     }
 
 
@@ -112,7 +122,6 @@ public class TypeWriter : MonoBehaviour {
         alertAnimation.SetBool("showAlert", false);
     }
 
-
     void Update() {
         if (active) {
             if (skipable && Input.GetButtonDown("Skip")) {
@@ -122,8 +131,6 @@ public class TypeWriter : MonoBehaviour {
                     WriteNextSentence();
                 }
             }
-
-
         }
 
     }

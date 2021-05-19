@@ -323,6 +323,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 947673174411224676, guid: 55408ac743dbb8d4ea050a6d150bf084, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: "\xC8 l'anno 3021. Un politico terrestre, John Hilder, tramite la sua
+        accanita propaganda, muove l'opinione pubblica contro le colonie extraterrestri
+        accusandole di consumare eccessivi quantitativi d'acqua, proveniente come
+        provvigione dal pianeta madre: la Terra.\r\nIn particolare, si avventa contro
+        i motori a dissipazione che permettono la propulsione spaziale vaporizzando
+        una miscela d'acqua e idrocarburi tramite pile nucleari.\n\nL'assemblea terrestre
+        sostiene Hilder e riduce drasticamente l'apporto di acqua agli altri pianeti.
+        In questo modo gli scavenger, degli indomiti cacciatori di rottami spaziali,
+        non potranno pi\xF9 alzarsi dal suolo di Marte.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 947673174411224676, guid: 55408ac743dbb8d4ea050a6d150bf084, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: "Ted Long \xE8 il pi\xF9 ambizioso tra gli scavenger marziani. Infervorato
+        dall'ingiustizia subita, decide che \xE8 giunto il momento di rendere Marte
+        indipendente. Elabora un minuzioso piano per riuscirci. Dovr\xE0 viaggiare
+        per 1,2 unit\xE0 astronomiche verso la temibile Fascia principale di asteroidi
+        per trovare e catturare Vesta, un enorme asteroide ricchissimo di ghiaccio.
+        \r\nHa a disposizione la sua amata draga, una piccola ma potente navicella
+        spaziale dotata di tutti gli strumenti necessari per muoversi agilmente tra
+        i rottami spaziali.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 947673174411224676, guid: 55408ac743dbb8d4ea050a6d150bf084, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: "\xC8 un'impresa titanica, mai tentata prima.\r\nMolti pensano sia una
+        missione suicida."
+      objectReference: {fileID: 0}
     - target: {fileID: 2700583751614583869, guid: 55408ac743dbb8d4ea050a6d150bf084, type: 3}
       propertyPath: m_Pivot.x
       value: 0
