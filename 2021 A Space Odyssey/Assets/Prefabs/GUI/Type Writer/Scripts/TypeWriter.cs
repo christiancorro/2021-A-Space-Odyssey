@@ -92,10 +92,10 @@ public class TypeWriter : MonoBehaviour {
             if (isTyping) {
                 if (i > 0 && sentence[i - 1] == '.') {
                     SFX_Typing.Pause();
-                    yield return new WaitForSecondsRealtime(timePerCharacter * 10); // pause typing on full stop
+                    yield return new WaitForSeconds(timePerCharacter * 10); // pause typing on full stop
                 } else {
                     SFX_Typing.UnPause();
-                    yield return new WaitForSecondsRealtime(timePerCharacter);
+                    yield return new WaitForSeconds(timePerCharacter);
                 }
             }
         }
@@ -105,7 +105,7 @@ public class TypeWriter : MonoBehaviour {
 
 
         if (autoForward) {
-            yield return new WaitForSecondsRealtime(autoForwardPause);
+            yield return new WaitForSeconds(autoForwardPause);
             WriteNextSentence();
         } else {
             ShowAlert();

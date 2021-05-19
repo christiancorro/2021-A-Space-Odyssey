@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class IntroManager : MonoBehaviour {
 
-    [SerializeField] Animator gameStateManager;
+    [SerializeField] Animator introAnimation;
+
     [SerializeField] TypeWriter plotWriter;
     [SerializeField] Sentences initialPlot;
 
@@ -31,24 +32,33 @@ public class IntroManager : MonoBehaviour {
     }
 
     public void showMap() {
+        Debug.Log("Map");
         mapWriter.Write(mapText);
         mapAnimator.SetBool("showMap", true);
     }
 
     public void showSecondPart() {
         mapAnimator.SetBool("showMap", false);
+        plotWriter2.Write(initialPlot2);
+        Debug.Log("Second part initial story");
     }
 
     public void triggerTutorial() {
-        Debug.Log("XIAO");
-        gameStateManager.SetBool("tutorial", true);
+        Debug.Log("Tutorial");
+        GameStateManager.StartTutorial();
     }
 
     void Update() {
-        if (!writing && gameStateManager.GetCurrentAnimatorStateInfo(0).IsName("Initial Story")) {
-            Debug.Log("Initial Story");
-            plotWriter.Write(initialPlot);
-            writing = true;
+        if (GameStateManager.isIntro()) {
+            introAnimation.SetBool("showIntro", true);
+
+            if (!writing) {
+                Debug.Log("Initial Story");
+                plotWriter.Write(initialPlot);
+                writing = true;
+            }
+        } else {
+            introAnimation.SetBool("showIntro", false);
         }
     }
 }

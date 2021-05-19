@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GUIManager : MonoBehaviour {
 
-    [SerializeField] Animator gameStateManager;
     [SerializeField] Animator startMenu;
 
 
@@ -14,13 +13,11 @@ public class GUIManager : MonoBehaviour {
 
     void Update() {
 
-        // Toggle pause
-        if (Input.GetButtonDown("Pause")) {
-            Debug.Log("Pause");
-            gameStateManager.SetBool("pause", !gameStateManager.GetBool("pause"));
+        if (Input.GetButtonDown("Pause") && GameStateManager.isPausable()) {
+            GameStateManager.TogglePause();
         }
 
-        if (gameStateManager.GetCurrentAnimatorStateInfo(0).IsName("Start Menu") || gameStateManager.GetCurrentAnimatorStateInfo(0).IsName("Pause")) {
+        if (GameStateManager.isStartMenu() || GameStateManager.isPaused()) {
             startMenu.SetBool("show", true);
         } else {
             startMenu.SetBool("show", false);
