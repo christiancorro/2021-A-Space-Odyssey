@@ -27,12 +27,8 @@ public class StartMenuManager : MonoBehaviour {
 
     public void NewGame() {
         Debug.Log("New Game");
-        gameStateManager.SetTrigger("newGame");
+        gameStateManager.SetBool("newGame", true);
         panelAnimator.SetBool("pause", false);
-    }
-
-    public bool isNewGame() {
-        return gameStateManager.GetBool("newGame");
     }
 
     public void Pause() {

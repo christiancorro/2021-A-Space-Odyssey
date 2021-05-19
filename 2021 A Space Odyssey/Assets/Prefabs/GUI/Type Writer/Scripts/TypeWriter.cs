@@ -19,13 +19,12 @@ public class TypeWriter : MonoBehaviour {
     [SerializeField] TMP_Text page;
     [SerializeField] TMP_Text alert;
 
-    [SerializeField] EndWritingEvent beginWritingEvent;
     [SerializeField] EndWritingEvent endWritingEvent;
 
     private Animator alertAnimation;
     private Queue<string> sentences;
 
-    private bool active = true;
+    private bool active = false;
     private bool isTyping = false;
     private AudioSource SFX_Typing;
 
@@ -42,12 +41,13 @@ public class TypeWriter : MonoBehaviour {
     }
 
     public void Write(Sentences text) {
-        StopAllCoroutines();
+        //  StopAllCoroutines();
         currentText = text;
         StartWriting();
     }
 
     public void StartWriting() {
+        Debug.Log("Start Writing");
         active = true;
         sentences.Clear(); // clears old sentences
                            // load sentences
@@ -62,7 +62,7 @@ public class TypeWriter : MonoBehaviour {
     private void WriteNextSentence() {
         CloseAlert();
         SFX_Typing.UnPause();
-        if (sentences.Count == 0) {
+        if (sentences.Count == 0 && active) {
             EndWriting();
         } else {
             string sentence = sentences.Dequeue();
@@ -114,7 +114,6 @@ public class TypeWriter : MonoBehaviour {
     }
 
     private void ShowAlert() {
-        Debug.Log("SHOW");
         alertAnimation.SetBool("showAlert", true);
     }
 

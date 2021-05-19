@@ -250,6 +250,9 @@ MonoBehaviour:
   autoForwardPause: 3
   page: {fileID: 2908385441103520387}
   alert: {fileID: 2908385441980457175}
+  endWritingEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!82 &2908385441749123250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -461,7 +464,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: premi SPAZIO per continuare...
+  m_text: premi INVIO per continuare...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
   m_sharedMaterial: {fileID: 21725345230478544, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
