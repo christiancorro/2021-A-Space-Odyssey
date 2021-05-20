@@ -105,11 +105,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5804197557666890640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7c0f47eb320e9747bb7f65f902d4a3f, type: 3}
+  m_Script: {fileID: 11500000, guid: e044ee55770ba4b4b8c61c70ce4493f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  oxygenAndFuel: {fileID: 0}
+  dockingAudio: {fileID: 0}
 --- !u!1 &5804197558328817466
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,9 +121,9 @@ GameObject:
   - component: {fileID: 5804197558328817456}
   - component: {fileID: 5804197558328817463}
   - component: {fileID: 5804197558328817462}
-  - component: {fileID: 5804197558328817461}
   - component: {fileID: 5804197558328817460}
-  - component: {fileID: 5804197558328817467}
+  - component: {fileID: 3381563566285493476}
+  - component: {fileID: 2203122520513649780}
   m_Layer: 7
   m_Name: Planet Blue
   m_TagString: Untagged
@@ -209,21 +208,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5804197558328817461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5804197558328817466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 731acd42daeb58741ac7f9f066acc41a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 20
-  velocityDamage: 2.5
 --- !u!114 &5804197558328817460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,13 +217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5804197558328817466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82c02e24da511f842a0c0274d6d1161c, type: 3}
+  m_Script: {fileID: 11500000, guid: ef515d08bf0ebdb45ae2d452263c0690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  mass: 1
-  radius: 50
---- !u!114 &5804197558328817467
+  damage: 1
+  velocityDamage: 1.5
+--- !u!114 &3381563566285493476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,9 +231,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 5804197558328817466}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0838f4d4d096bb64aac93ed858767efa, type: 3}
+  m_Script: {fileID: 11500000, guid: 2558ca306bbe73748b7228249ba50ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOxygen: 100
-  maxFuel: 60
+  mass: 1
+  radius: 50
+--- !u!114 &2203122520513649780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5804197558328817466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ceb7e4be386be14983799b2c5523e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOxygen: 99
+  maxFuel: 100
   rotationSpeed: 0.1

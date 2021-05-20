@@ -4,21 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using TMPro;
 
-public class StartMenuManager : MonoBehaviour {
+public class PauseMenuManager : MonoBehaviour {
 
     [SerializeField] AudioMixer mixer;
     [SerializeField] Texture2D cursorIcon;
     [SerializeField] AudioSource highlightSound;
     [SerializeField]
-    Button newGameButton, settingsFirstButton, settingsClosedButton,
-            controlsFirstButton, controlsClosedButton,
-            creditsFirstButton, creditsClosedButton;
+    Button resumeButton, settingsFirstButton, settingsClosedButton,
+            controlsFirstButton, controlsClosedButton;
 
     private Animator panelAnimator;
-
-    private bool isOpen = false;
+    private bool paused = false;
 
 
     void Awake() {
@@ -27,41 +26,52 @@ public class StartMenuManager : MonoBehaviour {
     }
 
     private void Update() {
-        if (GameStateManager.isStartMenu()) {
+        if (GameStateManager.isPaused()) {
             if (Input.GetButtonDown("Back")) {
                 if (panelAnimator.GetBool("settings")) {
                     CloseSettingsPanel();
                 } else if (panelAnimator.GetBool("controls")) {
                     CloseControlsPanel();
-                } else if (panelAnimator.GetBool("credits")) {
-                    CloseCreditsPanel();
                 }
             }
         }
     }
 
-    public void OpenStartMenu() {
-        Time.timeScale = 1;
-        if (!isOpen) {
+    public void OpenPauseMenu() {
+        if (!paused) {
             Debug.Log(EventSystem.current.currentSelectedGameObject);
             EventSystem.current.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(newGameButton.gameObject);
-            newGameButton.OnSelect(null);
-            isOpen = true;
+            EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
+            resumeButton.OnSelect(null);
+            Time.timeScale = 0;
+            paused = true;
+            panelAnimator.SetBool("show", true);
         }
-        panelAnimator.SetBool("show", true);
     }
 
-    public void CloseStartMenu() {
-        panelAnimator.SetBool("show", false);
-        isOpen = false;
+    public void ClosePauseMenu() {
+        if (paused) {
+            Time.timeScale = 1;
+            paused = false;
+            panelAnimator.SetBool("show", false);
+            panelAnimator.SetBool("settings", false);
+            panelAnimator.SetBool("controls", false);
+        }
     }
 
-
-    public void NewGame() {
-        Debug.Log("New Game");
-        GameStateManager.NewGame();
+    public void Restart() {
+        Debug.Log("Restart");
         panelAnimator.SetBool("show", false);
+        GameStateManager.TogglePause();
+        GameStateManager.Restart();
+        ClosePauseMenu();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+    }
+
+    public void Resume() {
+        Debug.Log("Resume");
+        GameStateManager.TogglePause();
+        ClosePauseMenu();
     }
 
     public void OpenSettingsPanel() {
@@ -92,23 +102,9 @@ public class StartMenuManager : MonoBehaviour {
         controlsClosedButton.OnSelect(null);
     }
 
-
-    public void OpenCreditsPanel() {
-        panelAnimator.SetBool("credits", true);
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(creditsFirstButton.gameObject);
-        creditsFirstButton.OnSelect(null);
-    }
-
-    public void CloseCreditsPanel() {
-        panelAnimator.SetBool("credits", false);
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(creditsClosedButton.gameObject);
-        creditsClosedButton.OnSelect(null);
-    }
-
-    public void Quit() {
-        Application.Quit();
+    public void Exit() {
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameStateManager.ExitGame();
     }
 
     public void SetMusicVolume(float sliderValue) {

@@ -20,10 +20,12 @@ public class Starship : MonoBehaviour {
     public float rotationSpeed = 3f;
     public float maxSpeed = 10f;
 
+    public GameObject model;
+
     public ParticleSystem engine, turbo, damageLight, damageMedium, damageCritical, explosion;
 
     public AudioSource engineActive, turboActive, explosionAudio;
-    private float maxEngineVolume = 0.012f;
+    private float maxEngineVolume = 0.011f;
 
     private static Rigidbody rbody;
 
@@ -34,70 +36,83 @@ public class Starship : MonoBehaviour {
     }
 
     void Start() {
+        init();
         rbody = this.GetComponent<Rigidbody>();
+        turbo.Stop();
+        engine.Stop();
+        damageCritical.Stop();
+        damageMedium.Stop();
+        damageLight.Stop();
     }
 
     void Update() {
-        if (GameStateManager.isInit()) {
-            init();
-        }
-        // if (GameStatusManager.isStarted()) {
-        // Controls
-        float rotation = Input.GetAxis("Horizontal");
-        float acceleration = Input.GetAxis("Vertical");
-        StarshipController(rotation, acceleration);
-        UpdateDistance();
+        // if (GameStateManager.isInit()) {
+        //     init();
+        // }
+        if (GameStateManager.isInGame()) {
+            // Controls
+            float rotation = Input.GetAxis("Horizontal");
+            float acceleration = Input.GetAxis("Vertical");
+            StarshipController(rotation, acceleration);
+            UpdateDistance();
 
-        oxygen -= oxygenUsage * Time.deltaTime;
+            oxygen -= oxygenUsage * Time.deltaTime;
 
-        if (health < 100) {
-            health += 0.5f * Time.deltaTime;
+            if (health < 100) {
+                health += 0.5f * Time.deltaTime;
+            }
+
+            if (health > 100) {
+                health = 100;
+            }
+            if (fuel > 100) {
+                fuel = 100;
+            }
+
+            if (oxygen > 100) {
+                oxygen = 100;
+            }
+
+            if (oxygen <= 0) {
+                health = -0.1f;
+            }
+
+            if (fuel <= 0) {
+                fuel = 0;
+                engineActive.volume = 0f;
+                turboActive.volume = 0f;
+            }
+
+            if (health <= 70 && health >= 40) {
+                damageLight.Play();
+            } else {
+                damageLight.Stop();
+            }
+
+            if (health < 40 && health >= 20) {
+                damageMedium.Play();
+            } else {
+                damageMedium.Stop();
+            }
+
+            if (health < 20) {
+                damageCritical.Play();
+            } else {
+                damageCritical.Stop();
+            }
+        }
+        if (health <= 0) {
+            health = 0;
         }
 
-        if (health > 100) {
-            health = 100;
-        }
-        if (fuel > 100) {
-            fuel = 100;
-        }
-
-        if (oxygen > 100) {
-            oxygen = 100;
-        }
-
-        if (oxygen <= 0) {
-            health = -0.1f;
-        }
-
-        if (fuel <= 0) {
-            fuel = 0;
-            engineActive.volume = 0f;
-            turboActive.volume = 0f;
-        }
-
-        if (health <= 75 && health >= 40) {
-            damageLight.Play();
-        } else {
-            damageLight.Stop();
-        }
-
-        if (health < 40 && health >= 20) {
-            damageMedium.Play();
-        } else {
-            damageMedium.Stop();
-        }
-
-        if (health < 20) {
-            damageCritical.Play();
-        } else {
-            damageCritical.Stop();
-        }
-
-        if (health <= 0 && GameStateManager.isGameover()) {
+        if (health <= 0 && !GameStateManager.isGameover()) {
+            model.SetActive(false);
+            turbo.Stop();
+            engine.Stop();
             explosion.Play();
             explosionAudio.Play();
-            StartCoroutine(Gameover());
-            health = 0;
+            GameStateManager.Gameover();
+
             //Explode
             Debug.Log("BOOOOOM!");
         }
@@ -110,32 +125,38 @@ public class Starship : MonoBehaviour {
     }
 
     private void StarshipController(float rotation, float acceleration) {
-        transform.Rotate(0, 0, -rotation * rotationSpeed * Time.deltaTime);
 
-        if (fuel > 0 && (GameStateManager.isInGame())) {
-            if (Input.GetAxis("Vertical") != 0 && !Input.GetButton("Turbo")) {
-                engine.Play();
-                engineActive.volume = maxEngineVolume;
-                fuel -= fuelUsage;
-            } else {
-                engine.Stop();
-                engineActive.volume = 0f;
-            }
-            // Turbo?
-            if (Input.GetButton("Turbo") && Input.GetAxis("Vertical") != 0) {
-                fuel -= 2 * fuelUsage;
-                turbo.Play();
-                turboActive.volume = maxEngineVolume;
-                rbody.AddForce(transform.up * turboForce * acceleration);
+        if (GameStateManager.isInGame()) {
+
+            transform.Rotate(0, 0, -rotation * rotationSpeed * Time.deltaTime);
+
+            if (fuel > 0) {
+
+                if (Input.GetAxis("Vertical") != 0 && !Input.GetButton("Turbo")) {
+                    engine.Play();
+                    engineActive.volume = maxEngineVolume;
+                    fuel -= fuelUsage;
+                } else {
+                    engine.Stop();
+                    engineActive.volume = 0f;
+                }
+                // Turbo?
+                if (Input.GetButton("Turbo") && Input.GetAxis("Vertical") != 0) {
+                    fuel -= 2 * fuelUsage;
+                    turbo.Play();
+                    turboActive.volume = maxEngineVolume;
+                    rbody.AddForce(transform.up * turboForce * acceleration);
+                } else {
+                    turbo.Stop();
+                    turboActive.volume = 0f;
+                    rbody.AddForce(transform.up * accelerationForce * acceleration);
+                }
             } else {
                 turbo.Stop();
-                turboActive.volume = 0f;
-                rbody.AddForce(transform.up * accelerationForce * acceleration);
+                engine.Stop();
             }
-        } else {
-            turbo.Stop();
-            engine.Stop();
         }
+
         rbody.velocity = new Vector2(Mathf.Clamp(rbody.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rbody.velocity.y, -maxSpeed, maxSpeed));
     }
 
@@ -151,13 +172,4 @@ public class Starship : MonoBehaviour {
     void FixedUpdate() {
         transform.rotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z);
     }
-
-    IEnumerator Gameover() {
-        //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(0);
-        //gameObject.SetActive(false);
-        // GameStatusManager.Gameover();
-        GameStateManager.Gameover();
-    }
-
 }

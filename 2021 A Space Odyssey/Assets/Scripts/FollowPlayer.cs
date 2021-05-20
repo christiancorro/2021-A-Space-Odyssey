@@ -35,14 +35,14 @@ public class FollowPlayer : MonoBehaviour {
         // Early out if we don't have a target
         if (!targetTransform) return;
 
-        if (startAnimation && GameStatusManager.isStarted() && targetDistance < 50) {
+        if (startAnimation && GameStateManager.isInGame() && targetDistance < 50) {
             targetDistance += 10f * Time.deltaTime;
         }
         if (targetDistance >= 50) {
             startAnimation = false;
         }
         //Zooming with mouse
-        targetDistance -= Input.GetAxis("Zoom") * 30;
+        targetDistance -= Input.GetAxis("Zoom") * 50;
         targetDistance = Mathf.Clamp(targetDistance, minZoom, maxZoom);
         distance = Mathf.Lerp(distance, targetDistance, zoomDampening * Time.deltaTime);
 

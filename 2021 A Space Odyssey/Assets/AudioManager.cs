@@ -28,14 +28,14 @@ public class AudioManager : MonoBehaviour {
             if (!introAudio.isPlaying) {
                 introAudio.Play();
             }
-            intro.TransitionTo(0.1f);
+            intro.TransitionTo(0f);
         }
 
         if (GameStateManager.isTutorial()) {
             if (!tutorialAudio.isPlaying) {
                 tutorialAudio.Play();
             }
-            tutorial.TransitionTo(1f);
+            tutorial.TransitionTo(2f);
         }
 
         if (GameStateManager.isPaused()) {

@@ -123,7 +123,7 @@ public class TypeWriter : MonoBehaviour {
 
     void Update() {
         if (active) {
-            if (skipable && Input.GetButtonDown("Skip")) {
+            if (skipable && Input.GetButtonDown("Skip") && !GameStateManager.isPaused()) {
                 if (isTyping) {
                     isTyping = false;
                 } else {

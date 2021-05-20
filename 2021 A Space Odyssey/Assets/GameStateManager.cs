@@ -1,20 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour {
 
+    public static GameStateManager instance;
     public static Animator gameStates;
 
     void Awake() {
-        gameStates = GetComponent<Animator>();
+        if (!instance) {
+            instance = this;
+            gameStates = GetComponent<Animator>();
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+    private void Start() {
+        Time.timeScale = 1;
     }
 
-
     private void Update() {
-        if (GameStatusManager.isInit() && Input.GetAxis("Vertical") > 0) {
-        }
+        // if (GameStatusManager.isInit() && Input.GetAxis("Vertical") > 0) {
+        // }
     }
 
     void OnEnable() {
@@ -39,10 +46,8 @@ public class GameStateManager : MonoBehaviour {
     }
 
     public static bool startPlayList() {
-        return
-                // !gameStates.GetBool("tutorial") &&
-                gameStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial")
-                || (gameStates.GetCurrentAnimatorStateInfo(0).IsName("Pause")
+        return (!gameStates.GetBool("tutorial") || gameStates.GetBool("newGame")) &&
+                 (gameStates.GetCurrentAnimatorStateInfo(0).IsName("Pause")
                || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game")
                || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Mid Game")
                || gameStates.GetCurrentAnimatorStateInfo(0).IsName("End Game"));
@@ -57,7 +62,6 @@ public class GameStateManager : MonoBehaviour {
                 || gameStates.GetCurrentAnimatorStateInfo(0).IsName("End Game");
     }
 
-
     public static bool isInGame() {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial")
                 || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game")
@@ -65,7 +69,7 @@ public class GameStateManager : MonoBehaviour {
     }
 
     public static bool isStartMenu() {
-        return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Menu");
+        return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Menu") && !(gameStates.GetBool("tutorial") || gameStates.GetBool("startGame") || gameStates.GetBool("midGame"));
     }
 
     public static bool isInit() {
@@ -75,20 +79,45 @@ public class GameStateManager : MonoBehaviour {
     public static void TogglePause() {
         if (gameStates.GetBool("pause")) {
             gameStates.SetBool("pause", false);
-            Time.timeScale = 1;
         } else {
             gameStates.SetBool("pause", true);
-            Time.timeScale = 0;
         }
 
         Debug.Log("Pause");
     }
+
+
+    public static void Restart() {
+        // if (isInGame()) {
+        //     StartGame();
+        // }
+        gameStates.SetTrigger("restart");
+    }
+
+    public static void StartMenu() {
+        gameStates.SetTrigger("startMenu");
+    }
+
+    public static void StartGame() {
+        gameStates.SetBool("startGame", true);
+        Debug.Log("Start Game");
+    }
+
 
     public static void NewGame() {
         gameStates.SetBool("newGame", true);
         Debug.Log("New Game");
     }
 
+    public static void ExitGame() {
+        gameStates.SetBool("pause", false);
+        gameStates.SetBool("newGame", false);
+        gameStates.SetBool("tutorial", false);
+        gameStates.SetTrigger("exitGame");
+        Debug.Log("Exit");
+    }
+
+    //FIXME: trigger remains 
     public static void Gameover() {
         gameStates.SetTrigger("gameOver");
         Debug.Log("Gameover");
@@ -96,6 +125,7 @@ public class GameStateManager : MonoBehaviour {
 
     public static void StartTutorial() {
         gameStates.SetBool("tutorial", true);
+        TutorialStateManager.StartTutorial();
         Debug.Log("Tutorial started");
     }
 }

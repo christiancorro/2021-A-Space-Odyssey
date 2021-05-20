@@ -19,11 +19,13 @@ public class StatusDisplay : MonoBehaviour {
     }
 
     void Update() {
-        if (!fadeInFinished && GameStatusManager.isStarted()) {
+        if (!fadeInFinished && GameStateManager.isInGame()) {
             canvas.gameObject.SetActive(true);
             CanvasGroup panel = canvas.GetComponentInChildren<CanvasGroup>();
             StartCoroutine(DoFade(panel, panel.alpha, 1, 4f));
             fadeInFinished = true;
+        } else {
+            canvas.gameObject.SetActive(false);
         }
         fuelText.text = Mathf.Ceil(Starship.fuel) + "%";
         oxygenText.text = Mathf.Ceil(Starship.oxygen) + "%";

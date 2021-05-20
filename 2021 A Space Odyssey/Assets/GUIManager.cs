@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GUIManager : MonoBehaviour {
 
-    [SerializeField] Animator startMenu;
+    [SerializeField] StartMenuManager startMenu;
+    [SerializeField] PauseMenuManager pauseMenu;
 
 
     void Start() {
@@ -13,14 +14,27 @@ public class GUIManager : MonoBehaviour {
 
     void Update() {
 
+        //  
+        if (!(Input.GetJoystickNames().Length > 0) && (GameStateManager.isStartMenu() || GameStateManager.isPaused())) {
+            Cursor.lockState = CursorLockMode.None;
+        } else {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         if (Input.GetButtonDown("Pause") && GameStateManager.isPausable()) {
             GameStateManager.TogglePause();
         }
 
-        if (GameStateManager.isStartMenu() || GameStateManager.isPaused()) {
-            startMenu.SetBool("show", true);
+        if (GameStateManager.isStartMenu()) {
+            startMenu.OpenStartMenu();
         } else {
-            startMenu.SetBool("show", false);
+            startMenu.CloseStartMenu();
+        }
+
+        if (GameStateManager.isPaused()) {
+            pauseMenu.OpenPauseMenu();
+        } else {
+            pauseMenu.ClosePauseMenu();
         }
     }
 }
