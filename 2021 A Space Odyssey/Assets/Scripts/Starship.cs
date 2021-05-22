@@ -129,9 +129,7 @@ public class Starship : MonoBehaviour {
     private void StarshipController(float rotation, float acceleration) {
 
         if (GameStateManager.canStarShipMove()) {
-
             transform.Rotate(0, 0, -rotation * rotationSpeed * Time.deltaTime);
-
             if (fuel > 0) {
 
                 if (Input.GetAxis("Vertical") != 0 && !Input.GetButton("Turbo")) {

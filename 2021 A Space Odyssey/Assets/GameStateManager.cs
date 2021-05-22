@@ -21,13 +21,10 @@ public class GameStateManager : MonoBehaviour {
     }
 
     private void Update() {
-        // if (GameStatusManager.isInit() && Input.GetAxis("Vertical") > 0) {
-        // }
     }
 
     void OnEnable() {
-        Debug.Log("Init");
-
+        // Debug.Log("Init");
     }
 
     public static bool isIntro() {
@@ -37,6 +34,7 @@ public class GameStateManager : MonoBehaviour {
     public static bool isTutorial() {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial");
     }
+
 
     public static bool isGameover() {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Game Over");
@@ -105,6 +103,43 @@ public class GameStateManager : MonoBehaviour {
 
     public static bool canStarShipMove() {
         return gameStates.GetBool("allowStarShipMovements");
+    }
+
+    public static bool isHUDVisible() {
+        return gameStates.GetBool("showHUD");
+    }
+
+    public static bool isPlanetNavigationSystemActive() {
+        return gameStates.GetBool("showPlanetNavigationSystem");
+    }
+
+    public static bool isVestaNavigationSystemActive() {
+        return gameStates.GetBool("showVestaNavigationSystem");
+    }
+
+    public static void ShowPlanetNavigationSystem() {
+        gameStates.SetBool("showPlanetNavigationSystem", true);
+    }
+
+    public static void HidePlanetNavigationSystem() {
+        gameStates.SetBool("showPlanetNavigationSystem", false);
+    }
+
+    public static void ShowVestaNavigationSystem() {
+        gameStates.SetBool("showVestaNavigationSystem", true);
+    }
+
+    public static void HideVestaNavigationSystem() {
+        gameStates.SetBool("showVestaNavigationSystem", false);
+    }
+
+
+    public static void ShowHUD() {
+        gameStates.SetBool("showHUD", true);
+    }
+
+    public static void HideHUD() {
+        gameStates.SetBool("showHUD", false);
     }
 
     public static void AllowStarShipMovements() {

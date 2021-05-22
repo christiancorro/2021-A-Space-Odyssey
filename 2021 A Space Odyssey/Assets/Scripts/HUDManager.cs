@@ -17,9 +17,11 @@ public class HUDManager : MonoBehaviour {
     }
 
     void Update() {
-        if (GameStateManager.isInGame()) {
+        if (GameStateManager.isInGame() && GameStateManager.isHUDVisible()) {
+            GameStateManager.ShowHUD();
             HUDAnimator.SetBool("showHUD", true);
         } else {
+            GameStateManager.HideHUD();
             HUDAnimator.SetBool("showHUD", false);
         }
         fuelText.text = Mathf.Ceil(Starship.fuel) + "%";
