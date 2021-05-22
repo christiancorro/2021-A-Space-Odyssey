@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -86,7 +87,6 @@ public class GameStateManager : MonoBehaviour {
         Debug.Log("Pause");
     }
 
-
     public static void Restart() {
         // if (isInGame()) {
         //     StartGame();
@@ -103,6 +103,19 @@ public class GameStateManager : MonoBehaviour {
         Debug.Log("Start Game");
     }
 
+    public static bool canStarShipMove() {
+        return gameStates.GetBool("allowStarShipMovements");
+    }
+
+    public static void AllowStarShipMovements() {
+        Debug.Log("Movements allowed");
+        gameStates.SetBool("allowStarShipMovements", true);
+    }
+
+    public static void BlockStarShipMovements() {
+        Debug.Log("Movements blocked");
+        gameStates.SetBool("allowStarShipMovements", false);
+    }
 
     public static void NewGame() {
         gameStates.SetBool("newGame", true);
@@ -117,7 +130,6 @@ public class GameStateManager : MonoBehaviour {
         Debug.Log("Exit");
     }
 
-    //FIXME: trigger remains 
     public static void Gameover() {
         gameStates.SetTrigger("gameOver");
         Debug.Log("Gameover");
@@ -125,7 +137,6 @@ public class GameStateManager : MonoBehaviour {
 
     public static void StartTutorial() {
         gameStates.SetBool("tutorial", true);
-        TutorialStateManager.StartTutorial();
         Debug.Log("Tutorial started");
     }
 }

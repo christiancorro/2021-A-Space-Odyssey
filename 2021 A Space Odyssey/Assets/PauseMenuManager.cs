@@ -43,7 +43,7 @@ public class PauseMenuManager : MonoBehaviour {
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
             resumeButton.OnSelect(null);
-            Time.timeScale = 0;
+            Time.timeScale = 0.5f;
             paused = true;
             panelAnimator.SetBool("show", true);
         }
@@ -61,10 +61,9 @@ public class PauseMenuManager : MonoBehaviour {
 
     public void Restart() {
         Debug.Log("Restart");
-        panelAnimator.SetBool("show", false);
         GameStateManager.TogglePause();
-        GameStateManager.Restart();
         ClosePauseMenu();
+        GameStateManager.Restart();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
     }
 
@@ -103,7 +102,7 @@ public class PauseMenuManager : MonoBehaviour {
     }
 
     public void Exit() {
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameStateManager.ExitGame();
     }
 

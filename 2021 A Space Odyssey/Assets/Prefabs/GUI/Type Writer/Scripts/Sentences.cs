@@ -2,6 +2,6 @@ using UnityEngine;
 
 [System.Serializable]
 public class Sentences : MonoBehaviour {
-    [TextArea(3, 20)]
+    [TextArea(10, 40)]
     public string[] sentences;
 }

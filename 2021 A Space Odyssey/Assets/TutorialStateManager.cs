@@ -15,6 +15,7 @@ public class TutorialStateManager : MonoBehaviour {
     }
 
     public static void EndTutorial() {
+        GameStateManager.StartGame();
         tutorialStates.SetTrigger("endTutorial");
     }
 
@@ -24,5 +25,13 @@ public class TutorialStateManager : MonoBehaviour {
 
     public static bool isTutorialEnded() {
         return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial Ended");
+    }
+
+    public static bool isTutorialStarted() {
+        return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial Started");
+    }
+
+    public static bool isTutorialWaiting() {
+        return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial Waiting");
     }
 }

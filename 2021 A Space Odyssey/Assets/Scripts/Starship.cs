@@ -108,6 +108,8 @@ public class Starship : MonoBehaviour {
         if (health <= 0 && !GameStateManager.isGameover()) {
             model.SetActive(false);
             turbo.Stop();
+            turboActive.volume = 0f;
+            engineActive.volume = 0f;
             engine.Stop();
             explosion.Play();
             explosionAudio.Play();
@@ -126,7 +128,7 @@ public class Starship : MonoBehaviour {
 
     private void StarshipController(float rotation, float acceleration) {
 
-        if (GameStateManager.isInGame()) {
+        if (GameStateManager.canStarShipMove()) {
 
             transform.Rotate(0, 0, -rotation * rotationSpeed * Time.deltaTime);
 

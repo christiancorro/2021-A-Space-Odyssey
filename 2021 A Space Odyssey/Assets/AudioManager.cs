@@ -35,11 +35,15 @@ public class AudioManager : MonoBehaviour {
             if (!tutorialAudio.isPlaying) {
                 tutorialAudio.Play();
             }
-            tutorial.TransitionTo(2f);
+            tutorial.TransitionTo(1f);
         }
 
         if (GameStateManager.isPaused()) {
             pause.TransitionTo(0.2f);
+        }
+
+        if (GameStateManager.isGameover()) {
+            gameOver.TransitionTo(0.2f);
         }
     }
 }

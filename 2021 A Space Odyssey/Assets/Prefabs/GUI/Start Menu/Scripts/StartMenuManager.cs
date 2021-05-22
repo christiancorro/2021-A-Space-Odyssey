@@ -26,9 +26,11 @@ public class StartMenuManager : MonoBehaviour {
         Cursor.SetCursor(cursorIcon, Vector2.zero, CursorMode.Auto);
     }
 
+
+
     private void Update() {
         if (GameStateManager.isStartMenu()) {
-            if (Input.GetButtonDown("Back")) {
+            if (Input.GetButtonDown("Back")) {  // back button, A on controller
                 if (panelAnimator.GetBool("settings")) {
                     CloseSettingsPanel();
                 } else if (panelAnimator.GetBool("controls")) {
@@ -43,10 +45,10 @@ public class StartMenuManager : MonoBehaviour {
     public void OpenStartMenu() {
         Time.timeScale = 1;
         if (!isOpen) {
-            Debug.Log(EventSystem.current.currentSelectedGameObject);
-            EventSystem.current.SetSelectedGameObject(null);
-            EventSystem.current.SetSelectedGameObject(newGameButton.gameObject);
-            newGameButton.OnSelect(null);
+            // Debug.Log(EventSystem.current.currentSelectedGameObject);
+            // EventSystem.current.SetSelectedGameObject(null);
+            // EventSystem.current.SetSelectedGameObject(newGameButton.gameObject);
+            // newGameButton.OnSelect(null);
             isOpen = true;
         }
         panelAnimator.SetBool("show", true);

@@ -41,7 +41,7 @@ public class TypeWriter : MonoBehaviour {
     }
 
     public void Write(Sentences text) {
-        //  StopAllCoroutines();
+        StopAllCoroutines();
         currentText = text;
         StartWriting();
     }
@@ -62,7 +62,7 @@ public class TypeWriter : MonoBehaviour {
     private void WriteNextSentence() {
         CloseAlert();
         SFX_Typing.UnPause();
-        if (sentences.Count == 0 && active) {
+        if (sentences.Count == 0) {
             EndWriting();
         } else {
             string sentence = sentences.Dequeue();
@@ -72,7 +72,7 @@ public class TypeWriter : MonoBehaviour {
     }
 
     private void EndWriting() {
-        SFX_Typing.Pause();
+        SFX_Typing.Stop();
         active = false;
         page.text = "";
         endWritingEvent.Invoke();
@@ -126,6 +126,7 @@ public class TypeWriter : MonoBehaviour {
             if (skipable && Input.GetButtonDown("Skip") && !GameStateManager.isPaused()) {
                 if (isTyping) {
                     isTyping = false;
+                    SFX_Typing.Pause();
                 } else {
                     WriteNextSentence();
                 }
