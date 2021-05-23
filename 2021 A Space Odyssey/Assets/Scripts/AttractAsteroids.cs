@@ -12,11 +12,11 @@ public class AttractAsteroids : MonoBehaviour {
     public ParticleSystem attractor;
 
     void Start() {
+        attractor.Stop();
         try {
             UpdateAsteroids();
         } catch { }
     }
-
 
     void Update() {
 

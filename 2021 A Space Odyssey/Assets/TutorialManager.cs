@@ -24,6 +24,9 @@ public class TutorialManager : MonoBehaviour {
     [SerializeField] TypeWriter step2Writer2;
     [SerializeField] Sentences step2Sentence2;
 
+    [SerializeField] TypeWriter step2Writer3;
+    [SerializeField] Sentences step2Sentence3;
+
 
     [Header("Step3 Hook")]
     [SerializeField] GameObject step3Trigger;
@@ -35,6 +38,9 @@ public class TutorialManager : MonoBehaviour {
 
     [Header("Step5 Vesta")]
     [SerializeField] GameObject step5Trigger;
+
+    [Header("HUD Navigation System")]
+    [SerializeField] HUDNavigationSystem tutorialTargetsNavigationSystem;
 
     [SerializeField] GameObject tutorialObjects;
 
@@ -51,7 +57,10 @@ public class TutorialManager : MonoBehaviour {
         // Starts tutorial
         if (GameStateManager.isTutorial()) {
 
+            tutorialTargetsNavigationSystem.gameObject.SetActive(true);
+
             if (TutorialStateManager.isTutorialWaiting()) {
+                GameStateManager.BlockStarShipMovements();
                 TutorialStateManager.StartTutorial();
                 tutorialObjects.SetActive(true);
                 step1Writer1.Write(step1Sentence1);
@@ -68,6 +77,8 @@ public class TutorialManager : MonoBehaviour {
                 // TutorialStateManager.EndTutorial();
                 // TODO: Implement Skip tutorial
             }
+        } else {
+            tutorialTargetsNavigationSystem.gameObject.SetActive(false);
         }
     }
 
@@ -78,16 +89,20 @@ public class TutorialManager : MonoBehaviour {
     }
 
     public void StartStep1_Movements() {
+        // GameStateManager.BlockStarShipMovements();
         GameStateManager.AllowStarShipMovements();
         TutorialStateManager.Step1();
         step1Trigger.SetActive(true);
         step1Writer2.Write(step1Sentence2);
+        tutorialTargetsNavigationSystem.Show();
+        tutorialTargetsNavigationSystem.SetTarget(step1Trigger);
     }
 
     public void EndStep1() {
         step1Trigger.SetActive(false);
         step1Writer3.Write(step1Sentence3);
-        // GameStateManager.BlockStarShipMovements();
+        tutorialTargetsNavigationSystem.Hide();
+        GameStateManager.BlockStarShipMovements();
     }
 
     public void ShowHUD() {
@@ -96,21 +111,32 @@ public class TutorialManager : MonoBehaviour {
     }
 
     public void StartStep2_Fuel() {
-        // GameStateManager.AllowStarShipMovements();
+        GameStateManager.AllowStarShipMovements();
         TutorialStateManager.Step2();
         step2Trigger.SetActive(true);
+        tutorialTargetsNavigationSystem.Show();
+        tutorialTargetsNavigationSystem.SetTarget(step2Trigger);
+    }
+
+    public void Step2_Attract_Message() {
+        if (!step2Writer2.HasAlreadyWritten()) {
+            step2Writer2.Write(step2Sentence2);
+            GameStateManager.BlockStarShipMovements();
+        }
     }
 
     public void EndStep2() {
         step2Trigger.SetActive(false);
-        step2Writer2.Write(step2Sentence2);
-        // GameStateManager.BlockStarShipMovements();
+        step2Writer3.Write(step2Sentence3);
+        tutorialTargetsNavigationSystem.Hide();
     }
 
     public void StartStep3_Hook() {
         TutorialStateManager.Step3();
         step3Trigger.SetActive(true);
         step3Writer1.Write(step3Sentence1);
+        tutorialTargetsNavigationSystem.Show();
+        tutorialTargetsNavigationSystem.SetTarget(step3Trigger);
     }
 
     public void EndStep3() {

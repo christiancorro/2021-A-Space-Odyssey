@@ -43,7 +43,7 @@ public class PauseMenuManager : MonoBehaviour {
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
             resumeButton.OnSelect(null);
-            Time.timeScale = 0.5f;
+            Time.timeScale = 0f;
             paused = true;
             panelAnimator.SetBool("show", true);
         }

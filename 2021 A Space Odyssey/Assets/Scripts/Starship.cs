@@ -155,9 +155,17 @@ public class Starship : MonoBehaviour {
                 turbo.Stop();
                 engine.Stop();
             }
-        }
+            rbody.velocity = new Vector2(Mathf.Clamp(rbody.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rbody.velocity.y, -maxSpeed, maxSpeed));
+        } else {
+            rbody.velocity = Vector2.Lerp(rbody.velocity, new Vector2(0, 0), Time.deltaTime * 2); //breaks
 
-        rbody.velocity = new Vector2(Mathf.Clamp(rbody.velocity.x, -maxSpeed, maxSpeed), Mathf.Clamp(rbody.velocity.y, -maxSpeed, maxSpeed));
+            //No rotation
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime);
+            turbo.Stop();
+            engine.Stop();
+            turboActive.volume = 0f;
+            engineActive.volume = 0f;
+        }
     }
 
     public static void ApplyDamage(float damage) {

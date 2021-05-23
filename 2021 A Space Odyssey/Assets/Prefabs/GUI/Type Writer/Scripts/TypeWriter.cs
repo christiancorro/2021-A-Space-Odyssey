@@ -26,12 +26,14 @@ public class TypeWriter : MonoBehaviour {
 
     private bool active = false;
     private bool isTyping = false;
+    private bool hasAlreadyWritten = false;
     private AudioSource SFX_Typing;
 
     void Start() {
         sentences = new Queue<string>();
         SFX_Typing = GetComponent<AudioSource>();
         alertAnimation = GetComponent<Animator>();
+        hasAlreadyWritten = false;
         // StartWriting();
 
         if (Input.GetJoystickNames().Length > 0) {
@@ -41,6 +43,7 @@ public class TypeWriter : MonoBehaviour {
     }
 
     public void Write(Sentences text) {
+        hasAlreadyWritten = true;
         StopAllCoroutines();
         currentText = text;
         StartWriting();
@@ -133,5 +136,9 @@ public class TypeWriter : MonoBehaviour {
             }
         }
 
+    }
+
+    public bool HasAlreadyWritten() {
+        return hasAlreadyWritten;
     }
 }

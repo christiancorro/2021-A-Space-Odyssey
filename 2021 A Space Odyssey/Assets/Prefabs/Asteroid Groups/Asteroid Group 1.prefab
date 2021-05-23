@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3994632821574258369}
   - component: {fileID: 3994632821574258368}
   - component: {fileID: 3994632821574258382}
-  - component: {fileID: 3994632821574258383}
+  - component: {fileID: 3960030508724601293}
   m_Layer: 6
   m_Name: Rocks 02 prefab
   m_TagString: Asteroids
@@ -114,7 +114,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632821574258383
+--- !u!114 &3960030508724601293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,14 +123,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632821574258381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 10
+  damage: 8
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &3994632821750451654
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +142,7 @@ GameObject:
   - component: {fileID: 3994632821750451514}
   - component: {fileID: 3994632821750451513}
   - component: {fileID: 3994632821750451512}
-  - component: {fileID: 3994632821750451655}
+  - component: {fileID: 2037875427229246038}
   m_Layer: 6
   m_Name: Asteroid Fuel 02 (4)
   m_TagString: Asteroids
@@ -245,7 +243,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632821750451655
+--- !u!114 &2037875427229246038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,14 +252,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632821750451654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
   damage: 5
   hasFuel: 1
-  fuel: 6
-  fuelCollison: {fileID: 0}
+  fuel: 10
 --- !u!1 &3994632821949269714
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +271,7 @@ GameObject:
   - component: {fileID: 3994632821949269718}
   - component: {fileID: 3994632821949269717}
   - component: {fileID: 3994632821949269716}
-  - component: {fileID: 3994632821949269715}
+  - component: {fileID: 3665852424420197589}
   m_Layer: 6
   m_Name: Asteroid Fuel
   m_TagString: Asteroids
@@ -376,7 +372,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632821949269715
+--- !u!114 &3665852424420197589
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,14 +381,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632821949269714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 8
+  damage: 5
   hasFuel: 1
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &3994632822143587161
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,7 +400,7 @@ GameObject:
   - component: {fileID: 3994632822143587165}
   - component: {fileID: 3994632822143587164}
   - component: {fileID: 3994632822143587163}
-  - component: {fileID: 3994632822143587162}
+  - component: {fileID: 2259366215858251925}
   m_Layer: 6
   m_Name: Rocks 02 prefab (2)
   m_TagString: Asteroids
@@ -507,7 +501,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632822143587162
+--- !u!114 &2259366215858251925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -516,14 +510,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632822143587161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
   damage: 5
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &3994632822178101577
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +529,7 @@ GameObject:
   - component: {fileID: 3994632822178101581}
   - component: {fileID: 3994632822178101580}
   - component: {fileID: 3994632822178101579}
-  - component: {fileID: 3994632822178101578}
+  - component: {fileID: 3757564518784422312}
   m_Layer: 6
   m_Name: Rocks 02 prefab (5)
   m_TagString: Asteroids
@@ -638,7 +630,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632822178101578
+--- !u!114 &3757564518784422312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -647,14 +639,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632822178101577}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 4
+  damage: 5
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &3994632822782483341
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +658,7 @@ GameObject:
   - component: {fileID: 3994632822782483329}
   - component: {fileID: 3994632822782483328}
   - component: {fileID: 3994632822782483343}
-  - component: {fileID: 3994632822782483342}
+  - component: {fileID: 1190680576470468729}
   m_Layer: 6
   m_Name: Asteroid Fuel 02 (9)
   m_TagString: Asteroids
@@ -769,7 +759,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632822782483342
+--- !u!114 &1190680576470468729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -778,14 +768,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632822782483341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
   damage: 5
   hasFuel: 1
-  fuel: 5
-  fuelCollison: {fileID: 0}
+  fuel: 10
 --- !u!1 &3994632822848185061
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +787,7 @@ GameObject:
   - component: {fileID: 3994632822848185049}
   - component: {fileID: 3994632822848185048}
   - component: {fileID: 3994632822848185063}
-  - component: {fileID: 3994632822848185062}
+  - component: {fileID: 903523087782934830}
   m_Layer: 6
   m_Name: Rocks 03 prefab (6)
   m_TagString: Asteroids
@@ -900,7 +888,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632822848185062
+--- !u!114 &903523087782934830
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -909,14 +897,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632822848185061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 12
+  damage: 8
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &3994632822917349581
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +916,7 @@ GameObject:
   - component: {fileID: 3994632822917349569}
   - component: {fileID: 3994632822917349568}
   - component: {fileID: 3994632822917349583}
-  - component: {fileID: 3994632822917349582}
+  - component: {fileID: 3331093263278417993}
   m_Layer: 6
   m_Name: Rocks 02 prefab (1)
   m_TagString: Asteroids
@@ -1031,7 +1017,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632822917349582
+--- !u!114 &3331093263278417993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1040,14 +1026,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632822917349581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 8
+  damage: 5
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &3994632823547851801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,7 +1084,7 @@ GameObject:
   - component: {fileID: 3994632823668256136}
   - component: {fileID: 3994632823668256151}
   - component: {fileID: 3994632823668256150}
-  - component: {fileID: 3994632823668256149}
+  - component: {fileID: 2856790022399809518}
   m_Layer: 6
   m_Name: Rocks 03 prefab (5)
   m_TagString: Asteroids
@@ -1201,7 +1185,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 8
   m_CollisionDetection: 0
---- !u!114 &3994632823668256149
+--- !u!114 &2856790022399809518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1210,11 +1194,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3994632823668256148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
   damage: 10
   hasFuel: 0
-  fuel: 0
-  fuelCollison: {fileID: 0}
+  fuel: 10

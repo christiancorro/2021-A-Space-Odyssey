@@ -23,7 +23,7 @@ public class GameOverManager : MonoBehaviour {
     }
 
     IEnumerator StartWriting() {
-        yield return new WaitForSecondsRealtime(1.2f);
+        yield return new WaitForSecondsRealtime(3f);
         gameOverWriter.Write(gameOverSentence);
         yield return null;
     }

@@ -143,12 +143,10 @@ public class GameStateManager : MonoBehaviour {
     }
 
     public static void AllowStarShipMovements() {
-        Debug.Log("Movements allowed");
         gameStates.SetBool("allowStarShipMovements", true);
     }
 
     public static void BlockStarShipMovements() {
-        Debug.Log("Movements blocked");
         gameStates.SetBool("allowStarShipMovements", false);
     }
 
