@@ -24,19 +24,19 @@ public class AudioManager : MonoBehaviour {
             startMenu.TransitionTo(0.2f);
         }
 
-        if (GameStateManager.isIntro()) {
+        if (GameStateManager.isIntro() && !GameStateManager.isPaused()) {
             if (!introAudio.isPlaying) {
                 introAudio.Play();
             }
             intro.TransitionTo(0f);
         }
 
-        if (GameStateManager.isTutorial()) {
-            if (!tutorialAudio.isPlaying) {
-                tutorialAudio.Play();
-            }
-            tutorial.TransitionTo(1f);
-        }
+        // if (GameStateManager.isTutorial()) {
+        //     if (!tutorialAudio.isPlaying) {
+        //         tutorialAudio.Play();
+        //     }
+        //     tutorial.TransitionTo(1f);
+        // }
 
         if (GameStateManager.isPaused()) {
             pause.TransitionTo(0.2f);

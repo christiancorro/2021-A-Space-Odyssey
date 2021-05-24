@@ -10,7 +10,7 @@ public class Star : MonoBehaviour {
 
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "Starship") {
-            starSnaphost.TransitionTo(1f);
+            starSnaphost.TransitionTo(0.5f);
             Starship.ApplyDamage(demage);
             Debug.Log("Star damage");
         }

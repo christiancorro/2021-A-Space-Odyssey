@@ -1,8 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class TutorialManager : MonoBehaviour {
+
+
+    [SerializeField] AudioSource tutorialAudio;
+    [SerializeField] AudioMixerSnapshot tutorialSnapshot;
 
     [Header("Step1 Movements")]
     [SerializeField] GameObject step1Trigger;
@@ -60,6 +65,11 @@ public class TutorialManager : MonoBehaviour {
             tutorialTargetsNavigationSystem.gameObject.SetActive(true);
 
             if (TutorialStateManager.isTutorialWaiting()) {
+
+                if (!tutorialAudio.isPlaying) {
+                    tutorialAudio.Play();
+                }
+                tutorialSnapshot.TransitionTo(0.1f);
                 GameStateManager.BlockStarShipMovements();
                 TutorialStateManager.StartTutorial();
                 tutorialObjects.SetActive(true);
@@ -119,7 +129,7 @@ public class TutorialManager : MonoBehaviour {
     }
 
     public void Step2_Attract_Message() {
-        if (!step2Writer2.HasAlreadyWritten()) {
+        if (!step2Writer2.HasAlreadyWritten() && TutorialStateManager.isStep2()) {
             step2Writer2.Write(step2Sentence2);
             GameStateManager.BlockStarShipMovements();
         }
