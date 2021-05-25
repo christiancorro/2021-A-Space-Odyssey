@@ -5,6 +5,9 @@ using UnityEngine;
 public class Hook : MonoBehaviour {
     [SerializeField] Transform startPoint, endPoint;
 
+    [Range(10f, 100.0f)]
+    [SerializeField] float ropePullVelocity = 60.5f;
+
     [Range(0.0f, 100.0f)]
     [SerializeField] float springStiffness = 60.5f;
 
@@ -24,8 +27,12 @@ public class Hook : MonoBehaviour {
 
     [SerializeField] bool showTrigger = false;
 
+    public GameObject targetObject;
+
+
+    [SerializeField] AudioSource shootHookAudio, isHookingAudio, returnHookAudio;
+
     private LineRenderer lineRenderer;
-    private GameObject targetObject;
 
     private RopeBridge rope;
 
@@ -53,8 +60,13 @@ public class Hook : MonoBehaviour {
         }
     }
 
+    private void Start() {
+        isHookingAudio.Pause();
+    }
+
     void Update() {
-        if (GameStateManager.isInGame()) {
+        if (GameStateManager.isInGame() && GameStateManager.CanStarShipHook()) {
+            endPoint.gameObject.SetActive(true);
             // Toggle hook
             if (Input.GetButtonDown("Hook")) {
                 // isActive = !isActive;
@@ -80,10 +92,13 @@ public class Hook : MonoBehaviour {
 
             // when target is disabled
             if (isHookShooted) {
+                isHookingAudio.UnPause();
                 if (!targetObject.activeSelf) {
                     StopHook();
                 }
             }
+        } else {
+            endPoint.gameObject.SetActive(false);
         }
     }
 
@@ -93,6 +108,7 @@ public class Hook : MonoBehaviour {
         Debug.Log("Start Hook");
         // if (Physics.SphereCast(startPoint.position, 2f, startPoint.up, out hit, maxDistance)) // don't work well, switch to trigger
         if (inside.Count > 0) {
+            shootHookAudio.Play();
             var outlineCloser = closestObject.gameObject.GetComponent<Outline>();
             outlineCloser.OutlineWidth = 0;
             targetObject = closestObject;
@@ -114,18 +130,15 @@ public class Hook : MonoBehaviour {
     }
     void StopHook() {
         Debug.Log("Stop Hook");
+        isHookingAudio.Stop();
+        returnHookAudio.Play();
         StartCoroutine(ReturnHook());
     }
 
     void DrawRope() {
         //If not grappling, don't draw rope
         if (joint) {
-            //Adjust these values to fit your game.
-            joint.spring = springStiffness;
-            joint.damper = springDamper;
-            joint.massScale = massScale;
-
-            joint.maxDistance += Input.GetAxis("Hook Rope Length") * Time.deltaTime * 20;
+            joint.maxDistance += Input.GetAxis("Hook Rope Length") * Time.deltaTime * ropePullVelocity;
             if (joint.maxDistance > maxDistance) joint.maxDistance = maxDistance;
             joint.connectedAnchor = startPoint.position;
         }
@@ -137,13 +150,15 @@ public class Hook : MonoBehaviour {
     }
 
     private void FixedUpdate() {
-        // if (isHookShooted) {
-        rope.Simulate();
-        // }
+        if (isHookShooted) {
+            rope.Simulate();
+        }
     }
 
     void LateUpdate() {
-        DrawRope();
+        if (GameStateManager.CanStarShipHook()) {
+            DrawRope();
+        }
     }
 
     private void UpdateTargetPosition(Transform target) {
@@ -209,24 +224,24 @@ public class Hook : MonoBehaviour {
             outline.OutlineWidth = 0f;
 
             inside.Add(other.gameObject);
-            // Debug.Log("Add " + inside.Count);
+            Debug.Log("Add " + inside.Count);
         }
         // }
     }
 
     private void OnTriggerStay(Collider other) {
-        if (!isHookShooted) {
+        if (!isHookShooted && GameStateManager.CanStarShipHook()) {
             if (IsInLayerMask(other.gameObject, LayerMask.GetMask("Hookable"))) {
-                closestObject = getCloserToCenterObject();
+                closestObject = getClosetToCenterObject();
                 if (selectedOldObject != closestObject) {
-                    var outlineCloser = closestObject.gameObject.GetComponent<Outline>();
+                    var outlineCloset = closestObject.gameObject.GetComponent<Outline>();
                     if (selectedOldObject == null) {
                         // Debug.Log("Change Color of " + closestObject.name);
-                        outlineCloser.OutlineWidth = outlineWidth;
+                        outlineCloset.OutlineWidth = outlineWidth;
                     } else {
                         var outlineSelected = selectedOldObject.gameObject.GetComponent<Outline>();
                         // Debug.Log("Change Color of " + closestObject.name);
-                        outlineCloser.OutlineWidth = outlineWidth;
+                        outlineCloset.OutlineWidth = outlineWidth;
                         outlineSelected.OutlineWidth = 0;
                     }
                     selectedOldObject = closestObject;
@@ -246,9 +261,8 @@ public class Hook : MonoBehaviour {
                     selectedOldObject = null;
                 }
                 inside.Remove(other.gameObject);
-                // Debug.Log("Remove " + inside.Count);
+                Debug.Log("Remove " + inside.Count);
             } catch { }
-            // }
         }
     }
 
@@ -258,7 +272,7 @@ public class Hook : MonoBehaviour {
         return point2closestPointOnLine.magnitude;
     }
 
-    private GameObject getCloserToCenterObject() {
+    private GameObject getClosetToCenterObject() {
         GameObject tMin = null;
         float minDist = Mathf.Infinity;
         foreach (GameObject t in inside) {

@@ -105,6 +105,10 @@ public class GameStateManager : MonoBehaviour {
         return gameStates.GetBool("allowStarShipMovements");
     }
 
+    public static bool CanStarShipHook() {
+        return gameStates.GetBool("allowHook");
+    }
+
     public static bool isHUDVisible() {
         return gameStates.GetBool("showHUD");
     }
@@ -148,6 +152,14 @@ public class GameStateManager : MonoBehaviour {
 
     public static void BlockStarShipMovements() {
         gameStates.SetBool("allowStarShipMovements", false);
+    }
+
+    public static void AllowStarShipHook() {
+        gameStates.SetBool("allowHook", true);
+    }
+
+    public static void BlockStarShipHook() {
+        gameStates.SetBool("allowHook", false);
     }
 
     public static void NewGame() {

@@ -99,6 +99,8 @@ public class TutorialManager : MonoBehaviour {
     }
 
     public void StartStep1_Movements() {
+
+        GameStateManager.AllowStarShipHook();
         // GameStateManager.BlockStarShipMovements();
         GameStateManager.AllowStarShipMovements();
         TutorialStateManager.Step1();
@@ -147,6 +149,7 @@ public class TutorialManager : MonoBehaviour {
         step3Writer1.Write(step3Sentence1);
         tutorialTargetsNavigationSystem.Show();
         tutorialTargetsNavigationSystem.SetTarget(step3Trigger);
+        GameStateManager.AllowStarShipHook();
     }
 
     public void EndStep3() {

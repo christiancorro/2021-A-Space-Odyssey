@@ -8,6 +8,7 @@ public class BackgroundManager : MonoBehaviour {
     [SerializeField] Transform target;
     [SerializeField] GameObject stars1;
     [SerializeField] GameObject stars2;
+    [SerializeField] float maxRadius;
 
     private Vector3 currentCenter;
     private float distance;
@@ -26,7 +27,7 @@ public class BackgroundManager : MonoBehaviour {
             Debug.DrawLine(target.position, currentCenter, Color.white, 0.1f);
             distance = Vector3.Distance(target.position, currentCenter);
 
-            if (distance > 120) {
+            if (distance > maxRadius) {
 
                 if (currentStars == stars1) {
                     currentStars = stars2;
