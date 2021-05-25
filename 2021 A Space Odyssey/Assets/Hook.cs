@@ -30,7 +30,7 @@ public class Hook : MonoBehaviour {
     public GameObject targetObject;
 
 
-    [SerializeField] AudioSource shootHookAudio, isHookingAudio, returnHookAudio;
+    [SerializeField] AudioSource shootHookAudio, returnHookAudio, notTargetAvailableHookAudio;
 
     private LineRenderer lineRenderer;
 
@@ -60,9 +60,6 @@ public class Hook : MonoBehaviour {
         }
     }
 
-    private void Start() {
-        isHookingAudio.Pause();
-    }
 
     void Update() {
         if (GameStateManager.isInGame() && GameStateManager.CanStarShipHook()) {
@@ -92,7 +89,6 @@ public class Hook : MonoBehaviour {
 
             // when target is disabled
             if (isHookShooted) {
-                isHookingAudio.UnPause();
                 if (!targetObject.activeSelf) {
                     StopHook();
                 }
@@ -120,17 +116,17 @@ public class Hook : MonoBehaviour {
 
             //The distance grapple will try to keep from grapple point. 
             joint.maxDistance = Mathf.Min(maxDistance, distanceFromPoint);
-            joint.minDistance = -1f;
+            joint.minDistance = -10f;
 
         } else {
             // No target, hook return
             isHookShooted = false;
+            notTargetAvailableHookAudio.Play();
         }
-
     }
+
     void StopHook() {
         Debug.Log("Stop Hook");
-        isHookingAudio.Stop();
         returnHookAudio.Play();
         StartCoroutine(ReturnHook());
     }

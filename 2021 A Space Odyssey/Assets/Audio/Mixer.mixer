@@ -139,7 +139,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 2608861548507735127}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 3
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -349,7 +349,7 @@ AudioMixerController:
   m_StartSnapshot: {fileID: -3395577141961220521}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ExposedParameters:
   - guid: 2bb83185b96d5f44290d85a022ed1343
     name: MusicVolume

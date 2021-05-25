@@ -18,7 +18,7 @@ public class GUIManager : MonoBehaviour {
         if (!(Input.GetJoystickNames().Length > 0) && (GameStateManager.isStartMenu() || GameStateManager.isPaused())) {
             Cursor.lockState = CursorLockMode.None;
         } else {
-            Cursor.lockState = CursorLockMode.Locked;
+            // Cursor.lockState = CursorLockMode.Locked;
         }
 
         if (Input.GetButtonDown("Pause") && GameStateManager.isPausable()) {
