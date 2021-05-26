@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class NearestPlanetNavigationSystem : MonoBehaviour {
 
-    [SerializeField] HUDNavigationSystem nearestPlanetNavigationSystem;
+    [SerializeField] HUDNavigationSystem navigationSystem;
 
     void Update() {
         if (GameStateManager.isPlanetNavigationSystemActive()) {
-            nearestPlanetNavigationSystem.Show();
+            navigationSystem.Show();
         } else {
-            nearestPlanetNavigationSystem.Hide();
+            navigationSystem.Hide();
         }
     }
 }

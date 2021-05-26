@@ -20,7 +20,7 @@ public class AttractAsteroids : MonoBehaviour {
 
     void Update() {
 
-        if (Input.GetButton("Attract")) {
+        if (Input.GetButton("Attract") && GameStateManager.canStarShipMove()) {
             attractor.Play();
             try {
                 UpdateAsteroids();

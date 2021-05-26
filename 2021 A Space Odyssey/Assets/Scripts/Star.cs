@@ -17,6 +17,8 @@ public class Star : MonoBehaviour {
     }
 
     private void OnTriggerExit(Collider other) {
-        defaultSnapshot.TransitionTo(4f);
+        if (other.gameObject.tag == "Starship") {
+            defaultSnapshot.TransitionTo(4f);
+        }
     }
 }

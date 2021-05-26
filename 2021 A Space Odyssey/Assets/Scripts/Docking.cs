@@ -25,7 +25,9 @@ public class Docking : MonoBehaviour {
     }
 
     private void OnTriggerExit(Collider other) {
-        oxygenAndFuel.Stop();
+        if (other.gameObject.tag == "Starship") {
+            oxygenAndFuel.Stop();
+        }
     }
 
     private void OnTriggerStay(Collider other) {

@@ -111,6 +111,7 @@ public class Starship : MonoBehaviour {
             turboActive.volume = 0f;
             engineActive.volume = 0f;
             engine.Stop();
+            damageCritical.Stop();
             explosion.Play();
             explosionAudio.Play();
             GameStateManager.Gameover();

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class VestaNavigationSystem : MonoBehaviour {
 
-    [SerializeField] HUDNavigationSystem nearestPlanetNavigationSystem;
+    [SerializeField] HUDNavigationSystem navigationSystem;
 
     void Update() {
         if (GameStateManager.isVestaNavigationSystemActive()) {
-            nearestPlanetNavigationSystem.Show();
+            navigationSystem.Show();
         } else {
-            nearestPlanetNavigationSystem.Hide();
+            navigationSystem.Hide();
         }
     }
 }

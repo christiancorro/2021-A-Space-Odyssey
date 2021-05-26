@@ -91,6 +91,7 @@ public class Hook : MonoBehaviour {
             if (isHookShooted) {
                 if (!targetObject.activeSelf) {
                     StopHook();
+                    inside.Remove(targetObject);
                 }
             }
         } else {
@@ -158,7 +159,7 @@ public class Hook : MonoBehaviour {
     }
 
     private void UpdateTargetPosition(Transform target) {
-        if (isHookShooted && isTargetArrived) {
+        if (target && isHookShooted && isTargetArrived) {
             endPoint.position = target.position;
             rope.SetRopeLength(joint.maxDistance);
         }

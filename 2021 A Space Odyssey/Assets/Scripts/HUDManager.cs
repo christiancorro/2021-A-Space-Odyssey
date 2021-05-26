@@ -2,11 +2,13 @@ using System;
 using System.Globalization;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour {
 
     [SerializeField] Animator HUDAnimator;
-    public TMPro.TextMeshProUGUI fuelText, oxygenText, distanceText, healthText;
+    public TMPro.TextMeshProUGUI distanceText;
+    public Slider fuelBar, healthBar, oxygenBar;
 
     private System.Globalization.CultureInfo customCulture;
 
@@ -24,9 +26,11 @@ public class HUDManager : MonoBehaviour {
             GameStateManager.HideHUD();
             HUDAnimator.SetBool("showHUD", false);
         }
-        fuelText.text = Mathf.Ceil(Starship.fuel) + "%";
-        oxygenText.text = Mathf.Ceil(Starship.oxygen) + "%";
-        healthText.text = Mathf.Ceil(Starship.health) + "%";
+
+        fuelBar.value = Mathf.Lerp(fuelBar.value, Starship.fuel, Time.deltaTime * 6);
+        oxygenBar.value = Mathf.Lerp(oxygenBar.value, Starship.oxygen, Time.deltaTime * 6);
+        healthBar.value = Mathf.Lerp(healthBar.value, Starship.health, Time.deltaTime * 6);
+
         distanceText.text = String.Format("{0:0.00}", Starship.distance / 1000) + "";
     }
 

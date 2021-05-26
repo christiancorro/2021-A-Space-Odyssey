@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
 
-
     public float damage;
     public float velocityDamage = 1.5f;
 
