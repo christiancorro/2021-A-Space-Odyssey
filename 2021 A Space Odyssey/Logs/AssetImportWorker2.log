@@ -1,0 +1,436 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 8077 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/chris/Documents/2021-A-Space-Odyssey/2021 A Space Odyssey
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+53687
+Successfully changed project path to: C:/Users/chris/Documents/2021-A-Space-Odyssey/2021 A Space Odyssey
+C:/Users/chris/Documents/2021-A-Space-Odyssey/2021 A Space Odyssey
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 78.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/chris/Documents/2021-A-Space-Odyssey/2021 A Space Odyssey/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
+    Vendor:   
+    VRAM:     4038 MB
+    Driver:   27.20.100.9466
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.005079 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.673 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001852 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 113.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.498 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2493 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.1 MB.
+System memory in use after: 207.7 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 2936.
+Total: 6.168200 ms (FindLiveObjects: 0.697400 ms CreateObjectMapping: 0.311800 ms MarkObjects: 3.586300 ms  DeleteObjects: 1.569400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/PlanetPack01/Materials/Planet_Atmosphere.shader
+  artifactKey: Guid(3cefb81b9ff212d45b778886cf8a46a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Materials/Planet_Atmosphere.shader using Guid(3cefb81b9ff212d45b778886cf8a46a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c40bd5068d09f69916ddae51b23fac9') in 0.083966 seconds
+  Import took 0.093445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/PlanetPack01/Help/ReadMe.txt
+  artifactKey: Guid(aa368b4cad646814fac2c81f8066f834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Help/ReadMe.txt using Guid(aa368b4cad646814fac2c81f8066f834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1267519e1da2fff7b576fa4927356295') in 0.036805 seconds
+  Import took 0.048595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000696 seconds.
+  path: Assets/PlanetPack01/Materials/Planet_Clouds_Atmosphere.shader
+  artifactKey: Guid(0f78add172b79fb40aebb6b2173da900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Materials/Planet_Clouds_Atmosphere.shader using Guid(0f78add172b79fb40aebb6b2173da900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bf5245e1d8424643f67456af14df1f') in 0.018791 seconds
+  Import took 0.026964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/PlanetPack01/Materials/Planet_Clouds.shader
+  artifactKey: Guid(b7583f24b26c97c40a85efd59c637c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Materials/Planet_Clouds.shader using Guid(b7583f24b26c97c40a85efd59c637c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb986c94ca8843fb9e37984f6c2dde65') in 0.019276 seconds
+  Import took 0.032329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.196895 seconds.
+  path: Assets/PlanetPack01/Models/PlanetAndRings.fbx
+  artifactKey: Guid(ec1cedb1d4521c845932167ba3a97b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Models/PlanetAndRings.fbx using Guid(ec1cedb1d4521c845932167ba3a97b64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31dcb6db2931c62cc6757eaa6e78ca37') in 0.534321 seconds
+  Import took 0.540872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000538 seconds.
+  path: Assets/PlanetPack01/Models/PlanetAlone.fbx
+  artifactKey: Guid(7c4c4db7a9f004b40ac29f2ffcd10605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Models/PlanetAlone.fbx using Guid(7c4c4db7a9f004b40ac29f2ffcd10605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529e9605d12177462bede0e4a26b4654') in 0.078407 seconds
+  Import took 0.087571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.681153 seconds.
+  path: Assets/PlanetPack01/Materials
+  artifactKey: Guid(e8a338bf17692024f9dd13ca002b8544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Materials using Guid(e8a338bf17692024f9dd13ca002b8544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ae269a2b3ba5756a623c484c6b064f') in 0.014833 seconds
+  Import took 0.022275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001534 seconds.
+  path: Assets/PlanetPack01/Materials
+  artifactKey: Guid(e8a338bf17692024f9dd13ca002b8544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Materials using Guid(e8a338bf17692024f9dd13ca002b8544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ae269a2b3ba5756a623c484c6b064f') in 0.007021 seconds
+  Import took 0.012765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.708081 seconds.
+  path: Assets/PlanetPack01/Code
+  artifactKey: Guid(379a688af470c5f44adf45fbfc7d2892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Code using Guid(379a688af470c5f44adf45fbfc7d2892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c278da65f8988892ad41caac7a38a849') in 0.017385 seconds
+  Import took 0.028652 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002862 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.449 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2387 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 209.0 MB.
+System memory in use after: 207.6 MB.
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2987.
+Total: 5.753600 ms (FindLiveObjects: 1.499300 ms CreateObjectMapping: 0.211400 ms MarkObjects: 2.920500 ms  DeleteObjects: 1.120600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 145.319176 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet1_Albedo.png
+  artifactKey: Guid(948992e2eaba9d642a3f64ee9f730c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet1_Albedo.png using Guid(948992e2eaba9d642a3f64ee9f730c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f24434d3fac720591e58bfcac04bc75a') in 0.215816 seconds
+  Import took 0.226157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.676944 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet1_WaterWalpha.png
+  artifactKey: Guid(869122e277039e944be9d1dc7118f538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet1_WaterWalpha.png using Guid(869122e277039e944be9d1dc7118f538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b313b9a33bd135d09d7222b36664efd') in 0.103084 seconds
+  Import took 0.111925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 444.215645 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet4_Albedo.png
+  artifactKey: Guid(f3dab20f7dbfedf4b91ba41fcb622272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet4_Albedo.png using Guid(f3dab20f7dbfedf4b91ba41fcb622272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f7f4227982c7b9c623cadac9d97414') in 0.442943 seconds
+  Import took 0.483328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002535 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet5_Rings.png
+  artifactKey: Guid(8d8b0b8682ce3ca42aadc2fcbc40d6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet5_Rings.png using Guid(8d8b0b8682ce3ca42aadc2fcbc40d6fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ebdd25d7060843682404b2d1644d65') in 0.165067 seconds
+  Import took 0.172162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000626 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet4_Normal.png
+  artifactKey: Guid(b084f794ef066f64e84fb94146f38806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet4_Normal.png using Guid(b084f794ef066f64e84fb94146f38806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15156989514f1ed512ff8b423cc8f8cf') in 0.836544 seconds
+  Import took 0.852504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet1_Smoothness.png
+  artifactKey: Guid(d9441039920c4404eb617879d6f92d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet1_Smoothness.png using Guid(d9441039920c4404eb617879d6f92d8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c0b2bdc45f62fea01593ca0504326d') in 0.144978 seconds
+  Import took 0.154996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet2_AO.png
+  artifactKey: Guid(6623d33e5a17aca4a9a9e7e9cc831ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet2_AO.png using Guid(6623d33e5a17aca4a9a9e7e9cc831ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3cdbebc151b1a9b2bdfb4cdc4fc04c') in 0.178738 seconds
+  Import took 0.187512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet2_Normal.png
+  artifactKey: Guid(df7cb44afbdf9524e8e9c927ab1a4081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet2_Normal.png using Guid(df7cb44afbdf9524e8e9c927ab1a4081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3602c40586b989e87438fd8d62b7edc') in 0.359678 seconds
+  Import took 0.369226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet5_Normal.png
+  artifactKey: Guid(c4387537217494f47932ae8db6d5c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet5_Normal.png using Guid(c4387537217494f47932ae8db6d5c59d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42f6acbee1f0de44c8c57d49d21b2bf9') in 0.145628 seconds
+  Import took 0.158764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001520 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet2_WaterWalpha.png
+  artifactKey: Guid(f7179fb182e03ad41abc468a734fc84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet2_WaterWalpha.png using Guid(f7179fb182e03ad41abc468a734fc84f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2548ddc263e08ad81190ffcd8d032074') in 0.143119 seconds
+  Import took 0.158416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet2_Albedo.png
+  artifactKey: Guid(6484ea072ee7cd1439a4b5bac3586ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet2_Albedo.png using Guid(6484ea072ee7cd1439a4b5bac3586ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767232eddbb273d4a2b29a1019f32f24') in 0.147841 seconds
+  Import took 0.172912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000607 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet3_Normal.png
+  artifactKey: Guid(668e6c55051bfd746a21a835d36f3e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet3_Normal.png using Guid(668e6c55051bfd746a21a835d36f3e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '089c7297023ccb24c121e91ce7626c75') in 0.131864 seconds
+  Import took 0.170693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000972 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet4_Smoothness.png
+  artifactKey: Guid(e5d8de6afe7e09f4f847a9afdd921a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet4_Smoothness.png using Guid(e5d8de6afe7e09f4f847a9afdd921a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98d1936a7a4f813161dd2514fa79f6c') in 0.075363 seconds
+  Import took 0.092503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet5_Smoothness.png
+  artifactKey: Guid(4600e67195ba3024d982c4d64c6cccfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet5_Smoothness.png using Guid(4600e67195ba3024d982c4d64c6cccfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7832e660a2d7adf9b0f2211080b6059f') in 0.094538 seconds
+  Import took 0.105463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet2_Smoothness.png
+  artifactKey: Guid(63dba23201c0bcc4a831c45afe59a798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet2_Smoothness.png using Guid(63dba23201c0bcc4a831c45afe59a798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e05daf7cbb8f9fe52ce4bb38240d70') in 0.147119 seconds
+  Import took 0.158305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet5_Albedo.png
+  artifactKey: Guid(5a35bd73e715ecc45a48654cec26c8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet5_Albedo.png using Guid(5a35bd73e715ecc45a48654cec26c8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d3301c2f1f2fbfb636c1d299420364') in 0.074742 seconds
+  Import took 0.086528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet3_Clouds.png
+  artifactKey: Guid(c7cb4ed4ddf452147ba7d34abd16db88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet3_Clouds.png using Guid(c7cb4ed4ddf452147ba7d34abd16db88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538ff192f54c49892b81742a92c0be8e') in 0.111515 seconds
+  Import took 0.126715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000558 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet1_AO.png
+  artifactKey: Guid(1151bab103bd02c468eb05694645d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet1_AO.png using Guid(1151bab103bd02c468eb05694645d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79574dbcc735b01eda127d226f3d28f') in 0.130765 seconds
+  Import took 0.142359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet3_Albedo.png
+  artifactKey: Guid(dee2ab9c31545cc47b61b9533c94072f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet3_Albedo.png using Guid(dee2ab9c31545cc47b61b9533c94072f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e225c95a3cca2cfd5456b542365d42a5') in 0.135068 seconds
+  Import took 0.146719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet6_Smoothness.png
+  artifactKey: Guid(d57781f65f38a1741b71cb1f05782549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet6_Smoothness.png using Guid(d57781f65f38a1741b71cb1f05782549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6a3cfc16d2fae193ec2a5d681fbf74') in 0.122633 seconds
+  Import took 0.134228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet1_Normal.png
+  artifactKey: Guid(d8797258e4170cb429411426d3994cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet1_Normal.png using Guid(d8797258e4170cb429411426d3994cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86f4b048a681cfe7f099b00f55ecdf83') in 0.220208 seconds
+  Import took 0.232514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet6_Normal.png
+  artifactKey: Guid(43c4edd4f4c3d1b419064b238ebf5a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet6_Normal.png using Guid(43c4edd4f4c3d1b419064b238ebf5a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2228e753297ed2ec5df679ec38ef07cf') in 0.226837 seconds
+  Import took 0.245050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet5_AO.png
+  artifactKey: Guid(48c43921400378e45aec1f199438fa75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet5_AO.png using Guid(48c43921400378e45aec1f199438fa75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be1da0bd8d2d75fc8c53e3dac3001c4') in 0.067440 seconds
+  Import took 0.076888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000498 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet6_Albedo.png
+  artifactKey: Guid(61f4e7bf66ed8b34cab2b819905c5024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet6_Albedo.png using Guid(61f4e7bf66ed8b34cab2b819905c5024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '318d2e185e73041f78174242b1de88be') in 0.176147 seconds
+  Import took 0.186080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet6_AO.png
+  artifactKey: Guid(5a4e6bae0ec6be847ae00984ad1ae141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet6_AO.png using Guid(5a4e6bae0ec6be847ae00984ad1ae141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042d0c9ee08793816ee8fea1df399fc2') in 0.133497 seconds
+  Import took 0.148676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet3_AO.png
+  artifactKey: Guid(36b15fe8dacb23e41a7c1078bf079a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet3_AO.png using Guid(36b15fe8dacb23e41a7c1078bf079a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d0572a735d21a2a714c8a309c838f80') in 0.157375 seconds
+  Import took 0.177138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/PlanetPack01/Textures/AlienPlanet4_AO.png
+  artifactKey: Guid(3afca89b42edc3b4e9ce9c879913deb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/AlienPlanet4_AO.png using Guid(3afca89b42edc3b4e9ce9c879913deb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f018939c3fe027fd8ae383826c96c92f') in 0.207715 seconds
+  Import took 0.238134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.257165 seconds.
+  path: Assets/PlanetPack01/Textures/Background1_background.png
+  artifactKey: Guid(38044dc8ab5e113449078aa40544162a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/Background1_background.png using Guid(38044dc8ab5e113449078aa40544162a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acd7baefccf534aa099bfd5c0f2cda6') in 0.138514 seconds
+  Import took 0.151896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/PlanetPack01/Textures/Background2_background.png
+  artifactKey: Guid(8624e5c770a5d524292450075fd29446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlanetPack01/Textures/Background2_background.png using Guid(8624e5c770a5d524292450075fd29446) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1fd20e597ced0b5868f443cf156e71') in 0.137952 seconds
+  Import took 0.148817 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.174 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
