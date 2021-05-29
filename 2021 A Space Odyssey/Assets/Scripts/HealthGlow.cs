@@ -19,7 +19,7 @@ public class HealthGlow : MonoBehaviour {
 
     Color getEmissionColor(float a) {
         Color c = gradient.Evaluate(a);
-        c = c * 3.51f;
+        c = c * 3.21f;
         return c;
     }
 }

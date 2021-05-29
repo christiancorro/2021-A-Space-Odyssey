@@ -13,7 +13,7 @@ public class Asteroid : MonoBehaviour {
     private void Start() {
         fuelCollison = GameObject.Find("Asteroid Fuel Collision").GetComponent<ParticleSystem>();
         rb = GetComponent<Rigidbody>();
-        damage = 2 * rb.mass;
+        // damage = 2 * rb.mass;
         if (hasFuel) {
             GetComponent<MeshCollider>().isTrigger = true;
         }

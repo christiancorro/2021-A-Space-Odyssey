@@ -161,7 +161,7 @@ public class Starship : MonoBehaviour {
             rbody.velocity = Vector2.Lerp(rbody.velocity, new Vector2(0, 0), Time.deltaTime * 2); //breaks
 
             //No rotation
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime);
+            // transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, Time.deltaTime);
             turbo.Stop();
             engine.Stop();
             turboActive.volume = 0f;

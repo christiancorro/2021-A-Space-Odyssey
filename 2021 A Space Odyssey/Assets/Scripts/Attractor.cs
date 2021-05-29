@@ -3,8 +3,8 @@ using UnityEngine;
 public class Attractor : MonoBehaviour {
 
     private GameObject starship;
-    public float mass;
-    public float radius = 50;
+    public float mass = 2;
+    public float radius = 100;
 
     private Rigidbody starshipRigidbody;
 

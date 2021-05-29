@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour {
 
-    public float damage;
+    public float damage = 20;
     public float velocityDamage = 1.5f;
 
     private void OnCollisionEnter(Collision other) {
