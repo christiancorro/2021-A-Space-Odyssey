@@ -23,7 +23,7 @@ public class LandingDustTrigger : MonoBehaviour {
     }
 
     private void OnTriggerStay(Collider other) {
-        if (Input.GetAxis("Vertical") > 0 && other.gameObject.tag == "Planet" && GameStateManager.canStarShipMove() && GameStateManager.isInGame()) {
+        if (Input.GetAxis("Vertical") > 0 && (other.gameObject.tag == "Planet" || other.gameObject.tag == "Mars" || other.gameObject.tag == "Vesta") && GameStateManager.canStarShipMove() && GameStateManager.isInGame()) {
             SetDustPosition(other.ClosestPoint(startPoint.position));
             PlayDust();
             Debug.DrawLine(transform.position, other.ClosestPoint(transform.position), Color.red, 0.1f);
@@ -34,7 +34,7 @@ public class LandingDustTrigger : MonoBehaviour {
 
 
     private void OnTriggerExit(Collider other) {
-        if (other.gameObject.tag == "Planet") {
+        if ((other.gameObject.tag == "Planet" || other.gameObject.tag == "Mars" || other.gameObject.tag == "Vesta")) {
             StopDust();
         }
     }

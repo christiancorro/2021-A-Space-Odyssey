@@ -61,23 +61,23 @@ public class TutorialStateManager : MonoBehaviour {
     }
 
     public static bool isStep1() {
-        return tutorialStates.GetBool("step1");
+        return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Step 1");
     }
 
     public static bool isStep2() {
-        return tutorialStates.GetBool("step2");
+        return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Step 2");
     }
 
     public static bool isStep3() {
-        return tutorialStates.GetBool("step3");
+        return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Step 3");
     }
 
     public static bool isStep4() {
-        return tutorialStates.GetBool("step4");
+        return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Step 4");
     }
 
     public static bool isStep5() {
-        return tutorialStates.GetBool("step5");
+        return tutorialStates.GetCurrentAnimatorStateInfo(0).IsName("Step 5");
     }
 
     public static bool isTutorialEnded() {

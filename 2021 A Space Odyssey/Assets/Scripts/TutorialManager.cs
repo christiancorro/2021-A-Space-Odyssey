@@ -38,11 +38,29 @@ public class TutorialManager : MonoBehaviour {
     [SerializeField] TypeWriter step3Writer1;
     [SerializeField] Sentences step3Sentence1;
 
+    [SerializeField] TypeWriter step3Writer2;
+    [SerializeField] Sentences step3Sentence2;
+
+    [SerializeField] TypeWriter step3Writer3;
+    [SerializeField] Sentences step3Sentence3;
+
     [Header("Step4 Planets")]
     [SerializeField] GameObject step4Trigger;
+    [SerializeField] TypeWriter step4Writer1;
+    [SerializeField] Sentences step4Sentence1;
+
+    [SerializeField] TypeWriter step4Writer2;
+    [SerializeField] Sentences step4Sentence2;
+
+    [SerializeField] TypeWriter step4Writer3;
+    [SerializeField] Sentences step4Sentence3;
 
     [Header("Step5 Vesta")]
-    [SerializeField] GameObject step5Trigger;
+    [SerializeField] TypeWriter step5Writer1;
+    [SerializeField] Sentences step5Sentence1;
+    [SerializeField] TypeWriter step5Writer2;
+    [SerializeField] Sentences step5Sentence2;
+
 
     [Header("HUD Navigation System")]
     [SerializeField] HUDNavigationSystem tutorialTargetsNavigationSystem;
@@ -53,8 +71,8 @@ public class TutorialManager : MonoBehaviour {
         step1Trigger.SetActive(false);
         step2Trigger.SetActive(false);
         step3Trigger.SetActive(false);
-        step4Trigger.SetActive(false);
-        step5Trigger.SetActive(false);
+        GameStateManager.BlockStarShipMovements();
+        GameStateManager.BlockStarShipHook();
     }
 
     void Update() {
@@ -99,8 +117,6 @@ public class TutorialManager : MonoBehaviour {
     }
 
     public void StartStep1_Movements() {
-
-        GameStateManager.AllowStarShipHook();
         // GameStateManager.BlockStarShipMovements();
         GameStateManager.AllowStarShipMovements();
         TutorialStateManager.Step1();
@@ -120,10 +136,10 @@ public class TutorialManager : MonoBehaviour {
     public void ShowHUD() {
         GameStateManager.ShowHUD();
         step2Writer1.Write(step2Sentence1);
+        GameStateManager.AllowStarShipMovements();
     }
 
     public void StartStep2_Fuel() {
-        GameStateManager.AllowStarShipMovements();
         TutorialStateManager.Step2();
         step2Trigger.SetActive(true);
         tutorialTargetsNavigationSystem.Show();
@@ -147,34 +163,58 @@ public class TutorialManager : MonoBehaviour {
         TutorialStateManager.Step3();
         step3Trigger.SetActive(true);
         step3Writer1.Write(step3Sentence1);
-        tutorialTargetsNavigationSystem.Show();
         tutorialTargetsNavigationSystem.SetTarget(step3Trigger);
-        GameStateManager.AllowStarShipHook();
+        tutorialTargetsNavigationSystem.Show();
     }
+
+    public void Step3_Hook_Message() {
+        if (!step3Writer2.HasAlreadyWritten() && TutorialStateManager.isStep3()) {
+            Starship.fuel = 0;
+            step3Writer2.Write(step3Sentence2);
+            GameStateManager.BlockStarShipMovements();
+        }
+    }
+
+    public void Step3_ActivateHook() {
+        GameStateManager.AllowStarShipHook();
+        GameStateManager.AllowStarShipMovements();
+    }
+
 
     public void EndStep3() {
         step3Trigger.SetActive(false);
-
+        step3Writer3.Write(step3Sentence3);
+        tutorialTargetsNavigationSystem.Hide();
     }
 
     public void StartStep4_Planets() {
         TutorialStateManager.Step4();
-        step4Trigger.SetActive(true);
+        step4Writer1.Write(step4Sentence1);
+    }
+
+    public void Step4_Activate_Planets_Navigation_System() {
+        step4Writer2.Write(step4Sentence2);
+        GameStateManager.ShowPlanetNavigationSystem();
+    }
+
+    public void Step4_Planet_Landing_Message() {
+        if (!step4Writer3.HasAlreadyWritten() && TutorialStateManager.isStep4()) {
+            step4Writer3.Write(step4Sentence3);
+            GameStateManager.BlockStarShipMovements();
+        }
     }
 
     public void EndStep4() {
-        step4Trigger.SetActive(false);
-        step1Writer3.Write(step1Sentence3);
-        GameStateManager.ShowHUD();
-    }
-
-    public void StartStep5_Vesta_Indicator() {
         TutorialStateManager.Step5();
-        step5Trigger.SetActive(true);
+        if (!step5Writer1.HasAlreadyWritten()) {
+            step5Writer1.Write(step5Sentence1);
+        }
+        GameStateManager.ShowVestaNavigationSystem();
     }
 
     public void EndStep5() {
-        step5Trigger.SetActive(false);
+        TutorialStateManager.EndTutorial();
+        GameStateManager.StartGame();
     }
 
 

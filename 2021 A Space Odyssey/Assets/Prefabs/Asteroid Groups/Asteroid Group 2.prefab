@@ -123,14 +123,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012504611352938068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
   damage: 5
   hasFuel: 1
-  fuel: 30
-  fuelCollison: {fileID: 0}
+  fuel: 40
 --- !u!1 &2012504611561543368
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,14 +252,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012504611561543368}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 15
+  damage: 16
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &2012504612319139899
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,14 +381,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012504612319139899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 4
+  damage: 6
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &2012504612499076504
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,14 +510,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012504612499076504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
   damage: 5
   hasFuel: 1
-  fuel: 10
-  fuelCollison: {fileID: 0}
+  fuel: 15
 --- !u!1 &2012504612569346133
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,14 +639,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012504612569346133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 8
+  damage: 6
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &2012504612653125141
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,14 +805,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012504612858135683}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 15
+  damage: 16
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}
 --- !u!1 &2012504613028775912
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,11 +934,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012504613028775912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b14c62e23933b7148b0043942ab06146, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  damage: 5
+  damage: 6
   hasFuel: 0
   fuel: 10
-  fuelCollison: {fileID: 0}

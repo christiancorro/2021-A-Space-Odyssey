@@ -9,6 +9,7 @@ TagManager:
   - Asteroids
   - Planet
   - Vesta
+  - Mars
   layers:
   - Default
   - TransparentFX
