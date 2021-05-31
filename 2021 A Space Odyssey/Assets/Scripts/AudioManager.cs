@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour {
         }
 
         if (GameStateManager.isGameover()) {
-            gameOver.TransitionTo(0.6f);
+            gameOver.TransitionTo(0.4f);
         }
     }
 }

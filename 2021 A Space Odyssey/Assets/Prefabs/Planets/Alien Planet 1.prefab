@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4739995439503798567}
   - component: {fileID: 4739995439503798566}
   m_Layer: 0
-  m_Name: AlienPlanet1 (1)
+  m_Name: Alien Planet 1
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,7 +274,6 @@ GameObject:
   - component: {fileID: 4739995440658101861}
   - component: {fileID: 4739995440658101862}
   - component: {fileID: 4739995440658101863}
-  - component: {fileID: 4739995440658101860}
   m_Layer: 0
   m_Name: Atmosphere
   m_TagString: Untagged
@@ -345,16 +344,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &4739995440658101860
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4739995440658101866}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}

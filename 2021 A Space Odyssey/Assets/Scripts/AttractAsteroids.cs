@@ -41,11 +41,19 @@ public class AttractAsteroids : MonoBehaviour {
 
     void UpdateAsteroids() {
         nearAsteroids.Clear();
-        asteroids = GameObject.FindGameObjectsWithTag("Asteroids");
+        asteroids = FindGameObjectsWithTags("Asteroids", "Fuel");
         for (int i = 0; i < asteroids.Length; i++) {
             if ((asteroids[i].transform.position - this.transform.position).magnitude < radius) {
                 nearAsteroids.Add(asteroids[i]);
             }
         }
+    }
+
+    GameObject[] FindGameObjectsWithTags(params string[] tags) {
+        var all = new List<GameObject>();
+        foreach (string tag in tags) {
+            all.AddRange(GameObject.FindGameObjectsWithTag(tag).ToList());
+        }
+        return all.ToArray();
     }
 }

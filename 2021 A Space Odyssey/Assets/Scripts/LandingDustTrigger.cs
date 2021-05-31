@@ -12,6 +12,9 @@ public class LandingDustTrigger : MonoBehaviour {
 
     [SerializeField] bool showTrigger = false;
 
+    private Gradient currentGradient = new Gradient();
+    private Color targetColor;
+
 
     void Start() {
         if (showTrigger) {
@@ -21,6 +24,12 @@ public class LandingDustTrigger : MonoBehaviour {
         }
         StopDust();
     }
+
+    // private void OnTriggerEnter(Collider other) {
+    //     if ((other.gameObject.tag == "Planet" || other.gameObject.tag == "Mars" || other.gameObject.tag == "Vesta") && GameStateManager.canStarShipMove() && GameStateManager.isInGame()) {
+    //         SetDustColor(other.gameObject);
+    //     }
+    // }
 
     private void OnTriggerStay(Collider other) {
         if (Input.GetAxis("Vertical") > 0 && (other.gameObject.tag == "Planet" || other.gameObject.tag == "Mars" || other.gameObject.tag == "Vesta") && GameStateManager.canStarShipMove() && GameStateManager.isInGame()) {
@@ -52,5 +61,21 @@ public class LandingDustTrigger : MonoBehaviour {
     private void SetDustPosition(Vector3 targetPosition) {
         landingDustLeft.transform.position = targetPosition - offsetPositionX;
         landingDustRight.transform.position = targetPosition + offsetPositionX;
+    }
+
+    private void SetDustColor(GameObject targetObject) {
+        // get material base color of target
+        try {
+            targetColor = targetObject.GetComponent<Renderer>().material.color;
+            // set color to gradient of particle system
+            currentGradient.SetKeys(new GradientColorKey[] { new GradientColorKey(targetColor, 0.0f), new GradientColorKey(Color.white, 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(0.8f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) });
+            var colorOverLifeTimeLeft = landingDustLeft.colorOverLifetime;
+            colorOverLifeTimeLeft.color = currentGradient;
+            var colorOverLifeTimeRight = landingDustLeft.colorOverLifetime;
+            colorOverLifeTimeRight.color = currentGradient;
+        } catch {
+            currentGradient.SetKeys(new GradientColorKey[] { new GradientColorKey(Color.white, 0.0f), new GradientColorKey(Color.white, 1.0f) }, new GradientAlphaKey[] { new GradientAlphaKey(0.8f, 0.0f), new GradientAlphaKey(0.0f, 1.0f) });
+        }
+
     }
 }

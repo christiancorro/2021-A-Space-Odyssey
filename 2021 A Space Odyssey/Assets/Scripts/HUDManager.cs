@@ -31,7 +31,7 @@ public class HUDManager : MonoBehaviour {
         oxygenBar.value = Mathf.Lerp(oxygenBar.value, Starship.oxygen, Time.deltaTime * 6);
         healthBar.value = Mathf.Lerp(healthBar.value, Starship.health, Time.deltaTime * 6);
 
-        distanceText.text = String.Format("{0:0.00}", Starship.distance / 1000) + "";
+        distanceText.text = String.Format("{0:0.00}", Starship.distance) + "";
     }
 
 }

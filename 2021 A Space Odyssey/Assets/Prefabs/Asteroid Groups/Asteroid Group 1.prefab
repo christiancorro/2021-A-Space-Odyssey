@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 5693413953560641831}
   - component: {fileID: 8146422846559474056}
   - component: {fileID: 6701779016729383}
-  m_Layer: 6
+  - component: {fileID: 138678986025600040}
+  m_Layer: 7
   m_Name: Rocks 02 prefab (3)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -129,6 +130,20 @@ MonoBehaviour:
   damage: 5
   hasFuel: 0
   fuel: 10
+--- !u!114 &138678986025600040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462732000614556947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a291445f6229e40bca18750329f053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 4
+  minValue: -4
 --- !u!1 &1979091525074646582
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +158,8 @@ GameObject:
   - component: {fileID: 6999039315068284014}
   - component: {fileID: 847477938493868663}
   - component: {fileID: 796340483100632672}
-  m_Layer: 6
+  - component: {fileID: 7378783953520050900}
+  m_Layer: 7
   m_Name: Rocks 03 prefab (7)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -258,6 +274,20 @@ MonoBehaviour:
   damage: 8
   hasFuel: 0
   fuel: 10
+--- !u!114 &7378783953520050900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979091525074646582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a291445f6229e40bca18750329f053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 4
+  minValue: -4
 --- !u!1 &3994632821574258381
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +302,8 @@ GameObject:
   - component: {fileID: 3994632821574258368}
   - component: {fileID: 3994632821574258382}
   - component: {fileID: 3960030508724601293}
-  m_Layer: 6
+  - component: {fileID: 1533144970943173587}
+  m_Layer: 7
   m_Name: Rocks 02 prefab
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -387,6 +418,20 @@ MonoBehaviour:
   damage: 8
   hasFuel: 0
   fuel: 10
+--- !u!114 &1533144970943173587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994632821574258381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a291445f6229e40bca18750329f053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 4
+  minValue: -4
 --- !u!1 &3994632821750451654
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +446,7 @@ GameObject:
   - component: {fileID: 3994632821750451513}
   - component: {fileID: 3994632821750451512}
   - component: {fileID: 2037875427229246038}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Asteroid Fuel 02 (4)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -515,7 +560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   hasFuel: 1
-  fuel: 10
+  fuel: 20
 --- !u!1 &3994632821949269714
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +575,7 @@ GameObject:
   - component: {fileID: 3994632821949269717}
   - component: {fileID: 3994632821949269716}
   - component: {fileID: 3665852424420197589}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Asteroid Fuel
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -644,7 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   hasFuel: 1
-  fuel: 15
+  fuel: 30
 --- !u!1 &3994632822143587161
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +704,7 @@ GameObject:
   - component: {fileID: 3994632822143587164}
   - component: {fileID: 3994632822143587163}
   - component: {fileID: 2259366215858251925}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Rocks 02 prefab (2)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -788,7 +833,7 @@ GameObject:
   - component: {fileID: 3994632822178101580}
   - component: {fileID: 3994632822178101579}
   - component: {fileID: 3757564518784422312}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Rocks 02 prefab (5)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -917,7 +962,7 @@ GameObject:
   - component: {fileID: 3994632822782483328}
   - component: {fileID: 3994632822782483343}
   - component: {fileID: 1190680576470468729}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Asteroid Fuel 02 (9)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -1031,7 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   hasFuel: 1
-  fuel: 10
+  fuel: 20
 --- !u!1 &3994632822848185061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1091,7 @@ GameObject:
   - component: {fileID: 3994632822848185048}
   - component: {fileID: 3994632822848185063}
   - component: {fileID: 903523087782934830}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Rocks 03 prefab (6)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -1175,7 +1220,7 @@ GameObject:
   - component: {fileID: 3994632822917349568}
   - component: {fileID: 3994632822917349583}
   - component: {fileID: 3331093263278417993}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Rocks 02 prefab (1)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -1345,7 +1390,8 @@ GameObject:
   - component: {fileID: 3994632823668256151}
   - component: {fileID: 3994632823668256150}
   - component: {fileID: 2856790022399809518}
-  m_Layer: 6
+  - component: {fileID: 5726123884350039974}
+  m_Layer: 7
   m_Name: Rocks 03 prefab (5)
   m_TagString: Asteroids
   m_Icon: {fileID: 0}
@@ -1460,3 +1506,17 @@ MonoBehaviour:
   damage: 10
   hasFuel: 0
   fuel: 10
+--- !u!114 &5726123884350039974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994632823668256148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9a291445f6229e40bca18750329f053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxValue: 4
+  minValue: -4

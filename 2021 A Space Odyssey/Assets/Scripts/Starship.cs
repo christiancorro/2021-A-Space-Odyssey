@@ -124,7 +124,7 @@ public class Starship : MonoBehaviour {
 
 
     private void UpdateDistance() {
-        distance = (Vector3.zero - transform.position).magnitude;
+        distance = (Vector3.zero - transform.position).magnitude / 8000;
     }
 
     private void StarshipController(float rotation, float acceleration) {

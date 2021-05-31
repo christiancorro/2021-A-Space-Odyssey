@@ -36,7 +36,7 @@ public class FollowPlayer : MonoBehaviour {
         if (!targetTransform) return;
 
         if (startAnimation && GameStateManager.isInGame() && GameStateManager.canStarShipMove() && targetDistance < 50) {
-            targetDistance = Mathf.Lerp(targetDistance, 51, Time.deltaTime);
+            targetDistance = Mathf.Lerp(targetDistance, 51, Time.deltaTime * 0.5f);
         }
         if (targetDistance >= 50) {
             startAnimation = false;

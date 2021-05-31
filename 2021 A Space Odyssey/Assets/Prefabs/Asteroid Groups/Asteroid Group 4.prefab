@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   hasFuel: 1
-  fuel: 15
+  fuel: 20
 --- !u!54 &4184059895159275725
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   hasFuel: 1
-  fuel: 15
+  fuel: 20
 --- !u!54 &4184059894815827680
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4184059894815858755}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 8
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   hasFuel: 1
-  fuel: 40
+  fuel: 60
 --- !u!1001 &4184059893984701305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -299,7 +299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_TagString
@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_TagString
@@ -481,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 94ac0f7807b256d4b866c2b3ec1a6de7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 94ac0f7807b256d4b866c2b3ec1a6de7, type: 3}
       propertyPath: m_TagString
@@ -580,7 +580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_TagString
@@ -671,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 94ac0f7807b256d4b866c2b3ec1a6de7, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 94ac0f7807b256d4b866c2b3ec1a6de7, type: 3}
       propertyPath: m_TagString
@@ -770,7 +770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_TagString
@@ -861,7 +861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_TagString
@@ -952,7 +952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7aa6cb432038d7c48a82b9395843536a, type: 3}
       propertyPath: m_TagString

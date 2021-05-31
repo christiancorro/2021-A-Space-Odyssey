@@ -11,10 +11,12 @@ public class Blackhole : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
 
-        if (other.tag == "Asteroids") {
+        if (other.tag == "Asteroids" || other.tag == "Fuel") {
             //Destroy(other.gameObject);
             other.gameObject.SetActive(false);
-        } else if (other.tag == "Starship") {
+        }
+
+        if (other.tag == "Starship") {
             Starship.health = -1;
             Debug.Log("Blackhole: gameover");
         }

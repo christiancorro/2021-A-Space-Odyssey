@@ -113,7 +113,7 @@ public class GameStateManager : MonoBehaviour {
         return gameStates.GetBool("showHUD");
     }
 
-    public static bool isPlanetNavigationSystemActive() {
+    public static bool isFuelNavigationSystemActive() {
         return gameStates.GetBool("showPlanetNavigationSystem");
     }
 
@@ -135,6 +135,14 @@ public class GameStateManager : MonoBehaviour {
 
     public static void HideVestaNavigationSystem() {
         gameStates.SetBool("showVestaNavigationSystem", false);
+    }
+
+    public static void ShowFuelNavigationSystem() {
+        gameStates.SetBool("showFuelNavigationSystem", true);
+    }
+
+    public static void HideFuelNavigationSystem() {
+        gameStates.SetBool("showFuelNavigationSystem", false);
     }
 
 
@@ -184,4 +192,6 @@ public class GameStateManager : MonoBehaviour {
         gameStates.SetBool("tutorial", true);
         Debug.Log("Tutorial started");
     }
+
+
 }

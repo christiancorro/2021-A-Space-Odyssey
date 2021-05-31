@@ -184,6 +184,7 @@ public class TutorialManager : MonoBehaviour {
     public void EndStep3() {
         step3Trigger.SetActive(false);
         step3Writer3.Write(step3Sentence3);
+        GameStateManager.ShowFuelNavigationSystem();
         tutorialTargetsNavigationSystem.Hide();
     }
 

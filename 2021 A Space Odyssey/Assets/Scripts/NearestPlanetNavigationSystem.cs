@@ -17,7 +17,7 @@ public class NearestPlanetNavigationSystem : MonoBehaviour {
     }
 
     void Update() {
-        if (GameStateManager.isPlanetNavigationSystemActive()) {
+        if (GameStateManager.isFuelNavigationSystemActive()) {
             navigationSystem.Show();
         } else {
             navigationSystem.Hide();

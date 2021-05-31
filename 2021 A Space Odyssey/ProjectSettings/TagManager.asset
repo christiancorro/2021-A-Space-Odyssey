@@ -10,6 +10,7 @@ TagManager:
   - Planet
   - Vesta
   - Mars
+  - Fuel
   layers:
   - Default
   - TransparentFX
