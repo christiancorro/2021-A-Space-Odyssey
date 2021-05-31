@@ -45,11 +45,7 @@ public class GameStateManager : MonoBehaviour {
     }
 
     public static bool startPlayList() {
-        return (!gameStates.GetBool("tutorial") || gameStates.GetBool("newGame")) &&
-                 (gameStates.GetCurrentAnimatorStateInfo(0).IsName("Pause")
-               || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game")
-               || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Mid Game")
-               || gameStates.GetCurrentAnimatorStateInfo(0).IsName("End Game"));
+        return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game");
     }
 
     public static bool isPausable() {
@@ -176,9 +172,6 @@ public class GameStateManager : MonoBehaviour {
     }
 
     public static void ExitGame() {
-        gameStates.SetBool("pause", false);
-        gameStates.SetBool("newGame", false);
-        gameStates.SetBool("tutorial", false);
         gameStates.SetTrigger("exitGame");
         Debug.Log("Exit");
     }

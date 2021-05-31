@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour {
-
 
     [SerializeField] AudioSource tutorialAudio;
     [SerializeField] AudioMixerSnapshot tutorialSnapshot;
@@ -67,6 +67,7 @@ public class TutorialManager : MonoBehaviour {
 
     [SerializeField] GameObject tutorialObjects;
 
+
     void Start() {
         step1Trigger.SetActive(false);
         step2Trigger.SetActive(false);
@@ -104,6 +105,8 @@ public class TutorialManager : MonoBehaviour {
             if (!GameStateManager.isPaused() && Input.GetButtonDown("Back")) {
                 // TutorialStateManager.EndTutorial();
                 // TODO: Implement Skip tutorial
+                Debug.Log("Skip tutorial");
+                EndTutorial();
             }
         } else {
             tutorialTargetsNavigationSystem.gameObject.SetActive(false);
@@ -134,6 +137,7 @@ public class TutorialManager : MonoBehaviour {
     }
 
     public void ShowHUD() {
+        Starship.oxygen = 100;
         GameStateManager.ShowHUD();
         step2Writer1.Write(step2Sentence1);
         GameStateManager.AllowStarShipMovements();
@@ -213,12 +217,11 @@ public class TutorialManager : MonoBehaviour {
         GameStateManager.ShowVestaNavigationSystem();
     }
 
-    public void EndStep5() {
+    public void EndTutorial() {
         TutorialStateManager.EndTutorial();
         GameStateManager.StartGame();
+        // SceneLoader.LoadGameScene();
     }
-
-
 
 
 }

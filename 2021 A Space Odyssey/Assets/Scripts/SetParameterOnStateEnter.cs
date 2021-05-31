@@ -6,7 +6,7 @@ public class Parameter {
     public bool value;
 }
 
-public class SetParameter : StateMachineBehaviour {
+public class SetParameterOnStateEnter : StateMachineBehaviour {
 
     [SerializeField]
     Parameter[] parametersToChange;

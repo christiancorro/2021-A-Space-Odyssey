@@ -20,6 +20,7 @@ public class PauseMenuManager : MonoBehaviour {
     private bool paused = false;
 
 
+
     void Awake() {
         panelAnimator = GetComponent<Animator>();
         Cursor.SetCursor(cursorIcon, Vector2.zero, CursorMode.Auto);
@@ -102,8 +103,8 @@ public class PauseMenuManager : MonoBehaviour {
     }
 
     public void Exit() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         GameStateManager.ExitGame();
+        SceneLoader.LoadMainScene();
     }
 
     public void SetMusicVolume(float sliderValue) {

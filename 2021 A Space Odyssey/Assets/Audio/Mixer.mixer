@@ -10,15 +10,15 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: c77a544f36bbbdb47a979557f33e38b7
   m_FloatValues:
-    836d9eb38c565b54eacb612352b56338: -43.603752
+    836d9eb38c565b54eacb612352b56338: -21.47691
     b73030c3ebe68fb42a9d267d4962fd36: -80
     a9f5e9f3b66e734489d8b527db1d688f: -80
     dc4500f450147334ea3267e53996b01c: -80
-    a0635b05b71219e47a67b781cefc5e37: -80
+    a0635b05b71219e47a67b781cefc5e37: -48.38312
     2bb83185b96d5f44290d85a022ed1343: -8.0101185
     b05efd563e145cd4dbff4b5e689dcdcb: -80
     7695cef71f440e24abb27ba51f99a572: -80
-    5666bf18f15e04c46b7a5465c0e84fa4: -80
+    5666bf18f15e04c46b7a5465c0e84fa4: -20.782825
     61d92b1ee9b179140a72a7643836fdd4: -80
     06c7f45f5d4bd2b4e9954e8e7f435bf3: -80
   m_TransitionOverrides: {}
@@ -327,6 +327,24 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!245 &-356711250993980432
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StartGame
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: f368dd43cd8140c4ca4519f17dcf3324
+  m_FloatValues:
+    836d9eb38c565b54eacb612352b56338: -2.3589041
+    b73030c3ebe68fb42a9d267d4962fd36: -80
+    dc4500f450147334ea3267e53996b01c: -80
+    a0635b05b71219e47a67b781cefc5e37: -80
+    2bb83185b96d5f44290d85a022ed1343: -0.02577689
+    5666bf18f15e04c46b7a5465c0e84fa4: -80
+    06c7f45f5d4bd2b4e9954e8e7f435bf3: -80
+  m_TransitionOverrides: {}
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -345,6 +363,7 @@ AudioMixerController:
   - {fileID: -8833985345691261823}
   - {fileID: 8021330507239325256}
   - {fileID: -3221438664055488908}
+  - {fileID: -356711250993980432}
   - {fileID: -8248703048012570733}
   m_StartSnapshot: {fileID: -3395577141961220521}
   m_SuspendThreshold: -80
@@ -373,7 +392,7 @@ AudioMixerController:
     - 95a313ddf2843ee4b97fbc9acf4500e2
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: -8293409311184636024}
+  m_TargetSnapshot: {fileID: 8021330507239325256}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0

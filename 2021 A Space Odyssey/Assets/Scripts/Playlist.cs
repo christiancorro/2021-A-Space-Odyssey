@@ -6,7 +6,7 @@ public class Playlist : MonoBehaviour {
 
     [SerializeField] AudioClip[] music;
     [SerializeField] AudioSource audioMusic;
-    private bool playListStarted = true;
+    private bool playListStarted = false;
 
     private void Update() {
         if (!playListStarted && GameStateManager.startPlayList()) {

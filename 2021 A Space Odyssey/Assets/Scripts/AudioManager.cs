@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -13,7 +11,6 @@ public class AudioManager : MonoBehaviour {
 
     [SerializeField] AudioSource introAudio;
     [SerializeField] AudioSource tutorialAudio;
-
 
     void Start() {
 
@@ -31,12 +28,12 @@ public class AudioManager : MonoBehaviour {
             intro.TransitionTo(0f);
         }
 
-        // if (GameStateManager.isTutorial()) {
-        //     if (!tutorialAudio.isPlaying) {
-        //         tutorialAudio.Play();
-        //     }
-        //     tutorial.TransitionTo(1f);
-        // }
+        if (GameStateManager.isTutorial()) {
+            if (!tutorialAudio.isPlaying) {
+                tutorialAudio.Play();
+            }
+            tutorial.TransitionTo(0.3f);
+        }
 
         if (GameStateManager.isPaused()) {
             pause.TransitionTo(0.2f);

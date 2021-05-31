@@ -18,6 +18,7 @@ public class GameOverManager : MonoBehaviour {
         if (!writing && GameStateManager.isGameover()) {
             writing = true;
             gameOverAnimator.SetBool("showIntro", true);
+            GameStateManager.HideHUD();
             StartCoroutine(StartWriting());
         }
     }
