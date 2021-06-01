@@ -14,10 +14,12 @@ public class GUIManager : MonoBehaviour {
 
     void Update() {
 
-        //  
-        if (!(Input.GetJoystickNames().Length > 0) && (GameStateManager.isStartMenu() || GameStateManager.isPaused())) {
+        //  !(Input.GetJoystickNames().Length > 0) && 
+        if ((GameStateManager.isStartMenu() || GameStateManager.isPaused())) {
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         } else {
+            Cursor.visible = false;
             // Cursor.lockState = CursorLockMode.Locked;
         }
 

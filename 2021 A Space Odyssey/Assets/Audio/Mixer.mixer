@@ -227,8 +227,19 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: bd36f72f007ff754199a7de4c13f2158
   m_FloatValues:
+    836d9eb38c565b54eacb612352b56338: -80
+    b73030c3ebe68fb42a9d267d4962fd36: -80
+    a9f5e9f3b66e734489d8b527db1d688f: -80
     eca53ed40758b204d98330f8af629926: -80
+    dc4500f450147334ea3267e53996b01c: -80
+    a0635b05b71219e47a67b781cefc5e37: -80
     2bb83185b96d5f44290d85a022ed1343: -80
+    b05efd563e145cd4dbff4b5e689dcdcb: -80
+    7695cef71f440e24abb27ba51f99a572: -80
+    5666bf18f15e04c46b7a5465c0e84fa4: -80
+    7d33c449d34047a4e8ba6718b250f9d9: -80
+    f5b8bd99e789cc24da3ab82609bfeeb5: -80
+    61d92b1ee9b179140a72a7643836fdd4: -80
   m_TransitionOverrides: {}
 --- !u!245 &-3221438664055488908
 AudioMixerSnapshotController:
@@ -333,7 +344,7 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StartGame
+  m_Name: InGame
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: f368dd43cd8140c4ca4519f17dcf3324
   m_FloatValues:
@@ -392,7 +403,7 @@ AudioMixerController:
     - 95a313ddf2843ee4b97fbc9acf4500e2
     name: View
   m_CurrentViewIndex: 0
-  m_TargetSnapshot: {fileID: 8021330507239325256}
+  m_TargetSnapshot: {fileID: -356711250993980432}
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0

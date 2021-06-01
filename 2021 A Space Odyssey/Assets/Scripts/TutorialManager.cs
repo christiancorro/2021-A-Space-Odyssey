@@ -74,6 +74,10 @@ public class TutorialManager : MonoBehaviour {
         step3Trigger.SetActive(false);
         GameStateManager.BlockStarShipMovements();
         GameStateManager.BlockStarShipHook();
+        GameStateManager.HideVestaNavigationSystem();
+        GameStateManager.HideFuelNavigationSystem();
+        GameStateManager.HidePlanetNavigationSystem();
+        GameStateManager.HideHUD();
     }
 
     void Update() {
@@ -152,6 +156,7 @@ public class TutorialManager : MonoBehaviour {
 
     public void Step2_Attract_Message() {
         if (!step2Writer2.HasAlreadyWritten() && TutorialStateManager.isStep2()) {
+            Starship.fuel = 60;
             step2Writer2.Write(step2Sentence2);
             GameStateManager.BlockStarShipMovements();
         }
@@ -195,6 +200,7 @@ public class TutorialManager : MonoBehaviour {
     public void StartStep4_Planets() {
         TutorialStateManager.Step4();
         step4Writer1.Write(step4Sentence1);
+        Starship.oxygen = 50;
     }
 
     public void Step4_Activate_Planets_Navigation_System() {

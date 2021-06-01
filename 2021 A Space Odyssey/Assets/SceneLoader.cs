@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
-    private static float transitionDelay = 0.5f;
+    private static float transitionDelay = 1f;
     private static Animator transition;
 
     public static SceneLoader instance;
@@ -33,8 +33,8 @@ public class SceneLoader : MonoBehaviour {
     }
 
     public static IEnumerator TransitionTo(string sceneName) {
-        yield return SceneManager.LoadSceneAsync(sceneName);
         yield return new WaitForSeconds(transitionDelay);
+        yield return SceneManager.LoadSceneAsync(sceneName);
         transition.SetBool("show", false);
     }
 

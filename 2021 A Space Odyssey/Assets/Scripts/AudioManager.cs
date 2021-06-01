@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] AudioMixerSnapshot tutorial;
     [SerializeField] AudioMixerSnapshot pause;
     [SerializeField] AudioMixerSnapshot gameOver;
+    [SerializeField] AudioMixerSnapshot startGame;
 
     [SerializeField] AudioSource introAudio;
     [SerializeField] AudioSource tutorialAudio;
@@ -18,7 +19,7 @@ public class AudioManager : MonoBehaviour {
 
     void Update() {
         if (GameStateManager.isStartMenu()) {
-            startMenu.TransitionTo(0.2f);
+            startMenu.TransitionTo(6f);
         }
 
         if (GameStateManager.isIntro() && !GameStateManager.isPaused()) {
@@ -33,10 +34,13 @@ public class AudioManager : MonoBehaviour {
                 tutorialAudio.Play();
             }
             tutorial.TransitionTo(0.3f);
+        } else if (!GameStateManager.isPaused()) {
+            tutorialAudio.Stop();
         }
 
+
         if (GameStateManager.isPaused()) {
-            pause.TransitionTo(0.2f);
+            pause.TransitionTo(0.3f);
         }
 
         if (GameStateManager.isGameover()) {

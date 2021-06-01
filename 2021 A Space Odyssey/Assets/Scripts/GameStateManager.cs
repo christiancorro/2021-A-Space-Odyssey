@@ -31,6 +31,11 @@ public class GameStateManager : MonoBehaviour {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Initial Story");
     }
 
+    public static void TestGame() {
+        gameStates.SetTrigger("testGame");
+        StartGame();
+    }
+
     public static bool isTutorial() {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial");
     }

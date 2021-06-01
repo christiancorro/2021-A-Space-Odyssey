@@ -10,6 +10,7 @@ using TMPro;
 public class PauseMenuManager : MonoBehaviour {
 
     [SerializeField] AudioMixer mixer;
+    [SerializeField] AudioMixerSnapshot defaultSnapshot;
     [SerializeField] Texture2D cursorIcon;
     [SerializeField] AudioSource highlightSound;
     [SerializeField]
@@ -18,6 +19,7 @@ public class PauseMenuManager : MonoBehaviour {
 
     private Animator panelAnimator;
     private bool paused = false;
+
 
 
 
@@ -33,6 +35,8 @@ public class PauseMenuManager : MonoBehaviour {
                     CloseSettingsPanel();
                 } else if (panelAnimator.GetBool("controls")) {
                     CloseControlsPanel();
+                } else {
+                    Resume();
                 }
             }
         }
@@ -57,6 +61,7 @@ public class PauseMenuManager : MonoBehaviour {
             panelAnimator.SetBool("show", false);
             panelAnimator.SetBool("settings", false);
             panelAnimator.SetBool("controls", false);
+            defaultSnapshot.TransitionTo(0.5f);
         }
     }
 

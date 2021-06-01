@@ -76,4 +76,8 @@ public class FollowPlayer : MonoBehaviour {
 
 
     }
+
+    public void SetDistance(float distance) {
+        this.distance = distance;
+    }
 }

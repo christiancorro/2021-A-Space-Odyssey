@@ -23,7 +23,6 @@ public class HUDManager : MonoBehaviour {
             GameStateManager.ShowHUD();
             HUDAnimator.SetBool("showHUD", true);
         } else {
-            GameStateManager.HideHUD();
             HUDAnimator.SetBool("showHUD", false);
         }
 
