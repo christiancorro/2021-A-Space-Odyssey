@@ -80,7 +80,7 @@ public class Planet : MonoBehaviour {
                     oxygenAndFuel.Play();
                     if (dockingAudio != null) {
                         dockingAudio.UnPause();
-                        dockingAudio.volume = 0.0138f;
+                        dockingAudio.volume = 0.0178f;
                     }
 
                     if (currentOxygen > 0) {

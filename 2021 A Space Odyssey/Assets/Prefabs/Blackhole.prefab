@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7755666343724277997}
   - component: {fileID: 7755666343724277984}
   - component: {fileID: 7755666343724277985}
-  - component: {fileID: 7755666343724277990}
   m_Layer: 0
   m_Name: Blackhole
   m_TagString: Untagged
@@ -96,8 +95,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.04
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.186601
+  m_Center: {x: 0.006598911, y: 0, z: 0}
 --- !u!114 &7755666343724277984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,12 +106,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7755666343724277999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82c02e24da511f842a0c0274d6d1161c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2558ca306bbe73748b7228249ba50ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
-  mass: 10
-  radius: 50
+  mass: 35
+  radius: 100
 --- !u!114 &7755666343724277985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,23 +120,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7755666343724277999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e9d53c4781596243bc5346ffdb01617, type: 3}
+  m_Script: {fileID: 11500000, guid: 823e8a66baaaf9042976600f7a9412a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starship: {fileID: 0}
---- !u!114 &7755666343724277990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7755666343724277999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1006fcd877f155e41885c9f64f5048ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mass: 4
-  radius: 50
-  asteroids: []
-  nearAsteroids: []

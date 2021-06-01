@@ -9,10 +9,21 @@ public class OnTriggerEnterEvent : UnityEvent { }
 public class TriggerEvent : MonoBehaviour {
 
     [SerializeField] OnTriggerEnterEvent onTriggerEnterEvent;
+    [SerializeField] bool triggerOnlyOnce = true;
+    private bool triggered = false;
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Starship") {
-            onTriggerEnterEvent.Invoke();
+            if (triggerOnlyOnce && !triggered) {
+                triggered = true;
+                onTriggerEnterEvent.Invoke();
+            }
+
+            if (!triggerOnlyOnce) {
+                triggered = true;
+                onTriggerEnterEvent.Invoke();
+            }
+
             Debug.Log("Event");
         }
     }

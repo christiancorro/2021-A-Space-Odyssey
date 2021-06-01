@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8136597661527611577}
   - component: {fileID: 8136597661527611576}
   - component: {fileID: 8136597661527611579}
+  - component: {fileID: 256683845817858726}
   m_Layer: 7
   m_Name: Star Purple
   m_TagString: Untagged
@@ -43,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8136597661527611578}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 7c4c4db7a9f004b40ac29f2ffcd10605, type: 3}
 --- !u!23 &8136597661527611582
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -107,12 +108,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8136597661527611578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac68d3cb642c9814d9abc89fa09575a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bfe3049ca5696c4c8eeffc18eb10b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demage: 0.5
-  defaultSnapshot: {fileID: 24500006, guid: 4a77b893b17429747a713537faefee92, type: 2}
-  starSnaphost: {fileID: -6663228170162828094, guid: 4a77b893b17429747a713537faefee92, type: 2}
+  demage: 0.8
+  defaultSnapshot: {fileID: -356711250993980432, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
+  starSnaphost: {fileID: -8293409311184636024, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
 --- !u!114 &8136597661527611579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,11 +123,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 8136597661527611578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82c02e24da511f842a0c0274d6d1161c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2558ca306bbe73748b7228249ba50ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 5
-  radius: 80
+  mass: 20
+  radius: 100
+--- !u!54 &256683845817858726
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8136597661527611578}
+  serializedVersion: 2
+  m_Mass: 90
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 8
+  m_CollisionDetection: 0
 --- !u!1 &8136597662216841810
 GameObject:
   m_ObjectHideFlags: 0
