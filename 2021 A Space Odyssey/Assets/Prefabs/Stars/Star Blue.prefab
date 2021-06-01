@@ -107,12 +107,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7416632383529934218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac68d3cb642c9814d9abc89fa09575a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bfe3049ca5696c4c8eeffc18eb10b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demage: 0.5
-  defaultSnapshot: {fileID: 24500006, guid: 4a77b893b17429747a713537faefee92, type: 2}
-  starSnaphost: {fileID: -6663228170162828094, guid: 4a77b893b17429747a713537faefee92, type: 2}
+  demage: 0.3
+  defaultSnapshot: {fileID: -356711250993980432, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
+  starSnaphost: {fileID: -8293409311184636024, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
 --- !u!114 &7416632383529934217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,11 +122,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7416632383529934218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82c02e24da511f842a0c0274d6d1161c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2558ca306bbe73748b7228249ba50ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 5
-  radius: 80
+  mass: 20
+  radius: 100
 --- !u!1 &7416632383803457614
 GameObject:
   m_ObjectHideFlags: 0
