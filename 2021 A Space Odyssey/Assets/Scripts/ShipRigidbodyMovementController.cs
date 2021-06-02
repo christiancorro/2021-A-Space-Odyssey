@@ -8,13 +8,14 @@ public class ShipRigidbodyMovementController : MonoBehaviour {
     public float velocity;
     public float rotationSpeed;
     private new Rigidbody rigidbody;
-    public Transform target;
+    private Transform target;
 
     public float horizontal, vertical;
 
     // Use this for initialization
     void Start() {
         rigidbody = GetComponent<Rigidbody>();
+        target = GameObject.FindGameObjectsWithTag("Starship")[0].transform;
     }
 
     // Update is called once per frame

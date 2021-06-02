@@ -11,6 +11,7 @@ TagManager:
   - Vesta
   - Mars
   - Fuel
+  - Enemy
   layers:
   - Default
   - TransparentFX
