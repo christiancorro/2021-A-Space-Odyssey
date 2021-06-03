@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef515d08bf0ebdb45ae2d452263c0690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  velocityDamage: 1.5
+  damage: 10
+  velocityDamage: 2
 --- !u!114 &4739995439503798567
 MonoBehaviour:
   m_ObjectHideFlags: 0

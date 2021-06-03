@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1216142951801828640}
   - component: {fileID: 1216142951801828646}
   m_Layer: 0
-  m_Name: barren_26
+  m_Name: Barren Planet 2
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef515d08bf0ebdb45ae2d452263c0690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  damage: 8
   velocityDamage: 3
 --- !u!114 &1216142951801828640
 MonoBehaviour:

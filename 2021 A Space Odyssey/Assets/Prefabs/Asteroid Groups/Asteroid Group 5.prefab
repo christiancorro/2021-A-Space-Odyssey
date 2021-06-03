@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 16
+  damage: 8
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254349168522162
@@ -255,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 5
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254349268269640
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 16
+  damage: 8
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254349330954270
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 16
+  damage: 8
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254349791695596
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 3
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350043766356
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 16
+  damage: 8
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350188759969
@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 16
+  damage: 8
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350236285674
@@ -1689,7 +1689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 3
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350473783337
@@ -1818,7 +1818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 3
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350520114826
@@ -1947,7 +1947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 5
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350575066411
@@ -2076,7 +2076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 16
+  damage: 8
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350622123974
@@ -2257,7 +2257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 4
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254350776244031
@@ -2644,7 +2644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 5
   hasFuel: 0
   fuel: 10
 --- !u!1 &691254351057756693
@@ -2773,7 +2773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 3
   hasFuel: 0
   fuel: 10
 --- !u!1 &1212888841642952698
@@ -2902,6 +2902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 5
   hasFuel: 0
   fuel: 10

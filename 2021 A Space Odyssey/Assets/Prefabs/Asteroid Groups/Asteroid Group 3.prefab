@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 12
   hasFuel: 0
   fuel: 10
 --- !u!1 &1690724774134510215
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 12
   hasFuel: 0
   fuel: 10
 --- !u!1 &1690724774517265177
@@ -807,6 +807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fe19afdf80baef4eaabf1c30e67006e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 5
   hasFuel: 0
   fuel: 10

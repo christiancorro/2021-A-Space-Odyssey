@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 3166707813089389599}
   - component: {fileID: 3166707813089389572}
   m_Layer: 0
-  m_Name: Planet Blue (2)
+  m_Name: Blue Planet 2
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,8 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef515d08bf0ebdb45ae2d452263c0690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  velocityDamage: 1.5
+  damage: 10
+  velocityDamage: 2
 --- !u!114 &3166707813089389598
 MonoBehaviour:
   m_ObjectHideFlags: 0

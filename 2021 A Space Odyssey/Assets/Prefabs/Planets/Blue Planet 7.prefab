@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2427294651015724247}
   - component: {fileID: 2427294651015724240}
   m_Layer: 0
-  m_Name: AlienPlanet1 (3)
+  m_Name: Blue Planet 7
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,8 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef515d08bf0ebdb45ae2d452263c0690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  velocityDamage: 1.5
+  damage: 10
+  velocityDamage: 2
 --- !u!82 &2427294651015724240
 AudioSource:
   m_ObjectHideFlags: 0
