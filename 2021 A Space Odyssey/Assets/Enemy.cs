@@ -35,11 +35,16 @@ public class Enemy : MonoBehaviour {
         shootPause = Random.Range(attackPause - 2, attackPause + 2);
         attackTimer = shootPause / 2;
         rb = GetComponent<Rigidbody>();
+        EnemiesManager.increaseEnemyCounter();
     }
 
     void Update() {
 
         Attack();
+
+        if(Vector3.Distance(starship.position, this.transform.position) > 300){
+            DestroyEnemy();
+        }
 
         if (health <= 0 && !isExploded) {
             isExploded = true;
@@ -65,6 +70,11 @@ public class Enemy : MonoBehaviour {
         yield return new WaitForSeconds(1.1f);
         gameObject.SetActive(false);
         yield return new WaitForSeconds(0.01f);
+        DestroyEnemy();
+    }
+
+    private void DestroyEnemy(){
+        EnemiesManager.decreaseEnemyCounter();
         Destroy(gameObject);
     }
 
@@ -105,18 +115,18 @@ public class Enemy : MonoBehaviour {
 
         if (other.gameObject.tag == "Asteroids") {
             if (other.relativeVelocity.magnitude > 20) {
-                Debug.Log("Enemy-Asteroid Collision: " + other.relativeVelocity.magnitude);
+                // Debug.Log("Enemy-Asteroid Collision: " + other.relativeVelocity.magnitude);
                 ApplyDamage(demageFactorToEnemyOnAsteroidCollision * other.relativeVelocity.magnitude);
             }
         } else if (other.gameObject.tag == "Planet" || other.gameObject.tag == "Vesta" || other.gameObject.tag == "Mars") {
-            Debug.Log("Enemy-Planet Collision: " + other.relativeVelocity.magnitude);
+            // Debug.Log("Enemy-Planet Collision: " + other.relativeVelocity.magnitude);
             if (other.relativeVelocity.magnitude > 20) {
                 ApplyDamage(demageFactorToEnemyOnPlanetCollision * other.relativeVelocity.magnitude);
             }
         }
 
         if (other.gameObject.tag == "Enemy") {
-            Debug.Log("Enemy-Enemy Collision: " + other.relativeVelocity.magnitude);
+            // Debug.Log("Enemy-Enemy Collision: " + other.relativeVelocity.magnitude);
             if (other.relativeVelocity.magnitude > 57) {
                 Debug.Log("Enemy-Enemy Destroy");
                 ApplyDamage(100);

@@ -11267,7 +11267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160819928}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31, y: 917.8, z: 0}
+  m_LocalPosition: {x: 31, y: 761, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 102894705}
@@ -11310,6 +11310,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerOnlyOnce: 1
 --- !u!135 &160819931
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22417,7 +22418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7266410100350197079, guid: a4b3d545cb29d4d4dbcd01a1f0495a27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1186
+      value: 997
       objectReference: {fileID: 0}
     - target: {fileID: 7266410100350197079, guid: a4b3d545cb29d4d4dbcd01a1f0495a27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23069,6 +23070,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerOnlyOnce: 1
 --- !u!95 &1319039229
 Animator:
   serializedVersion: 3
@@ -23192,6 +23194,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerOnlyOnce: 1
 --- !u!135 &1330764825
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24272,6 +24275,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerOnlyOnce: 1
 --- !u!1 &1425619279
 GameObject:
   m_ObjectHideFlags: 0
@@ -25647,6 +25651,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerOnlyOnce: 1
 --- !u!114 &1514486724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29510,8 +29515,10 @@ MonoBehaviour:
   pause: {fileID: -8833985345691261823, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
   gameOver: {fileID: 8021330507239325256, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
   startGame: {fileID: 0}
+  extremeDanger: {fileID: 0}
   introAudio: {fileID: 1694479935720731564}
   tutorialAudio: {fileID: 1694479935720731563}
+  extremeDangerAudio: {fileID: 0}
 --- !u!1 &1898748192
 GameObject:
   m_ObjectHideFlags: 0
@@ -33280,6 +33287,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerOnlyOnce: 1
 --- !u!4 &395302973408559501
 Transform:
   m_ObjectHideFlags: 0
@@ -33650,6 +33658,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  triggerOnlyOnce: 1
 --- !u!4 &395302974027267928
 Transform:
   m_ObjectHideFlags: 0
@@ -91278,7 +91287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395302973294483486}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.8, y: 522, z: 0}
+  m_LocalPosition: {x: 23.8, y: 417, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 395302973472514756}

@@ -8,13 +8,14 @@ public class AudioManager : MonoBehaviour {
     [SerializeField] AudioMixerSnapshot tutorial;
     [SerializeField] AudioMixerSnapshot pause;
     [SerializeField] AudioMixerSnapshot gameOver;
-    [SerializeField] AudioMixerSnapshot startGame;
+    [SerializeField] AudioMixerSnapshot danger;
+    [SerializeField] AudioMixerSnapshot extremeDanger;
 
     [SerializeField] AudioSource introAudio;
     [SerializeField] AudioSource tutorialAudio;
+    [SerializeField] AudioSource extremeDangerAudio;
 
     void Start() {
-
     }
 
     void Update() {
@@ -38,7 +39,6 @@ public class AudioManager : MonoBehaviour {
             tutorialAudio.Stop();
         }
 
-
         if (GameStateManager.isPaused()) {
             pause.TransitionTo(0.3f);
         }
@@ -46,5 +46,18 @@ public class AudioManager : MonoBehaviour {
         if (GameStateManager.isGameover()) {
             gameOver.TransitionTo(0.4f);
         }
+
+
+
+        if(EnemiesManager.isDanger() && !GameStateManager.isPaused()){
+            danger.TransitionTo(3f);
+        }
+
+        if(EnemiesManager.isExtremeDanger() && !GameStateManager.isPaused()){
+            extremeDanger.TransitionTo(3f);
+        }
+
+
+
     }
 }
