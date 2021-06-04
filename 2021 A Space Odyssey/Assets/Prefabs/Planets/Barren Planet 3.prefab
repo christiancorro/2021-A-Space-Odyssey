@@ -237,8 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ceb7e4be386be14983799b2c5523e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOxygen: 40
-  maxFuel: 40
+  maxOxygen: 80
+  maxFuel: 80
   currentOxygen: 0
   currentFuel: 0
   hasLava: 0

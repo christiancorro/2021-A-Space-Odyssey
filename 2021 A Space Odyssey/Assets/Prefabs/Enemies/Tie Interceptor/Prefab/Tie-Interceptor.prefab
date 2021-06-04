@@ -436,7 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineWidth: 0
   precomputeOutline: 1
   bakeKeys:
   - {fileID: -4917730264244812816, guid: 4b458d3514339d747a97f112c47e9132, type: 3}
@@ -20791,9 +20791,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  attackPause: 7
+  attackPause: 6
   demageToStarshipOnCollision: 10
-  demageToEnemyOnStarshipCollision: 90
+  demageFactorToEnemyOnStarshipCollision: 2
   demageToEnemyOnEnemyCollision: 90
   demageFactorToEnemyOnAsteroidCollision: 2
   demageFactorToEnemyOnPlanetCollision: 3

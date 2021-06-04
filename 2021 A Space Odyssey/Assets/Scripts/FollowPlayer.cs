@@ -78,6 +78,17 @@ public class FollowPlayer : MonoBehaviour {
     }
 
     public void SetDistance(float distance) {
-        this.distance = distance;
+        StartCoroutine(LerpDistance(distance, 1f));
+    }
+
+    private IEnumerator LerpDistance(float distance, float time) {
+
+        float elapsedTime = 0;
+
+        while (elapsedTime < time) {
+            targetDistance = Mathf.Lerp(targetDistance, distance, (elapsedTime / time));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
     }
 }

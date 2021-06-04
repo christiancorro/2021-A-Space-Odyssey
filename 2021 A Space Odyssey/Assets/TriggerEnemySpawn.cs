@@ -28,6 +28,8 @@ public class TriggerEnemySpawn : MonoBehaviour {
     }
 
     public void SpawnEnemy() {
+        Debug.DrawLine(new Vector3(transform.position.x - 300, transform.position.y, 0), new Vector3(transform.position.x + 300, transform.position.y, 0), Color.green, 2);
+
         for (int i = 0; i < numberOfEnemies; i++) {
             Vector3 position = new Vector3(spawnPoint.position.x + (-numberOfEnemies / 2 + i), spawnPoint.transform.position.y, 0);
             Instantiate(enemyPrefab, position, Quaternion.identity);

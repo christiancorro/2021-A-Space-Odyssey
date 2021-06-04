@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2558ca306bbe73748b7228249ba50ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 1
+  mass: 2
   radius: 100
 --- !u!114 &1492891051549269256
 MonoBehaviour:
@@ -237,13 +237,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ceb7e4be386be14983799b2c5523e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOxygen: 40
-  maxFuel: 80
+  maxOxygen: 80
+  maxFuel: 90
   currentOxygen: 0
   currentFuel: 0
   hasLava: 0
   lavaDamage: 0.1
-  rotationSpeed: 0.2
+  rotationSpeed: 0.3
 --- !u!1 &1492891051781632477
 GameObject:
   m_ObjectHideFlags: 0

@@ -17663,7 +17663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[2]
-      value: "Per catturarli basta passarci sopra. Pi\xF9 avanti ce n'\xE8 uno"
+      value: "Per catturarli basta passarci sopra. Pi\xF9 avanti ce n'\xE8 uno!"
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[3]
@@ -17723,7 +17723,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: timePerCharacter
@@ -21465,7 +21465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: timePerCharacter
@@ -24563,7 +24563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: timePerCharacter
@@ -27253,7 +27253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: timePerCharacter
@@ -27600,7 +27600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: timePerCharacter
@@ -28169,7 +28169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: timePerCharacter
@@ -28563,7 +28563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: timePerCharacter
@@ -29292,8 +29292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "L'indicatore celeste segna l'espopianeta pi\xF9 vicino. Proviamo a
-        raggiungerlo!"
+      value: "L'indicatore celeste segna l'esopianeta pi\xF9 vicino. Proviamo a raggiungerlo!"
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -29514,7 +29513,7 @@ MonoBehaviour:
   tutorial: {fileID: -4847996662110092292, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
   pause: {fileID: -8833985345691261823, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
   gameOver: {fileID: 8021330507239325256, guid: 146413e9f34ab314aa334a3e0bed4c4a, type: 2}
-  startGame: {fileID: 0}
+  danger: {fileID: 0}
   extremeDanger: {fileID: 0}
   introAudio: {fileID: 1694479935720731564}
   tutorialAudio: {fileID: 1694479935720731563}

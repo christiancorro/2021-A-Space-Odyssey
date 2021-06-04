@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour {
 
     void Update() {
         if (GameStateManager.isStartMenu()) {
-            startMenu.TransitionTo(6f);
+            startMenu.TransitionTo(1f);
         }
 
         if (GameStateManager.isIntro() && !GameStateManager.isPaused()) {
@@ -48,16 +48,13 @@ public class AudioManager : MonoBehaviour {
         }
 
 
-
-        if(EnemiesManager.isDanger() && !GameStateManager.isPaused()){
-            danger.TransitionTo(3f);
+        if (EnemiesManager.isDanger() && !GameStateManager.isPaused()) {
+            danger.TransitionTo(1f);
         }
 
-        if(EnemiesManager.isExtremeDanger() && !GameStateManager.isPaused()){
-            extremeDanger.TransitionTo(3f);
+        if (EnemiesManager.isExtremeDanger() && extremeDangerAudio.isPlaying && !GameStateManager.isPaused()) {
+            extremeDanger.TransitionTo(1f);
         }
-
-
 
     }
 }

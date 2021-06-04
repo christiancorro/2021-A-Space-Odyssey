@@ -8,6 +8,7 @@ public class GameStateManager : MonoBehaviour {
 
     public static GameStateManager instance;
     public static Animator gameStates;
+    public static Vector3 checkpoint;
 
     void Awake() {
         if (!instance) {
@@ -27,6 +28,10 @@ public class GameStateManager : MonoBehaviour {
         // Debug.Log("Init");
     }
 
+    public static void SetCheckpoint(Vector3 position) {
+        checkpoint = position;
+    }
+
     public static bool isIntro() {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Initial Story");
     }
@@ -43,6 +48,14 @@ public class GameStateManager : MonoBehaviour {
 
     public static bool isGameover() {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Game Over");
+    }
+
+    public static bool isStartGame() {
+        return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game");
+    }
+
+    public static bool isMidGame() {
+        return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Mid Game");
     }
 
     public static bool isPaused() {
@@ -66,6 +79,10 @@ public class GameStateManager : MonoBehaviour {
         return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Tutorial")
                 || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game")
                 || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Mid Game");
+    }
+
+    public static bool isCheckpoint() {
+        return checkpoint != Vector3.zero;
     }
 
     public static bool isStartMenu() {
@@ -95,11 +112,22 @@ public class GameStateManager : MonoBehaviour {
 
     public static void StartMenu() {
         gameStates.SetTrigger("startMenu");
+        checkpoint = Vector3.zero;
     }
 
     public static void StartGame() {
         gameStates.SetBool("startGame", true);
         Debug.Log("Start Game");
+    }
+
+    public static void StartMidGame() {
+        gameStates.SetBool("midGame", true);
+        Debug.Log("Mid Game");
+    }
+
+    public static void EndGame() {
+        gameStates.SetTrigger("endGame");
+        Debug.Log("End Game");
     }
 
     public static bool canStarShipMove() {
@@ -178,6 +206,7 @@ public class GameStateManager : MonoBehaviour {
 
     public static void ExitGame() {
         gameStates.SetTrigger("exitGame");
+        checkpoint = Vector3.zero;
         Debug.Log("Exit");
     }
 

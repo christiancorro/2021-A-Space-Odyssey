@@ -15,11 +15,13 @@ public class TriggerEvent : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Starship") {
             if (triggerOnlyOnce && !triggered) {
+                Debug.DrawLine(new Vector3(transform.position.x - 300, transform.position.y, 0), new Vector3(transform.position.x + 300, transform.position.y, 0), Color.green, 2);
                 triggered = true;
                 onTriggerEnterEvent.Invoke();
             }
 
             if (!triggerOnlyOnce) {
+                Debug.DrawLine(new Vector3(transform.position.x - 300, transform.position.y, 0), new Vector3(transform.position.x + 300, transform.position.y, 0), Color.green, 2);
                 triggered = true;
                 onTriggerEnterEvent.Invoke();
             }

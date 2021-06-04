@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField] float health = 100;
     [SerializeField] float attackPause = 8;
     [SerializeField] float demageToStarshipOnCollision = 10;
-    [SerializeField] float demageToEnemyOnStarshipCollision = 90;
+    [SerializeField] float demageFactorToEnemyOnStarshipCollision = 3;
     [SerializeField] float demageToEnemyOnEnemyCollision = 100;
     [SerializeField] float demageFactorToEnemyOnAsteroidCollision = 2;
     [SerializeField] float demageFactorToEnemyOnPlanetCollision = 3;
@@ -42,11 +42,13 @@ public class Enemy : MonoBehaviour {
 
         Attack();
 
-        if(Vector3.Distance(starship.position, this.transform.position) > 300){
+        if (Vector3.Distance(starship.position, this.transform.position) > 350) {
+            EnemiesManager.decreaseEnemyCounter();
             DestroyEnemy();
         }
 
         if (health <= 0 && !isExploded) {
+            EnemiesManager.decreaseEnemyCounter();
             isExploded = true;
             GetComponent<Collider>().enabled = false;
             GetComponent<MeshRenderer>().enabled = false;
@@ -68,13 +70,12 @@ public class Enemy : MonoBehaviour {
         explosionParticles.Play();
         explosionAudio.Play();
         yield return new WaitForSeconds(1.1f);
-        gameObject.SetActive(false);
+        gameObject.SetActive(false); // needed for hook logic
         yield return new WaitForSeconds(0.01f);
         DestroyEnemy();
     }
 
-    private void DestroyEnemy(){
-        EnemiesManager.decreaseEnemyCounter();
+    private void DestroyEnemy() {
         Destroy(gameObject);
     }
 
@@ -107,9 +108,9 @@ public class Enemy : MonoBehaviour {
 
     private void OnCollisionEnter(Collision other) {
         if (other.gameObject.tag == "Starship") {
-            if (other.relativeVelocity.magnitude > 20) {
+            if (other.relativeVelocity.magnitude > 15) {
                 Starship.ApplyDamage(demageToStarshipOnCollision);
-                this.ApplyDamage(demageToEnemyOnStarshipCollision);
+                this.ApplyDamage(demageFactorToEnemyOnStarshipCollision * other.relativeVelocity.magnitude);
             }
         }
 

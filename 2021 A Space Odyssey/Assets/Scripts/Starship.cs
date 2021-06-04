@@ -105,7 +105,7 @@ public class Starship : MonoBehaviour {
             health = 0;
         }
 
-        if (health <= 0 && !GameStateManager.isGameover()) {
+        if (health <= 0 && !GameStateManager.isGameover() && model.gameObject.activeSelf) {
             model.SetActive(false);
             turbo.Stop();
             turboActive.volume = 0f;

@@ -156,7 +156,7 @@ public class TutorialManager : MonoBehaviour {
 
     public void Step2_Attract_Message() {
         if (!step2Writer2.HasAlreadyWritten() && TutorialStateManager.isStep2()) {
-            Starship.fuel = 60;
+            Starship.fuel = 100;
             step2Writer2.Write(step2Sentence2);
             GameStateManager.BlockStarShipMovements();
         }
@@ -200,7 +200,7 @@ public class TutorialManager : MonoBehaviour {
     public void StartStep4_Planets() {
         TutorialStateManager.Step4();
         step4Writer1.Write(step4Sentence1);
-        Starship.oxygen = 50;
+        Starship.oxygen = 100;
     }
 
     public void Step4_Activate_Planets_Navigation_System() {
