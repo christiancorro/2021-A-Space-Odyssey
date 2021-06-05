@@ -75,7 +75,7 @@ public class Planet : MonoBehaviour {
                 // Docking
                 starshipRigidbody.velocity = Vector2.Lerp(starshipRigidbody.velocity, Vector3.zero, 2 * Time.deltaTime);
 
-                if ((Starship.fuel < 100 || Starship.oxygen < 100 || Starship.health < 100) && (currentOxygen > 0 || currentFuel > 0)) {
+                if ((Starship.fuel < 100 || Starship.health < 100) && (currentOxygen > 0 || currentFuel > 0)) {
 
                     oxygenAndFuel.Play();
                     if (dockingAudio != null) {
@@ -107,11 +107,10 @@ public class Planet : MonoBehaviour {
 
             } else {
                 Starship.ApplyDamage(0.23f);
-                oxygenAndFuel.Pause();
+                dockingAudio.Pause();
                 oxygenAndFuel.Stop();
                 if (dockingAudio != null) {
                     dockingAudio.volume = 0f;
-
                 }
             }
         }

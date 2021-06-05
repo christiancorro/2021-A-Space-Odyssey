@@ -25,7 +25,6 @@ public class ShipRigidbodyMovementController : MonoBehaviour {
         vertical = difference.y;
 
         UpdateMoveAdaptiveRotation();
-
     }
 
     private void UpdateMoveAdaptiveRotation() {

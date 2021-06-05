@@ -125,9 +125,15 @@ public class GameStateManager : MonoBehaviour {
         Debug.Log("Mid Game");
     }
 
+
     public static void EndGame() {
         gameStates.SetTrigger("endGame");
         Debug.Log("End Game");
+    }
+
+    public static void StartCredits() {
+        gameStates.SetTrigger("credits");
+        Debug.Log("Credits");
     }
 
     public static bool canStarShipMove() {

@@ -24559,7 +24559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
@@ -27959,11 +27959,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: skipable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause
@@ -28559,7 +28559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForwardPause

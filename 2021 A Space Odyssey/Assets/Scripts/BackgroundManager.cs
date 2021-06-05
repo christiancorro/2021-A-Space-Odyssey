@@ -17,6 +17,7 @@ public class BackgroundManager : MonoBehaviour {
     private void Start() {
         currentStars = stars1;
         currentCenter = target.position;
+        stars1.transform.position = currentCenter;
     }
 
     void Update() {

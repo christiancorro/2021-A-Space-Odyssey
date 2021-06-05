@@ -15,6 +15,11 @@ public class SetParameterOnStateEnter : StateMachineBehaviour {
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
         foreach (Parameter parameter in parametersToChange) {
             animator.SetBool(parameter.name, parameter.value);
+            // if (parameter.value) {
+            //     animator.SetTrigger(parameter.name);
+            // } else {
+            //     animator.ResetTrigger(parameter.name);
+            // }
         }
     }
 }

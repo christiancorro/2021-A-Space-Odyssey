@@ -18,6 +18,7 @@ public class TypeWriter : MonoBehaviour {
     [SerializeField] float autoForwardPause = 3;
     [SerializeField] TMP_Text page;
     [SerializeField] TMP_Text alert;
+    [SerializeField] bool dontClean = false;
 
     [SerializeField] EndWritingEvent endWritingEvent;
 
@@ -77,8 +78,14 @@ public class TypeWriter : MonoBehaviour {
     private void EndWriting() {
         SFX_Typing.Stop();
         active = false;
-        page.text = "";
+        if (!dontClean) {
+            page.text = "";
+        }
         endWritingEvent.Invoke();
+    }
+
+    public void Clean() {
+        page.text = "";
     }
 
 
