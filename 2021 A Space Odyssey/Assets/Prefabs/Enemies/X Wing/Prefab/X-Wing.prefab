@@ -25421,7 +25421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   attackPause: 8
-  demageToStarshipOnCollision: 7
+  demageToStarshipOnCollision: 10
   demageFactorToEnemyOnStarshipCollision: 3
   demageToEnemyOnEnemyCollision: 100
   demageFactorToEnemyOnAsteroidCollision: 3

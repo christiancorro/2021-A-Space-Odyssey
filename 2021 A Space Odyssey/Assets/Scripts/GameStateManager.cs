@@ -63,7 +63,7 @@ public class GameStateManager : MonoBehaviour {
     }
 
     public static bool startPlayList() {
-        return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game");
+        return gameStates.GetCurrentAnimatorStateInfo(0).IsName("Start Game") || gameStates.GetCurrentAnimatorStateInfo(0).IsName("Mid Game");
     }
 
     public static bool isPausable() {

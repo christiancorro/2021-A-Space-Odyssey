@@ -47,10 +47,20 @@ public class MidGameManager : MonoBehaviour {
 
         if (GameStateManager.checkpoint != Vector3.zero) {
             starship.transform.position = GameStateManager.checkpoint;
+            GameStateManager.AllowStarShipMovements();
+
+            GameStateManager.AllowStarShipHook();
+            GameStateManager.ShowPlanetNavigationSystem();
+            GameStateManager.ShowFuelNavigationSystem();
+            GameStateManager.ShowVestaNavigationSystem();
+            GameStateManager.ShowHUD();
+            gameStarted = true;
+
+            Debug.Log("Checkpoint loaded");
 
             // Vesta near starship
             if (GameStateManager.isMidGame()) {
-                Vesta.transform.position = new Vector3(GameStateManager.checkpoint.x, GameStateManager.checkpoint.y + 30, 0);
+                Vesta.transform.position = new Vector3(GameStateManager.checkpoint.x, GameStateManager.checkpoint.y + 60, 0);
             }
         }
     }
