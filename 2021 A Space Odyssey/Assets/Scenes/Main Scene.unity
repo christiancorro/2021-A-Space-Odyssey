@@ -17715,7 +17715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: skipable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
@@ -19532,7 +19532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: skipable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
@@ -21457,7 +21457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: skipable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
@@ -24673,6 +24673,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_margin.x
+      value: -571.49097
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_margin.z
+      value: -28.250938
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
 --- !u!4 &1458281281 stripped
@@ -27245,7 +27257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: skipable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
@@ -28077,6 +28089,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_margin.x
+      value: -572.0635
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_margin.z
+      value: -28.540916
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
 --- !u!4 &1780662979 stripped
@@ -28161,7 +28185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: skipable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: autoForward
@@ -28672,6 +28696,18 @@ PrefabInstance:
     - target: {fileID: 2908385441973108666, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_margin.x
+      value: -570.75824
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_margin.z
+      value: -28.06394
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
