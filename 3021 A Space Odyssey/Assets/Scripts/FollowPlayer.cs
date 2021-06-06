@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour {
 
+    // Camera movements
+
     public GameObject target;
-    // The target we are following
     private Transform targetTransform;
-    // The distance in the x-z plane to the target
+
     public float distance = 10.0f;
     public float minZoom = 1;
     public float maxZoom = 30;
-    // the height we want the camera to be above the target
+
     public float height = 5.0f;
-    // How much we 
     public float heightDamping = 2.0f;
     public float rotationDamping = 3.0f;
 
@@ -22,7 +22,6 @@ public class FollowPlayer : MonoBehaviour {
 
     private bool startAnimation = true;
 
-    // Place the script in the Camera-Control group in the component menu
     [AddComponentMenu("Camera-Control/Smooth Follow")]
 
     void Start() {
@@ -32,6 +31,7 @@ public class FollowPlayer : MonoBehaviour {
     }
 
     void LateUpdate() {
+
         // Early out if we don't have a target
         if (!targetTransform) return;
 
@@ -41,7 +41,8 @@ public class FollowPlayer : MonoBehaviour {
         if (targetDistance >= 50) {
             startAnimation = false;
         }
-        //Zooming with mouse
+
+        //Zooming with mouse or dpad
         targetDistance -= Input.GetAxis("Zoom") * 50;
         targetDistance = Mathf.Clamp(targetDistance, minZoom, maxZoom);
         distance = Mathf.Lerp(distance, targetDistance, zoomDampening * Time.deltaTime);

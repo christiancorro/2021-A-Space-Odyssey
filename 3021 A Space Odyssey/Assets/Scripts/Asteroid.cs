@@ -13,11 +13,14 @@ public class Asteroid : MonoBehaviour {
     private void Start() {
         fuelCollison = GameObject.Find("Asteroid Fuel Collision").GetComponent<ParticleSystem>();
         rb = GetComponent<Rigidbody>();
+
         // damage = 2 * rb.mass;
+
         if (hasFuel) {
             GetComponent<MeshCollider>().isTrigger = true;
         }
 
+        // Random rotation
         rb.AddTorque(new Vector3(Random.Range(-1, 1), Random.Range(-1, 1), Random.Range(-1, 1)), ForceMode.Impulse);
         //rb.AddForce(new Vector3(Random.Range(-1, 1), Random.Range(-30, 1), 0), ForceMode.Impulse);
     }

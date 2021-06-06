@@ -5,6 +5,8 @@ using UnityEngine;
 public class Area : MonoBehaviour {
 
     [SerializeField] public bool isActive;
+    [SerializeField] NearestPlanetNavigationSystem planetNavigationSystem;
+    [SerializeField] NearestFuelNavigationSystem fuelNavigationSystem;
 
     void Start() {
         isActive = AreaManager.isCurrentArea(this);
@@ -16,8 +18,11 @@ public class Area : MonoBehaviour {
     }
 
     IEnumerator Toggle() {
-        foreach (Transform child in transform)
+        foreach (Transform child in transform) {
             child.gameObject.SetActive(isActive);
+        }
+        planetNavigationSystem.UpdatePlanets();
+        fuelNavigationSystem.UpdateFuels();
         yield return null;
     }
 }

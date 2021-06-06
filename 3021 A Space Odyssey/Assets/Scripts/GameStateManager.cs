@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameStateManager : MonoBehaviour {
 
+    // Main FSM wrapper. Brain of the game on a Dont destory object. Animator (FSM) for game state transitions
+
     public static GameStateManager instance;
     public static Animator gameStates;
     public static Vector3 checkpoint;

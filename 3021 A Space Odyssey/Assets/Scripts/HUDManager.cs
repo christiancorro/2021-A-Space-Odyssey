@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class HUDManager : MonoBehaviour {
 
+    // Manage the HUD
+
     [SerializeField] Animator HUDAnimator;
     public TMPro.TextMeshProUGUI distanceText;
     public Slider fuelBar, healthBar, oxygenBar;
@@ -26,6 +28,7 @@ public class HUDManager : MonoBehaviour {
             HUDAnimator.SetBool("showHUD", false);
         }
 
+        // smooth value change for sliders
         fuelBar.value = Mathf.Lerp(fuelBar.value, Starship.fuel, Time.deltaTime * 6);
         oxygenBar.value = Mathf.Lerp(oxygenBar.value, Starship.oxygen, Time.deltaTime * 6);
         healthBar.value = Mathf.Lerp(healthBar.value, Starship.health, Time.deltaTime * 6);

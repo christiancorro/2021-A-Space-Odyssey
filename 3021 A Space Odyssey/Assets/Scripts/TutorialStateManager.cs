@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TutorialStateManager : MonoBehaviour {
 
+    // Tutorial FSM wrapper
+
     public static Animator tutorialStates;
 
     void Awake() {

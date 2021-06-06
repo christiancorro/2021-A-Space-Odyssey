@@ -16,12 +16,23 @@ public class NearestPlanetNavigationSystem : MonoBehaviour {
         InvokeRepeating("UpdateNearestPlanet", 0, 5); // update asteroids every 2 seconds
     }
 
+
     void Update() {
         if (GameStateManager.isFuelNavigationSystemActive()) {
             navigationSystem.Show();
         } else {
             navigationSystem.Hide();
         }
+    }
+
+
+    public void UpdatePlanets() {
+        StartCoroutine(UpdatePlanetsCoroutine());
+    }
+
+    IEnumerator UpdatePlanetsCoroutine() {
+        planets = GameObject.FindGameObjectsWithTag("Planet");
+        yield return null;
     }
 
     private float distance = 0;

@@ -75,17 +75,6 @@ public class Hook : MonoBehaviour {
                     }
                 }
             }
-            // else {
-            // isActive = false;
-            // }
-
-            // if (isActive && !isHookShooted) {
-            //     StartHook();
-            // }
-
-            // if (!isActive && isHookShooted) {
-            //     StopHook();
-            // }
 
             // when target is disabled
             if (isHookShooted) {
@@ -103,8 +92,9 @@ public class Hook : MonoBehaviour {
     void StartHook() {
         isHookShooted = true;
         // Debug.Log("Start Hook");
-        // if (Physics.SphereCast(startPoint.position, 2f, startPoint.up, out hit, maxDistance)) // don't work well, switch to trigger
-        if (inside.Count > 0) {
+        // don't work well, switch to trigger
+        // if (Physics.SphereCast(startPoint.position, 2f, startPoint.up, out hit, maxDistance)) 
+        if (inside.Count > 0) { // check if any object hookable
             shootHookAudio.Play();
             var outlineCloser = closestObject.gameObject.GetComponent<Outline>();
             outlineCloser.OutlineWidth = 0;
@@ -207,9 +197,6 @@ public class Hook : MonoBehaviour {
     private GameObject selectedOldObject;
 
     private void OnTriggerEnter(Collider other) {
-        // Debug.Log(other.gameObject.name);
-        // other.gameObject.transform.localScale.Set(10, 10, 10);
-        // if (isHookShooted) {
         if (IsInLayerMask(other.gameObject, LayerMask.GetMask("Hookable"))) {
             var outline = other.gameObject.GetComponent<Outline>();
             if (!outline) {
@@ -223,7 +210,6 @@ public class Hook : MonoBehaviour {
             inside.Add(other.gameObject);
             // Debug.Log("Add " + inside.Count);
         }
-        // }
     }
 
     private void OnTriggerStay(Collider other) {
@@ -249,7 +235,6 @@ public class Hook : MonoBehaviour {
     }
 
     private void OnTriggerExit(Collider other) {
-        // if (!isHookShooted) {
         if (IsInLayerMask(other.gameObject, LayerMask.GetMask("Hookable"))) {
             try {
                 if (selectedOldObject == other.gameObject) {

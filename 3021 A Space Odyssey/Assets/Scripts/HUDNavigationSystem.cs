@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HUDNavigationSystem : MonoBehaviour {
 
+    // Arrow pointer for off screen target direction
+
     [SerializeField] GameObject target;
     [SerializeField] Camera UICamera;
     [SerializeField] float borderSize = 0;

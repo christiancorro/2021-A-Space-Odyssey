@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AreaManager : MonoBehaviour {
 
+    // Dont destroy object. If restart the current area is visible 
+
     public static AreaManager instance;
     private static string currentArea;
 
@@ -14,6 +16,7 @@ public class AreaManager : MonoBehaviour {
         }
     }
 
+    // Current area comparasion based on area name
     public static bool isCurrentArea(Area area) {
         if (currentArea != null) {
             Debug.Log("Current Area: " + currentArea + "\nArea: " + area.name);

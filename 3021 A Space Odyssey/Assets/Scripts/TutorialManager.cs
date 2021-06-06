@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour {
 
+    // Tutorial sequence
+
     [SerializeField] AudioSource tutorialAudio;
     [SerializeField] AudioMixerSnapshot tutorialSnapshot;
 

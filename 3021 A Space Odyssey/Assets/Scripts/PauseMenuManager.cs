@@ -21,8 +21,6 @@ public class PauseMenuManager : MonoBehaviour {
     private bool paused = false;
 
 
-
-
     void Awake() {
         panelAnimator = GetComponent<Animator>();
         Cursor.SetCursor(cursorIcon, Vector2.zero, CursorMode.Auto);

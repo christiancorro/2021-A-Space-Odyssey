@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Playlist : MonoBehaviour {
 
+    // Plays random music
+
     [SerializeField] AudioClip[] music;
     [SerializeField] AudioSource audioMusic;
     private bool playListStarted = false;

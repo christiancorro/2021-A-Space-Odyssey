@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
+    // Manage transition between scenes
+
     private static float transitionDelay = 1f;
     private static Animator transition;
 

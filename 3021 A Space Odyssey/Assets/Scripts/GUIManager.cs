@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GUIManager : MonoBehaviour {
 
+    // Manager of Start and Pause menus
+
     [SerializeField] StartMenuManager startMenu;
     [SerializeField] PauseMenuManager pauseMenu;
 

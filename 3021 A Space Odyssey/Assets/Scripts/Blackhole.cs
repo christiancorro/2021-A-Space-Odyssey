@@ -9,6 +9,8 @@ public class Blackhole : MonoBehaviour {
         transform.Rotate(0, 0, 2f, Space.Self);
     }
 
+    // If starship or asteroids inside blackhole, deactivate
+
     private void OnTriggerEnter(Collider other) {
 
         if (other.tag == "Asteroids" || other.tag == "Fuel") {

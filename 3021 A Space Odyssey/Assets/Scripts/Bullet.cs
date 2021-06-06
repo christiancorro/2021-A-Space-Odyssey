@@ -12,6 +12,9 @@ public class Bullet : MonoBehaviour {
     private float timer;
 
     private void Update() {
+
+        // Add bullet lifetime
+
         if (timer < lifeTime) {
             timer += Time.deltaTime;
         }
@@ -23,6 +26,8 @@ public class Bullet : MonoBehaviour {
 
     void Start() {
         rb = GetComponent<Rigidbody>();
+
+        // bullet goes only forward at a constant velocity
         rb.velocity = transform.forward * speed;
     }
 

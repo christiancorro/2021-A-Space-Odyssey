@@ -16,6 +16,8 @@ public class Attractor : MonoBehaviour {
     void Update() {
 
         if (GameStateManager.isInGame()) {
+
+            // Apply gravity attraction to starship if inside radius
             Vector3 difference = this.transform.position - starship.transform.position;
             float dist = difference.magnitude;
             if (dist < radius) {
@@ -25,6 +27,7 @@ public class Attractor : MonoBehaviour {
                 starshipRigidbody.AddForce(starship.transform.forward, ForceMode.Acceleration);
                 starshipRigidbody.AddForce(gravityVector, ForceMode.Acceleration);
             }
+
         }
     }
 }

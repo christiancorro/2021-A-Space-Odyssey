@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class IntroManager : MonoBehaviour {
 
+    // Intro sequence
+
     [SerializeField] Animator introAnimation;
 
     [SerializeField] TypeWriter plotWriter;

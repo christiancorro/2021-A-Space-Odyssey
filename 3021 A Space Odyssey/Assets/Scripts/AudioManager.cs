@@ -18,6 +18,9 @@ public class AudioManager : MonoBehaviour {
     void Start() {
     }
 
+
+    // Changes audio snapshot based on game states
+
     void Update() {
         if (GameStateManager.isStartMenu()) {
             startMenu.TransitionTo(1f);

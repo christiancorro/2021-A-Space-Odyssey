@@ -20,6 +20,8 @@ public class BackgroundManager : MonoBehaviour {
         stars1.transform.position = currentCenter;
     }
 
+    // Background based on interleaving of two groups of particle systems
+
     void Update() {
         if (GameStateManager.isInGame()) {
             stars1.SetActive(true);

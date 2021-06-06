@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour {
 
+    // Game over sequence
+
     [SerializeField] Animator gameOverAnimator;
     [SerializeField] TypeWriter gameOverWriter;
     [SerializeField] Sentences gameOverSentence;

@@ -7,6 +7,8 @@ using UnityEngine.Rendering;
 
 public class EndGameManager : MonoBehaviour {
 
+    // End Game Sequence
+
     [SerializeField] FollowPlayer cam;
     [SerializeField] TypeWriter endStoryWriter;
     [SerializeField] Sentences endStory_text;

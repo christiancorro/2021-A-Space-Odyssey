@@ -6,6 +6,8 @@ using UnityEngine.Audio;
 
 public class EnemiesManager : MonoBehaviour {
 
+    // Manage danger level counting enemies spawned, useful for audio transition
+
     private static int counter;
     private static bool extremeDanger;
     private static bool danger;

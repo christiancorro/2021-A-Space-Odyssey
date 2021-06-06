@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
 
+    // Enemy behavior
+
     [SerializeField] float health = 100;
     [SerializeField] float attackPause = 8;
     [SerializeField] float demageToStarshipOnCollision = 10;
@@ -32,7 +34,7 @@ public class Enemy : MonoBehaviour {
     }
 
     private void Start() {
-        shootPause = Random.Range(attackPause - 2, attackPause + 2);
+        shootPause = Random.Range(attackPause - 2, attackPause + 2); // pause after shoot
         attackTimer = shootPause / 2;
         rb = GetComponent<Rigidbody>();
         EnemiesManager.increaseEnemyCounter();

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour {
 
+    // Planet behaviour 
+
     [Range(0f, 100f)]
     public float maxOxygen = 100;
     [Range(0f, 100f)]
@@ -75,7 +77,7 @@ public class Planet : MonoBehaviour {
                 // Docking
                 starshipRigidbody.velocity = Vector2.Lerp(starshipRigidbody.velocity, Vector3.zero, 2 * Time.deltaTime);
 
-                if ((Starship.fuel < 100 || Starship.health < 100) && (currentOxygen > 0 || currentFuel > 0)) {
+                if ((Starship.fuel < 100 || Starship.health < 100 || Starship.oxygen < 96) && (currentOxygen > 0 || currentFuel > 0)) {
 
                     oxygenAndFuel.Play();
                     if (dockingAudio != null) {

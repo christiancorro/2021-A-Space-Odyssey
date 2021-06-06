@@ -24,6 +24,8 @@ public class AttractAsteroids : MonoBehaviour {
             attractor.Play();
             try {
                 UpdateAsteroids();
+
+                // Apply gravity attraction to asteroids inside a radius saved in nearAsteroids
                 for (int i = 0; i < nearAsteroids.Count; i++) {
                     Vector3 difference = this.transform.position - nearAsteroids[i].transform.position;
                     float dist = difference.magnitude;

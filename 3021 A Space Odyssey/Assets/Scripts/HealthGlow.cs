@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HealthGlow : MonoBehaviour {
 
+    // Manage the color of starship's pinhole, if low health red
+
     public Gradient gradient;
     private Material material;
 

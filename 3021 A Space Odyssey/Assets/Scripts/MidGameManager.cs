@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-
 public class MidGameManager : MonoBehaviour {
+
+    // Mid game sequence (Mid Game triggers when Vesta is reached)
 
     [Header("Game Objects Groups")]
     [SerializeField] GameObject startGameObjects;

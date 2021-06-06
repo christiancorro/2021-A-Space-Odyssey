@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LandingDustTrigger : MonoBehaviour {
 
+    // Landing dust particle system manager
+
     [SerializeField] Transform startPoint;
     [SerializeField]
     ParticleSystem landingDustRight, landingDustLeft;

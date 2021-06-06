@@ -24,6 +24,15 @@ public class NearestFuelNavigationSystem : MonoBehaviour {
         }
     }
 
+    public void UpdateFuels() {
+        StartCoroutine(UpdateFuelsCoroutine());
+    }
+
+    IEnumerator UpdateFuelsCoroutine() {
+        fuels = GameObject.FindGameObjectsWithTag("Fuel");
+        yield return null;
+    }
+
     private float distance = 0;
     void UpdateNearestFuel() {
         float min = 100000000;

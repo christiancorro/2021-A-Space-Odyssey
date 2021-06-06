@@ -19862,7 +19862,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 858768453277817888, guid: ae3e17e0be106954b985b969f9c24035, type: 3}
       propertyPath: m_Name
-      value: Big Asteroid 1
+      value: Big Asteroid
       objectReference: {fileID: 0}
     - target: {fileID: 858768453277817888, guid: ae3e17e0be106954b985b969f9c24035, type: 3}
       propertyPath: m_IsActive
