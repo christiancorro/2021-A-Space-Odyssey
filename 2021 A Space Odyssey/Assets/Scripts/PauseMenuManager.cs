@@ -44,7 +44,6 @@ public class PauseMenuManager : MonoBehaviour {
 
     public void OpenPauseMenu() {
         if (!paused) {
-            Debug.Log(EventSystem.current.currentSelectedGameObject);
             EventSystem.current.SetSelectedGameObject(null);
             EventSystem.current.SetSelectedGameObject(resumeButton.gameObject);
             resumeButton.OnSelect(null);
