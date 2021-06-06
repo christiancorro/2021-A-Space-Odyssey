@@ -39,6 +39,7 @@ public class EndGameManager : MonoBehaviour {
 
 
     public void StartCredits() {
+        GameStateManager.StartCredits();
         credits.Write(credits_text);
     }
 

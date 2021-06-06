@@ -19864,6 +19864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big Asteroid 1
       objectReference: {fileID: 0}
+    - target: {fileID: 858768453277817888, guid: ae3e17e0be106954b985b969f9c24035, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 858768453277817894, guid: ae3e17e0be106954b985b969f9c24035, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -24821,7 +24825,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   transparency: 0.8
   dangerValue: 30
-  alertAnimationDuration: 0.6
+  alertAnimationDuration: 0.3
 --- !u!114 &1465074725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27448,6 +27452,10 @@ PrefabInstance:
     - target: {fileID: 8640170771289519056, guid: 655cddcdd46b6f44dab790239e9aff33, type: 3}
       propertyPath: m_Name
       value: Medium Asteroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 8640170771289519056, guid: 655cddcdd46b6f44dab790239e9aff33, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8640170771289552242, guid: 655cddcdd46b6f44dab790239e9aff33, type: 3}
@@ -32366,7 +32374,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   transparency: 0.8
   dangerValue: 30
-  alertAnimationDuration: 0.6
+  alertAnimationDuration: 0.3
 --- !u!114 &2134801391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32552,7 +32560,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   transparency: 0.8
   dangerValue: 30
-  alertAnimationDuration: 0.6
+  alertAnimationDuration: 0.3
 --- !u!1 &2138527656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2908385441056465678, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
@@ -32724,7 +32732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -528.141, y: -308.76334}
+  m_AnchoredPosition: {x: -528.141, y: -308.7633}
   m_SizeDelta: {x: 410.99, y: 65.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2145359611
@@ -36359,7 +36367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -528.141, y: -308.76334}
+  m_AnchoredPosition: {x: -528.141, y: -308.7633}
   m_SizeDelta: {x: 410.99, y: 65.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &1895963069329306385

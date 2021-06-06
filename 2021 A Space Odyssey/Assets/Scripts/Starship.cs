@@ -8,9 +8,9 @@ public class Starship : MonoBehaviour {
     [Header("Main settings")]
     public static float health = 100;
     public static float fuel = 100;
-    public static float fuelUsage = 0.040f;
+    public static float fuelUsage = 0.88f;
     public static float oxygen = 100;
-    public static float oxygenUsage = 0.4f;
+    public static float oxygenUsage = 0.6f;
 
     public static float distance = 0;
 
@@ -136,14 +136,14 @@ public class Starship : MonoBehaviour {
                 if (Input.GetAxis("Vertical") != 0 && !Input.GetButton("Turbo")) {
                     engine.Play();
                     engineActive.volume = maxEngineVolume;
-                    fuel -= fuelUsage;
+                    fuel -= fuelUsage * Time.deltaTime;
                 } else {
                     engine.Stop();
                     engineActive.volume = 0f;
                 }
                 // Turbo?
                 if (Input.GetButton("Turbo") && Input.GetAxis("Vertical") != 0) {
-                    fuel -= 2 * fuelUsage;
+                    fuel -= 2.5f * fuelUsage * Time.deltaTime;
                     turbo.Play();
                     turboActive.volume = maxEngineVolume;
                     rbody.AddForce(transform.up * turboForce * acceleration);
