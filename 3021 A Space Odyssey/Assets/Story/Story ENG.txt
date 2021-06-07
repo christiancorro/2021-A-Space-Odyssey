@@ -1,0 +1,50 @@
+// START PLOT
+It is the year 3021.
+
+A terrestrial politician, John Hilder, through his relentless propaganda, moves public opinion against the extraterrestrial colonies accusing them of consuming large quantities of water, coming as a provision from the mother planet: the Earth.
+
+In particular, he pounces on dissipation engines that allow space propulsion by vaporizing a mixture of water and hydrocarbons via nuclear batteries.
+The Earth Assembly supports Hilder and drastically reduces the water supply to the other planets. So the scavengers, indomitable hunters of space debris, will no longer be able to take off from the ground of Mars.
+
+Ted Long is the most ambitious of the Martian scavengers. Infuriated by the injustice, he decides that the time has come to make Mars independent. He devises a detailed plan to achieve this. He will have to travel 1.2 astronomical units to the fearsome Main Asteroid Belt to find and capture Vesta, a huge ice-rich asteroid. That way there would be enough water for centuries.
+
+He has at his disposal his beloved dredger, a small but powerful spaceship equipped with all the necessary tools to move easily among the space debris.
+
+Here is the map:
+
+It is a titanic quest never attempted before.
+Everyone thinks it's a suicide mission.
+
+// Tutorial
+
+It's been a while since I fly, maybe I should refresh my memory?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Press BACKSPACE at any time to skip the tutorial
+or
+
+// GAME OVER PLOT
+
+
+// END PLOT
+Ritornato su Marte Ted Long viene accolto come eroe, avendo non solo salvato la colonia ma anche per aver allargato l'orizzonte dell'uomo sull'intero universo. Il tavolo delle trattative con la Terra risulta completamente ribaltato, dato che ormai i marziani sono in grado di muovere una quantità di acqua molto superiore a quella dei terrestri. Addirittura i marziani offrono in vendita parte delle loro nuove riserve idriche. Il fatto provoca ovviamente la caduta di Hilder dal potere.

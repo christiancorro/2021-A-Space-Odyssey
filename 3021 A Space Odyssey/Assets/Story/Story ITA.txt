@@ -1,0 +1,136 @@
+// START PLOT
+È l'anno 3021.
+
+Un politico terrestre, John Hilder, tramite la sua accanita propaganda, muove l'opinione pubblica contro le colonie extraterrestri accusandole di consumare grandi quantitativi di acqua, proveniente come provvigione dal pianeta madre: la Terra.
+In particolare, si avventa contro i motori a dissipazione che permettono la propulsione spaziale vaporizzando una miscela d'acqua e idrocarburi tramite pile nucleari.
+
+L'assemblea terrestre sostiene Hilder e riduce drasticamente l'apporto di acqua agli altri pianeti. In questo modo gli scavenger, degli indomiti cacciatori di rottami spaziali, non potranno più alzarsi dal suolo di Marte.
+
+Ted Long è il più ambizioso tra gli scavenger marziani. Infervorato dall'ingiustizia subita, decide che è giunto il momento di rendere Marte indipendente. Elabora un minuzioso piano per riuscirci. Dovrà viaggiare per 1,2 unità astronomiche verso la temibile Fascia principale di asteroidi per trovare e catturare Vesta, un enorme asteroide ricchissimo di ghiaccio. In questo modo ci sarebbe acqua a sufficienza per centinaia di anni.
+
+Ha a disposizione la sua amata draga, una piccola ma potente navicella spaziale dotata di tutti gli strumenti necessari per muoversi agilmente tra i rottami spaziali.
+
+Ecco la mappa:
+
+È un'impresa titanica, mai tentata prima.
+Pensano tutti che sia una missione suicida.
+
+// Tutorial
+È da un po' che non volo, forse dovrei rinfrescarmi la memoria?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Premi BACKSPACE in qualunque momento per saltare il tutorial
+o
+
+
+
+Proviamo a raggiungere quella boa viola! 
+
+[W] PROPULSORI          [S] RETRO-PROPULSORI         [A | D] ROTAZIONE          [SHIFT + PROPULSORI] TURBO         [SCROLL] ZOOM
+
+DAL MENU PUOI SEMPRE RIVEDERE TUTTI I CONTROLLI
+
+Fantastico! Sto già iniziando a riprenderci la mano...
+
+Devo tenere sotto controllo i parametri della mia navicella spaziale. 
+Il carburante si consuma in fretta, devo procedere con cautela!
+
+L'interfaccia visuale della nave applica un filtro viola agli asteroidi ricchi di carburante che posso catturare per fare rifornimento...
+
+Per catturarli basta passarci sopra. Più avanti ce n'è uno!
+
+Devo fare attenzione! Quegli asteroidi potrebbero fare molto danno...
+
+Posso usare l'attrattore gravitazionale per liberare un passaggio verso l'asteroide viola, stando attento a non farmi colpire... il turbo permette di fare movimenti rapidi per schivarli!
+
+[SPAZIO] ATTRAI ASTEROIDI
+
+Ottimo! Il livello del carburante è salito!
+
+L'indicatore viola segna l'asteroide con carburante più vicino, proviamo a raggiungerene un altro!
+
+Quando rimango a secco non posso rischiare di attrarre gli asteroidi per cercare di rifornirmi, non posso spostarmi e mi colpirebbero...
+
+È meglio usare il gancio elettromagnetico per un lavoro di precisione. 
+Ora lo attivo!
+
+[E] LANCIO/RILASCIO GANCIO           [ARROW UP/DOWN] ALLUNGA/ACCORCIA FUNE
+
+Perfetto! Con i comandi della nave ci siamo...
+
+La nave è piccola e non ha molta riserva di ossigeno...
+
+Il viaggio per Vesta sarà lungo, avrò bisogno di sfruttare gli esopianeti artificiali costruiti dalla Confederazione Terrestre per fare rifornimento di tutto il necessario
+
+L'indicatore celeste segna l'esopianeta più vicino. Proviamo a raggiungerlo!
+
+Per fare rifornimento devo atterrare. Devo farlo delicatamente, questi esopianeti fanno molto danno!
+
+Ottimo!
+
+La nave mi fornisce anche la direzione di navigazione per Vesta...
+
+È questo indicatore bianco qui al centro
+
+Penso sia tutto, possiamo partire!
+
+// Comunicazioni
+[W] ATTIVAZIONE PROPULSORI
+
+LIFTOFF!
+
+Verso Vesta!
+
+Mh, oggetti celesti alquanto insoliti da queste parti...
+Tanto spettacolari quanto pericolosi! Lo scudo termico non reggerà a lungo se mi avvicino troppo...
+
+Hilder ha sguizagliato gli Interceptor per cercare di fermarmi!
+Niente panico! Ho tutti gli strumenti necessari per sopraffarli!
+Potrei sfruttare il gancio elettromagnetico per scagliarli contro gli asteroidi o gli esopianeti!
+Oppure usare l'attrattore gravitazionale per creare una barriera di asteroidi...
+Cadranno come mosche!
+
+Ancora loro!
+Ci sono anche i Defender! Sono quelli più grandi. Sono più resistenti e più pericolosi. Devo stare attento!
+
+Di nuovo! Non gli è bastato!
+
+Ci siamo! Questa deve essere la Fascia Principale di asteroidi!
+Vesta è vicina!
+
+Sono esausto! Ma manca poco, ce la posso fare!
+
+Wow! È meraviglioso!
+Tutto quel ghiaccio basterà per secoli!
+Ok, ora arriva la parte complessa. Devo agganciarlo e trascinarlo fino a Marte...
+
+Hanno inviato una flotta intera!!!
+
+Ce l'ho fatta!
+Nulla sarà più come prima.
+
+// GAME OVER PLOT
+
+
+// END PLOT
+Ritornato su Marte Ted Long viene accolto come eroe, avendo non solo salvato la colonia ma anche per aver allargato l'orizzonte dell'uomo sull'intero universo. Il tavolo delle trattative con la Terra risulta completamente ribaltato, dato che ormai i marziani sono in grado di muovere una quantità di acqua molto superiore a quella dei terrestri. Addirittura i marziani offrono in vendita parte delle loro nuove riserve idriche. Il fatto provoca ovviamente la caduta di Hilder dal potere.

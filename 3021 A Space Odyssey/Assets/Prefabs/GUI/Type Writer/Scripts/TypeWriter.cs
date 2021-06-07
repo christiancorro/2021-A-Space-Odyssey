@@ -39,7 +39,7 @@ public class TypeWriter : MonoBehaviour {
 
         if (Input.GetJoystickNames().Length > 0) {
             Debug.Log("Joystick detected");
-            alert.text = "Premi A per continuare...";
+            alert.text = "Press A to continue...";
         }
     }
 

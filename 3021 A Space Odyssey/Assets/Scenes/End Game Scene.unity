@@ -1731,7 +1731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: premi INVIO per continuare...
+  m_text: press ENTER to continue...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
   m_sharedMaterial: {fileID: 21725345230478544, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
@@ -2507,7 +2507,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: premi INVIO per continuare...
+  m_text: press ENTER to continue...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
   m_sharedMaterial: {fileID: 21725345230478544, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
@@ -2882,9 +2882,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - "Ora Marte risplende per i suoi laghi ghiacciati. \n\xC8 un nuovo inizio..."
-  - "\xC8 un nuovo inizio per tutta l'umanit\xE0. \nL'innata paura dell'ignoto \xE8
-    stata sconfitta ancora una volta."
+  - "Mars now glows from its frozen lakes. \r\nIt's a new beginning..."
+  - "It is a new beginning for all mankind. \r\nThe innate fear of the unknown has
+    been defeated once again."
 --- !u!1001 &992088531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4171,7 +4171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: premi INVIO per continuare...
+  m_text: press ENTER to continue...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
   m_sharedMaterial: {fileID: 21725345230478544, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}

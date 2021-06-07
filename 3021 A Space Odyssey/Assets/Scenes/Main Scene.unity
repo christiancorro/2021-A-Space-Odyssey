@@ -545,7 +545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441980457175, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: m_text
-      value: premi INVIO per tornare alla Home
+      value: press ENTER to restart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
@@ -12211,7 +12211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Ottimo! Il livello del carburante \xE8 salito!"
+      value: Great! The fuel level has increased!
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -13005,8 +13005,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "\xC8 un'impresa titanica, mai tentata prima.\r\nPensano tutti che sia
-        una missione suicida."
+      value: 'It is a titanic quest, never attempted before.
+
+        Everyone thinks
+        it''s a suicide mission.'
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -13291,7 +13293,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Fantastico! Sto gi\xE0 iniziando a riprenderci la mano..."
+      value: Awesome! I'm already starting to get the hang of it....
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -16137,7 +16139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Penso sia tutto, possiamo partire!
+      value: I think that's it, we can go!
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -17653,17 +17655,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Devo tenere sotto controllo i parametri della mia navicella spaziale.
-        \nIl carburante si consuma in fretta, devo procedere con cautela!"
+      value: "I have to keep an eye on the parameters of my spacecraft. \r\nFuel
+        burns out fast, I have to proceed with caution!"
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: L'interfaccia visuale della nave applica un filtro viola agli asteroidi
-        ricchi di carburante che posso catturare per fare rifornimento...
+      value: The ship's visual interface applies a purple filter to fuel-rich asteroids
+        that I can capture to refuel...
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[2]
-      value: "Per catturarli basta passarci sopra. Pi\xF9 avanti ce n'\xE8 uno!"
+      value: To catch them, just pass over them. Up ahead there is one!
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[3]
@@ -19468,7 +19470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Perfetto! Con i comandi della nave ci siamo...
+      value: Perfect! With the ship's controls, we're good...
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -21401,15 +21403,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Ottimo!
+      value: Great!
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: La nave mi fornisce anche la direzione di navigazione per Vesta...
+      value: The ship also provides me with navigation direction to Vesta....
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[2]
-      value: "\xC8 questo indicatore bianco qui al centro"
+      value: It is this white pointer here in the center
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[3]
@@ -22196,8 +22198,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "\xC8 da un po' che non volo, forse dovrei rinfrescarmi la memoria?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPremi
-        BACKSPACE in qualunque momento per saltare il tutorial\no"
+      value: 'It''s been a while since I fly, maybe I should refresh my memory?
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        Press
+        BACKSPACE at any time to skip the tutorial
+
+        or'
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -24493,14 +24543,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Quando rimango a secco non posso rischiare di attrarre gli asteroidi
-        per cercare di rifornirmi, non posso spostarmi e mi colpirebbero...
+      value: When I run out of fuel, I can't risk attracting asteroids to try to
+        refuel, I can't move and they would hit me....
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: "\xC8 meglio usare il gancio elettromagnetico per un lavoro di precisione.
-        \nOra lo attivo!\n\n[E] LANCIO/RILASCIO GANCIO           [ARROW UP/DOWN]
-        ALLUNGA/ACCORCIA FUNE"
+      value: "It's best to use the electromagnetic hook for precision work. \r\nNow
+        I activate it!\r\n\n\n[E] THROW/RELEASE HOOK           [ARROW UP/DOWN] LENGTHEN/SHORTEN
+        ROPE"
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[2]
@@ -24726,11 +24776,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentencesMouseKeyboard: {fileID: 1458281283}
   sentencesXboxController:
-  - Quando rimango a secco non posso rischiare di attrarre gli asteroidi per cercare
-    di rifornirmi, non potrei spostarmi e mi colpirebbero...
-  - "\xC8 meglio usare il gancio elettromagnetico per un lavoro di precisione. \nOra
-    lo attivo!\n\n[RB] LANCIO/RILASCIO GANCIO          [RS SU/GI\xD9] ALLUNGA/ACCORCIA
-    FUNE"
+  - When I run out of fuel, I can't risk attracting asteroids to try to refuel, I
+    can't move and they would hit me....
+  - "It's best to use the electromagnetic hook for precision work. \r\nNow I activate
+    it!\r\n\n\n[RB] THROW/RELEASE HOOK           [RS UP/DOWN] LENGTHEN/SHORTEN ROPE"
 --- !u!114 &1458281285 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2908385441749123251, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
@@ -27200,8 +27249,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Per fare rifornimento devo atterrare. Devo farlo delicatamente, questi
-        esopianeti fanno molto danno!
+      value: To refuel, I have to land. I have to do it gently, these exoplanets
+        do a lot of damage!
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -27550,13 +27599,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "La nave \xE8 piccola e non ha molta riserva di ossigeno..."
+      value: The spaceship is small and doesn't have much of an oxygen supply....
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: "Il viaggio per Vesta sar\xE0 lungo, avr\xF2 bisogno di sfruttare gli
-        esopianeti artificiali costruiti dalla Confederazione Terrestre per fare
-        rifornimento di tutto il necessario"
+      value: The journey to Vesta will be long, I will need to take advantage of
+        the artificial exoplanets built by the Terran Confederation to refuel everything
+        needed...
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[2]
@@ -27917,9 +27966,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "\n\nProviamo a raggiungere quella boa viola! \n\n[W] PROPULSORI         
-        [S] RETRO-PROPULSORI         [A | D] ROTAZIONE          [SHIFT + PROPULSORI]
-        TURBO         [SCROLL] ZOOM\n\nDAL MENU PUOI SEMPRE RIVEDERE TUTTI I CONTROLLI"
+      value: '
+
+
+        Let''s try to reach that purple buoy!
+
+
+        [W] THRUSTERS         
+        [S] RETRO-THRUSTERS         [A | D] ROTATION          [SHIFT + THRUSTERS]
+        TURBO         [SCROLL] ZOOM
+
+
+        FROM THE MENU YOU CAN ALWAYS SEE ALL
+        THE CONTROLS'
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -28129,8 +28188,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "L'indicatore viola segna l'asteroide con carburante pi\xF9 vicino,
-        proviamo a raggiungerene un altro!"
+      value: The purple indicator points to the closest fuel asteroid, let's try
+        to get to another one!
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -28353,7 +28412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: 'Ecco la mappa:'
+      value: 'Here is the map:'
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -28518,17 +28577,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: Devo fare attenzione! Quegli asteroidi potrebbero fare molto danno...
+      value: I have to be careful! Those asteroids could do a lot of damage....
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: 'Posso usare l''attrattore gravitazionale per liberare un passaggio
-        verso l''asteroide viola, stando attento a non farmi colpire... il turbo
-        permette di fare movimenti rapidi per schivarli!
+      value: 'I can use the gravitational attractor to clear a path to the purple
+        asteroid, being careful not to get hit... the turbo allows me to make quick
+        movements to dodge them!
 
+        
 
-        [SPAZIO] ATTRAI
-        ASTEROIDI'
+        [SPACE] ATTRACT ASTEROIDS'
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[2]
@@ -28743,13 +28802,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentencesMouseKeyboard: {fileID: 1795421369}
   sentencesXboxController:
-  - Devo fare attenzione! Quegli asteroidi potrebbero fare molto danno...
-  - 'Posso usare l''attrattore gravitazionale per liberare un passaggio verso l''asteroide
-    viola, stando attento a non farmi colpire... il turbo permette di fare movimenti
-    rapidi per schivarli!
+  - I have to be careful! Those asteroids could do a lot of damage....
+  - 'I can use the gravitational attractor to clear a path to the purple asteroid,
+    being careful not to get hit... the turbo allows me to make quick movements to
+    dodge them!
 
+    
 
-    [LB] ATTRAI ASTEROIDI'
+    [LB] ATTRACT ASTEROIDS'
 --- !u!114 &1795421369 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
@@ -29336,7 +29396,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "L'indicatore celeste segna l'esopianeta pi\xF9 vicino. Proviamo a raggiungerlo!"
+      value: "The light blue indicator marks the nearest exoplanet. \nLet's try to
+        reach it!"
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
@@ -32591,9 +32652,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentencesMouseKeyboard: {fileID: 2138527658}
   sentencesXboxController:
-  - "\n\nProviamo a raggiungere quella boa viola! \n\n[RT] PROPULSORI          [LT]
-    RETRO-PROPULSORI         [LS] ROTAZIONE          [A + PROPULSORI] TURBO        
-    [DPAD] ZOOM\n\nDAL MENU PUOI SEMPRE RIVEDERE TUTTI I CONTROLLI"
+  - '
+
+
+    Let''s try to reach that purple buoy!
+
+
+    [RT] THRUSTERS          [LT]
+    RETRO-THRUSTERS         [LS] ROTATION          [A + THRUSTERS] TURBO        
+    [DPAD] ZOOM
+
+
+    FROM THE MENU YOU CAN ALWAYS SEE ALL THE CONTROLS'
 --- !u!1 &2138677391
 GameObject:
   m_ObjectHideFlags: 0
@@ -36735,27 +36805,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "\xC8 l'anno 3021.\n\nUn politico terrestre, John Hilder, tramite la
-        sua accanita propaganda, muove l'opinione pubblica contro le colonie extraterrestri
-        accusandole di consumare grandi quantitativi di acqua, proveniente come provvigione
-        dal pianeta madre: la Terra.\r\nIn particolare, si avventa contro i motori
-        a dissipazione che permettono la propulsione spaziale vaporizzando una miscela
-        d'acqua e idrocarburi tramite pile nucleari.\n\nL'assemblea terrestre sostiene
-        Hilder e riduce drasticamente l'apporto di acqua agli altri pianeti. In questo
-        modo gli scavenger, degli indomiti cacciatori di rottami spaziali, non potranno
-        pi\xF9 alzarsi dal suolo di Marte.\r\n"
+      value: 'It is the year 3021.
+
+        
+
+        A terrestrial politician,
+        John Hilder, through his relentless propaganda, moves public opinion against
+        the extraterrestrial colonies accusing them of consuming large quantities
+        of water, coming as a provision from the mother planet: the Earth.
+
+        
+
+        In
+        particular, he pounces on dissipation engines that allow space propulsion
+        by vaporizing a mixture of water and hydrocarbons via nuclear batteries.
+
+        The
+        Earth Assembly supports Hilder and drastically reduces the water supply to
+        the other planets. So the scavengers, indomitable hunters of space debris,
+        will no longer be able to take off from the ground of Mars.'
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: "Ted Long \xE8 il pi\xF9 ambizioso tra gli scavenger marziani. Infervorato
-        dall'ingiustizia subita, decide che \xE8 giunto il momento di rendere Marte
-        indipendente. Elabora un minuzioso piano per riuscirci. Dovr\xE0 viaggiare
-        per 1,2 unit\xE0 astronomiche verso la temibile Fascia principale di asteroidi
-        per trovare e catturare Vesta, un enorme asteroide ricchissimo di ghiaccio.
-        In questo modo ci sarebbe acqua a sufficienza per centinaia di anni.\n\nHa
-        a disposizione la sua amata draga, una piccola ma potente navicella spaziale
-        dotata di tutti gli strumenti necessari per muoversi agilmente tra i rottami
-        spaziali.\r\n"
+      value: 'Ted Long is the most ambitious of the Martian scavengers. Infuriated
+        by the injustice, he decides that the time has come to make Mars independent.
+        He devises a detailed plan to achieve this. He will have to travel 1.2 astronomical
+        units to the fearsome Main Asteroid Belt to find and capture Vesta, a huge
+        ice-rich asteroid. That way there would be enough water for centuries.
+
+        
+
+        He
+        has at his disposal his beloved dredger, a small but powerful spaceship equipped
+        with all the necessary tools to move easily among the space debris.
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
       propertyPath: sentences.Array.data[2]
@@ -37123,8 +37207,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentencesMouseKeyboard: {fileID: 2908385442060110278}
   sentencesXboxController:
-  - "\xC8 da un po' che non volo, forse dovrei rinfrescarmi la memoria?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPremi
-    B in qualunque momento per saltare il tutorial\no"
+  - 'It''s been a while since I fly, maybe I should refresh my memory?
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    Press
+    B at any time to skip the tutorial
+
+    or'
 --- !u!114 &2908385442060110278 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2908385441056465676, guid: 50ec16609fb1ab74b81ed6551e66dc00, type: 3}
